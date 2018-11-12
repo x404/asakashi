@@ -30,6 +30,7 @@ body{
 	@include font-size(1.4);
 	flex-flow: column;
 	font-display: swap;
+	 font-family: 'bender';
 	// height: 100vh;
 }
 
@@ -213,6 +214,19 @@ body{
 }
 
 
+@supports (display:grid) {
+	.main-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;			
+	}
+}
+
+
 /* =footer
 ---------------------------*/
 .footer{
@@ -247,28 +261,15 @@ body{
 			border-radius: 50%;
 			height: 10px;
 			left: 0;
-			top: 6px;
+			top: 5px;
 			width: 10px;
 		};
 	}
-
 }
 /* =/footer
 ---------------------------*/
 
 
-
-@supports (display:grid) {
-	.main-grid{
-		height: auto;
-		min-height: 100vh;
-		display: grid;
-		grid-template-areas: "header"
-							 "main"
-							 "footer";
-		grid-template-rows: auto 1fr auto;			
-	}
-}
 
 
 
