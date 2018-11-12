@@ -3403,6 +3403,7 @@ html {
 
 body {
   background-color: #fff;
+  color: #4b4b4b;
   font-size: 14px;
   font-size: 1.4rem;
   flex-flow: column;
@@ -3491,7 +3492,7 @@ em strong {
 .icon-question {
   position: relative; }
   .icon-question:before {
-    background: url(../images/icons/question.png) no-repeat left top;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAAG9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbeq9RgAAACV0Uk5TABJpscz8CXjw/xjJG+EGD+13WhEzuyLY7uSI+WbzXUQee2y0z3HQzW4AAAC5SURBVHicXZFZEoMgEAVHQXEERSOJS0zidv8zRmQRfV9NFzXU8ACORDGhSUJJHMGZlGVok7HU2ZxjEJ4bKwq8pBDalhxv4eWu2d0iMgBZGaT1Hmq4kvCwttEDG+tjIAaUNk94mROB1kB33HO6B7/InsHpd6hHUHb2xw0xtrPYuif1YOWRwNdzPXiMQfrhanSUyWD55hcsDyXFW+jx5aK/2l6YD5+uNUy+tPksbfal6YqXdUPc1sVW/AdigBC9gdtZFQAAAABJRU5ErkJggg==") no-repeat left top;
     height: 22px;
     width: 22px;
     left: 12px;
@@ -3654,6 +3655,46 @@ body {
 .cl-effect-11 a:hover::before,
 .cl-effect-11 a:focus::before {
   max-width: 100%; }
+
+.homepage .intro {
+  padding-top: 7rem; }
+  .homepage .intro .title {
+    color: #000;
+    line-height: 1.2;
+    font-size: 7rem;
+    font-weight: 700; }
+  .homepage .intro .subtitle {
+    background-color: #ed1d24;
+    color: #fff;
+    font-size: 3rem;
+    display: inline-block;
+    padding: .3rem 1rem; }
+
+.homepage .advantages {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000; }
+
+.homepage .advantage__pic {
+  width: 96px;
+  font-size: 7rem;
+  color: #ed1d24;
+  font-weight: normal; }
+
+.homepage .advantage__item {
+  margin-top: .1rem;
+  width: 50%;
+  line-height: 1.6;
+  min-height: 75px; }
+  .homepage .advantage__item a {
+    text-decoration: none; }
+    .homepage .advantage__item a span {
+      color: #ed1d24;
+      text-decoration: underline; }
+    .homepage .advantage__item a:hover {
+      color: currentColor; }
+      .homepage .advantage__item a:hover span {
+        text-decoration: none; }
 
 /* =mobile-menu
 ---------------------------*/

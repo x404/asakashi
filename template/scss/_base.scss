@@ -27,11 +27,11 @@ html {
 
 body{
 	background-color: $color2;
+	color: $color7;	
 	@include font-size(1.4);
 	flex-flow: column;
 	font-display: swap;
-	 font-family: 'bender';
-	// height: 100vh;
+	font-family: 'bender';
 }
 
 html, body{
@@ -144,7 +144,9 @@ em strong
 		position: relative;
 		&:before{
 			@extend .before;
-			background: url(../images/icons/question.png) no-repeat left top;
+
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAAG9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbeq9RgAAACV0Uk5TABJpscz8CXjw/xjJG+EGD+13WhEzuyLY7uSI+WbzXUQee2y0z3HQzW4AAAC5SURBVHicXZFZEoMgEAVHQXEERSOJS0zidv8zRmQRfV9NFzXU8ACORDGhSUJJHMGZlGVok7HU2ZxjEJ4bKwq8pBDalhxv4eWu2d0iMgBZGaT1Hmq4kvCwttEDG+tjIAaUNk94mROB1kB33HO6B7/InsHpd6hHUHb2xw0xtrPYuif1YOWRwNdzPXiMQfrhanSUyWD55hcsDyXFW+jx5aK/2l6YD5+uNUy+tPksbfal6YqXdUPc1sVW/AdigBC9gdtZFQAAAABJRU5ErkJggg==") no-repeat left top;
+			// background: url(../images/icons/question.png) no-repeat left top;
 			height: 22px;
 			width: 22px;
 			left: 12px;
