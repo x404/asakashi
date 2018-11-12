@@ -2,15 +2,7 @@
 html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
 header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
-$color1:#000;
-$color2:#fff;
 
-$color3:#f4f4f4;
-$color4:#1a237e;
-$color5:#666;
-$color6:#ff5722;
-$color7:#80bbde;
-$color8:#292929;
 
 
 * {
@@ -34,11 +26,11 @@ html {
 
 
 body{
-	@include flexbox;
+	background-color: $color2;
 	@include font-size(1.4);
 	flex-flow: column;
 	font-display: swap;
-	height: 100vh;
+	// height: 100vh;
 }
 
 html, body{
@@ -185,37 +177,96 @@ header{
 /* =/navigation
 ---------------------------*/
 
-
-.owl-carousel{
-	.owl-controls{
-		position: absolute;
-		width: 100%;
-		top: 115px;
-		.owl-buttons{
-			.owl-prev,
-			.owl-next{
-				background: url(../images/prevnext.png) no-repeat left top;
-				width: 65px;
-				height: 65px;
-				position: absolute;
-			}
-			.owl-prev{
-				left: -110px;
-			}
-			.owl-next{
-				// @include sprite;
-				// .rotation(180deg);
-				right: -110px;
-			}
-		}
+/* =main
+---------------------------*/
+body{
+	display: flex;
+	 flex-flow: column;
+}
+.homepage{
+	flex-grow: 1;
+	position: relative;
+	&:before{
+		background: url(../images/bg-vline.gif);
+		@extend .before;
+		left: 40%;
+		width: 60%;
+		height: 100%;
+		// background: #fff;
+		z-index: 0;
+	};
+	.main-grid{
+		position: relative;
+		z-index: 2;
 	}
 }
 
-/* =main
+
+
+.main-grid{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main{
+		flex-grow: 1;
+	}		
+}
+
+
+/* =footer
+---------------------------*/
+.footer{
+	padding-bottom: 3.5rem;
+}
+
+.copyright{
+	color: $color5;
+	padding-left: 4rem;
+}
+
+.lang{
+	font-size: 1.5rem;
+	padding-right: 4rem;
+	a, span{
+		padding-left: 20px;		
+	}
+
+	a{
+		color: $color4;
+		&:hover{
+			color: $color6;
+			text-decoration: none;
+		};
+	}
+
+	.current{
+		position: relative;
+		&:before{
+			@extend .before;
+			background: $color6;
+			border-radius: 50%;
+			height: 10px;
+			left: 0;
+			top: 6px;
+			width: 10px;
+		};
+	}
+
+}
+/* =/footer
 ---------------------------*/
 
-.main{
-	aside{
+
+
+@supports (display:grid) {
+	.main-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;			
 	}
 }
 
