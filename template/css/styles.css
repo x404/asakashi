@@ -3656,18 +3656,21 @@ body {
 .cl-effect-11 a:focus::before {
   max-width: 100%; }
 
+.homepage .main {
+  position: relative; }
+
 .homepage .intro {
-  padding-top: 7rem; }
+  padding-top: 4rem; }
   .homepage .intro .title {
     color: #000;
-    line-height: 1.2;
     font-size: 7rem;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 1.2; }
   .homepage .intro .subtitle {
     background-color: #ed1d24;
     color: #fff;
-    font-size: 3rem;
     display: inline-block;
+    font-size: 3rem;
     padding: .3rem 1rem; }
 
 .homepage .advantages {
@@ -3696,6 +3699,65 @@ body {
       .homepage .advantage__item a:hover span {
         text-decoration: none; }
 
+.homepage .counter {
+  position: absolute;
+  left: 0;
+  bottom: 5.5rem;
+  font-size: 1.5rem;
+  width: 21rem; }
+  .homepage .counter .cifr {
+    font-size: 7rem;
+    letter-spacing: .1em;
+    color: #ed1d24;
+    line-height: 1; }
+  .homepage .counter p {
+    color: #000;
+    line-height: 1;
+    font-size: 1.8rem;
+    font-weight: 700; }
+
+/* =lastnews
+---------------------------*/
+.lastnews {
+  color: #000;
+  position: relative;
+  padding-left: 5rem;
+  margin: 6rem 0; }
+  .lastnews h1 {
+    position: absolute;
+    line-height: 1;
+    font-size: 7rem;
+    font-weight: normal;
+    left: -170px; }
+
+.lastnew__item {
+  border-left: 2px solid #000;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  width: 33rem; }
+  .lastnew__item a:hover {
+    color: #000;
+    text-decoration: none; }
+    .lastnew__item a:hover .lastnew__title {
+      color: #ed1d24;
+      text-decoration: none; }
+
+.lastnew__pic {
+  margin-right: 1.4rem; }
+  .lastnew__pic img {
+    border-radius: 50%;
+    border: 2px solid #fff; }
+
+.lastnew__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.8;
+  transition: color .3s;
+  margin-top: -.7rem; }
+
+/* =/lastnews
+---------------------------*/
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
