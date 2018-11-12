@@ -40,33 +40,59 @@
 	<div class="main-grid">
 		<!-- =header -->
 		<header class="header">
-			<!-- =nav -->
-			<div class="navmenu">
-				<div class="navmenu__inner">
-					<nav id="navbar">
-						<div class="mainnav__list">
-							<ul class="nav nav-tabs">
-								<li><a href="#" title="">Company</a></li>
-								<li><a href="#" title="">Products</a></li>
-								<li><a href="#" title="">Catalogue</a></li>
-								<li><a href="#" title="">Did you know?</a></li>
-								<li><a href="#" title="">Contact us</a></li>
-							</ul>
-							<div class="show-sm">
-								<a href="tel:+123456789">+1234 56-78-89</a>
-								<a href="mailto:info@">info@site.site</a>
-							</div>
+			<div class="d-flex">
+				<div class="col-lg-1">
+					<button type="button" class="extra-toggle" data-popup="modal-menu" aria-label="Show / hide menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+			
+				<div class="col-lg-1">
+					<!-- =logo -->
+					<div class="logo">
+						<a href="/" title="">
+							<img src="/template/images/logo.png" alt="" />
+						</a>
+					</div>
+					<!-- =/logo -->
+				</div>
+			
+				<div class="col-lg-6 offset-lg-3">
+					<!-- =nav -->
+					<div class="navmenu">
+						<div class="navmenu__inner">
+							<nav id="navbar">
+								<div class="mainnav__list">
+									<ul class="nav nav-tabs d-flex cl-effect-11">
+										<li><a href="#" title="" data-hover="Company">Company</a></li>
+										<li><a href="#" title="" data-hover="Products">Products</a></li>
+										<li><a href="#" title="" data-hover="Catalogue">Catalogue</a></li>
+										<li><a href="#" title="" data-hover="Did you know?">Did you know?</a></li>
+										<li><a href="#" title="" data-hover="Contact us">Contact us</a></li>
+									</ul>
+									<div class="show-sm">
+										<a href="tel:+123456789">+1234 56-78-89</a>
+										<a href="mailto:info@">info@site.site</a>
+									</div>
+								</div>
+							</nav>	
+							<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
 						</div>
-					</nav>	
-					<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
+					</div>
+					<button type="button" class="navbar-toggle" aria-label="Показать/Скрыть меню">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- =/nav -->					
+				</div>
+
+				<div class="col-lg-1">
+					<a href="#" class="btn btn-icon btn-ask icon-question" data-toggle="modal" data-target="#modal-ask">Ask us</a>
 				</div>
 			</div>
-			<button type="button" class="navbar-toggle" aria-label="Показать/Скрыть меню">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<!-- =/nav -->
 		</header>
 		<!-- =/header -->
 

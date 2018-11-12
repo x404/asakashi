@@ -63,67 +63,22 @@ h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
-.regular{
-	font-family: "SegoeUIRegular";	
-}
-
-/* font-family: "SegoeUIRegular"; */
-@font-face {
-	font-family: "SegoeUIRegular";
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "SegoeUIBold"; */
-@font-face {
-	font-family: "SegoeUIBold";
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIItalic";
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIBoldItalic";
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
 strong,
 .bold{
 	font-weight: normal;
-	font-family: "SegoeUIBold";
+	// font-family: "SegoeUIBold";
 }
 em, i, 
 .italic{
 	font-style: normal;
-	font-family: "SegoeUIItalic";
+	// font-family: "SegoeUIItalic";
 }
 
 strong em,
 em strong
 {
 	font-weight: normal;
-	font-family: "SegoeUIBoldItalic";
+	// font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -162,10 +117,145 @@ em strong
 }
 
 
+.btn{
+	border: 2px solid;
+	color: $color1;
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	height: 40px;
+	padding-right: 27px;
+	transition: .3s;
+	display: flex;
+	align-items: center;
+	&-icon{
+		padding-left: 42px;
+	}	
+	&:hover{
+		border-color: $color6;
+		background-color: $color6;
+		text-decoration: none;
+		color: $color2;
+	}
+}
+
+.icon{
+	&-question{
+		position: relative;
+		&:before{
+			@extend .before;
+			background: url(../images/icons/question.png) no-repeat left top;
+			height: 22px;
+			width: 22px;
+			left: 12px;
+			top: 50%;
+			margin-top: -11px;
+			transition: filter .3s;
+		};
+		&:hover{
+			&:before{
+				filter: invert(100);
+			};
+		}
+	}
+}
+
+
+.main-grid{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main{
+		flex-grow: 1;
+	}		
+}
+
+
+@supports (display:grid) {
+	.main-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;			
+	}
+}
+
+
+
 
 /* =header
 ---------------------------*/
-header{
+.header{
+	.logo{
+		padding-top: 4.5rem;
+	}
+	.navmenu{
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.7px;
+		font-size: 1.7rem;
+		ul{
+			padding-top: 6rem;
+			li{
+				position: relative;
+				margin-left: 37px;
+				padding-left: 25px;
+				&:before{
+					@extend .before;
+					background: $color6;
+					border-radius: 50%;
+					height: 10px;
+					left: 2px;
+					top: -15px;
+					width: 10px;
+				};
+				a{
+					white-space: nowrap;
+					&:hover{
+						color: currentColor;
+						text-decoration: none;
+					};
+				}
+			}
+		}
+	}
+
+	.btn-ask{
+		margin-top: 5rem;
+		width: 120px;
+	}
+}
+
+.extra-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	height: 34px;
+	margin: 51px 0 0 45px;
+	padding: 0;
+	position: relative;
+	width: 30px;
+	.icon-bar{
+		background: #000;
+		border-radius: 2px;
+		display: block;
+		height: 3px;
+		margin: 7px 0;
+		position: relative;
+		transition: .15s margin ease-out;
+		width: 100%;
+		z-index: 5;
+		transition: .3s background;
+	}
+	&:hover{
+		.icon-bar{
+			background: $color6;
+		}
+	}
 }
 
 /* =/header
@@ -204,29 +294,6 @@ body{
 
 
 
-.main-grid{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	.main{
-		flex-grow: 1;
-	}		
-}
-
-
-@supports (display:grid) {
-	.main-grid{
-		height: auto;
-		min-height: 100vh;
-		display: grid;
-		grid-template-areas: "header"
-							 "main"
-							 "footer";
-		grid-template-rows: auto 1fr auto;			
-	}
-}
-
-
 /* =footer
 ---------------------------*/
 .footer{
@@ -235,7 +302,7 @@ body{
 
 .copyright{
 	color: $color5;
-	padding-left: 4rem;
+	padding-left: 4.5rem;
 }
 
 .lang{
@@ -279,4 +346,32 @@ body{
 	height: 1px;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
+}
+
+
+
+
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11 a {
+	position: relative;
+	// color: #0972b4;
+	text-shadow: none;
+} 
+
+.cl-effect-11 a::before {
+	border-bottom: 2px solid $color6;
+	color: $color6;
+	content: attr(data-hover);
+	left: 0;
+	// right: 0;
+	max-width: 0;
+	overflow: hidden;
+	position: absolute;
+	transition: max-width 0.5s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+	// left: 0;
 }
