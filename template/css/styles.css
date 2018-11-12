@@ -3729,6 +3729,11 @@ body {
     font-size: 7rem;
     font-weight: normal;
     left: -170px; }
+    .lastnews h1 a {
+      transition: color .3s; }
+      .lastnews h1 a:hover {
+        color: #ed1d24;
+        text-decoration: none; }
 
 .lastnew__item {
   border-left: 2px solid #000;

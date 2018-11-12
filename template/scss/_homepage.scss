@@ -88,6 +88,13 @@
 		font-size: 7rem;
 		font-weight: normal;
 		left: -170px;
+		a{
+			transition: color .3s;
+			&:hover{
+				color: $color6;
+				text-decoration: none;
+			}
+		}
 	}
 }
 
