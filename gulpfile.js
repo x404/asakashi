@@ -220,8 +220,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/css/styles.min.css',
-		config.templateDir + '/css/tiny.css',
-		config.templateDir + '/css/owl.carousel.css'
+		config.templateDir + '/css/selectize.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/template/css'));
 

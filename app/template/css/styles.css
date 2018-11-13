@@ -3484,6 +3484,7 @@ em strong {
     text-decoration: none;
     color: #fff; }
   .btn-red {
+    border-width: 3px;
     border-color: #ed1d24;
     background-color: #fff;
     font-size: 1.7rem;
