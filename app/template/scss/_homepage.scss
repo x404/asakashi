@@ -96,6 +96,48 @@
 }
 
 
+.homeslider{
+	margin-left: 130px;
+	position: relative;
+	top: -10px;
+	width: 750px;
+	height: 750px;
+	.slick-slide{
+		padding-bottom: 50px;
+		position: relative;
+	}
+	.slide{
+		height: 740px;
+		&__bg{
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		&__link{
+			display: flex;
+			background-color: $color6;
+			border-radius: 50%;
+			width: 617px;
+			height: 618px;
+			box-shadow: 40px 20px 50px rgba(255,98,40,.7);
+			position: relative;
+			z-index: 1;
+			margin-top: 45px;
+			// margin-left: 60px;
+			img{
+				transition: transform .5s;
+				margin: auto;
+			}
+			&:hover{
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}		
+	}
+}
+
+
 /* =lastnews
 ---------------------------*/
 .lastnews{

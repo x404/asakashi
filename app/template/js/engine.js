@@ -1,5 +1,53 @@
 $(document).ready(function(){
 
+	$('#main-carousel').slick({
+		dots: true,
+		// prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		// nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		arrows : false,
+		fade: true,
+		// appendArrows : $('.prevnext'),
+        // centerMode: true,
+        // centerPadding: '110px',
+        infinite : true,
+		responsive: [
+		    {
+		      breakpoint: 1700,
+		      settings: {
+		        centerPadding: "70px"
+		      }
+		    },
+			{
+		      breakpoint: 991,
+		      settings: {
+		        centerPadding: "50px"
+		      }
+		    },
+			{
+		      breakpoint: 850,
+		      settings: {
+		        centerPadding: "30px"
+		      }
+		    },
+			{
+		      breakpoint: 768,
+		      settings: {
+		        centerPadding: "0px"
+		      }
+		    },
+			{
+		      breakpoint: 740,
+		      settings: {
+		        centerPadding: "10px"
+		      }
+		    }		    
+	    ]
+	});
+
 
 	// mobile-menu
 	$('#navbar').each(function(){
