@@ -1,0 +1,78 @@
+.input-field{
+	position: relative;	
+	margin-top: 3.2rem;
+	&:before{
+		bottom: 15px;
+	}	
+	// visible label
+	label{
+		font-size: 1.7rem;
+		-moz-user-select: none;
+		color: $color1;
+		font-weight: 300;
+		cursor: text;
+		opacity: 1;
+		overflow: hidden;
+		position: absolute;
+		text-overflow: ellipsis;
+		top: -2px;
+		transform-origin: left top 0;
+		transform: translate3d(0, 9px, 0px);
+		transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+		white-space: nowrap;
+		// width: calc(96% - 10px);	
+	}	
+	.name-field{
+		opacity: 0;
+		color: $color11;
+	}
+
+	.helper-field{
+	}
+
+	.form-control{
+		&:focus,
+		&:active
+		{
+			border-bottom-color: $color6
+		}
+	}
+
+}
+.textarea-field{
+	label{
+		top: -10px;
+	}
+}
+
+.is-focused{
+	label{
+		@include transform(translate3d(0,-10px,0) scale(.8));
+	}
+	input,
+	textarea{
+		outline: none;
+	}
+	.name-field{
+		opacity: 1;
+	}
+	.helper-field{
+		opacity: 0;
+	}
+}
+
+.input-field.is-charged:not(.is-focused) > label.name-field{
+	@include transform(translate3d(0px, -7px, 0px) scale(0.7));
+}
+
+.is-charged{
+	label{
+		opacity: 0;
+	}
+	.name-field{
+		opacity: 1;
+	}
+	.helper-field{
+		// opacity: 0
+	}
+}

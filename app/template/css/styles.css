@@ -3456,25 +3456,20 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before {
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .box-vline:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before {
   content: "";
   display: block;
   position: absolute; }
 
 .form-control {
-  border: 1px solid #efd24a;
-  border-radius: 0;
-  margin-top: 0.6rem;
   font-size: 16px; }
-  .form-control:focus, .form-control:active {
-    border-color: #686868;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
 .btn {
   border: 2px solid;
   color: #000;
+  cursor: pointer;
   display: block;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
   height: 40px;
   padding-right: 27px;
@@ -3488,6 +3483,12 @@ em strong {
     background-color: #ed1d24;
     text-decoration: none;
     color: #fff; }
+  .btn-red {
+    border-color: #ed1d24;
+    background-color: #fff;
+    font-size: 1.7rem;
+    height: 5rem;
+    padding: 0 3rem; }
 
 .icon-question {
   position: relative; }
@@ -3642,6 +3643,110 @@ body {
 .cl-effect-11 a:hover::before,
 .cl-effect-11 a:focus::before {
   max-width: 100%; }
+
+.box-vline {
+  background-color: #fff;
+  border-left: 5px solid #eee32d;
+  padding: 7.2rem 12rem 8rem 10rem;
+  position: relative; }
+  .box-vline:before {
+    background: url("data:image/gif;base64,R0lGODlhMgABAIABAO7jLQAAACH5BAEAAAEALAAAAAAyAAEAAAILhB2ZhxoM3GMSygIAOw==") repeat-y;
+    width: 50px;
+    height: 100%;
+    left: -55px;
+    top: 0; }
+
+.form-wrapper .title {
+  color: #000;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem; }
+
+.form-wrapper p {
+  font-size: 1.5rem; }
+
+.form-wrapper .form-control {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #7e8083;
+  height: 40px;
+  letter-spacing: .1em;
+  width: 100%; }
+
+.form-wrapper .textarea {
+  background: url("data:image/gif;base64,R0lGODlhAQAeAIABAO0dJAAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
+  border: none;
+  filter: grayscale(1) brightness(1.8);
+  height: 90px;
+  line-height: 30px;
+  overflow: hidden;
+  resize: none; }
+  .form-wrapper .textarea:active, .form-wrapper .textarea:focus {
+    filter: none; }
+
+.form-wrapper .form {
+  padding-top: 2rem; }
+
+.form-wrapper .btn-submit {
+  margin-top: 3.2rem; }
+
+#modal-ask .modal-dialog {
+  max-width: 585px; }
+
+.input-field {
+  position: relative;
+  margin-top: 3.2rem; }
+  .input-field:before {
+    bottom: 15px; }
+  .input-field label {
+    font-size: 1.7rem;
+    -moz-user-select: none;
+    color: #000;
+    font-weight: 300;
+    cursor: text;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: -2px;
+    transform-origin: left top 0;
+    transform: translate3d(0, 9px, 0px);
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    white-space: nowrap; }
+  .input-field .name-field {
+    opacity: 0;
+    color: #525252; }
+  .input-field .form-control:focus, .input-field .form-control:active {
+    border-bottom-color: #ed1d24; }
+
+.textarea-field label {
+  top: -10px; }
+
+.is-focused label {
+  -webkit-transform: translate3d(0, -10px, 0) scale(0.8);
+  -ms-transform: translate3d(0, -10px, 0) scale(0.8);
+  transform: translate3d(0, -10px, 0) scale(0.8); }
+
+.is-focused input,
+.is-focused textarea {
+  outline: none; }
+
+.is-focused .name-field {
+  opacity: 1; }
+
+.is-focused .helper-field {
+  opacity: 0; }
+
+.input-field.is-charged:not(.is-focused) > label.name-field {
+  -webkit-transform: translate3d(0px, -7px, 0px) scale(0.7);
+  -ms-transform: translate3d(0px, -7px, 0px) scale(0.7);
+  transform: translate3d(0px, -7px, 0px) scale(0.7); }
+
+.is-charged label {
+  opacity: 0; }
+
+.is-charged .name-field {
+  opacity: 1; }
 
 .homepage {
   flex-grow: 1;
@@ -3821,7 +3926,7 @@ body {
   .lastnew__item a:hover {
     color: #000;
     text-decoration: none; }
-    .lastnew__item a:hover .lastnew__title {
+    .lastnew__item a:hover .lastnew__desc {
       color: #ed1d24;
       text-decoration: none; }
 
@@ -3835,8 +3940,10 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.8;
-  transition: color .3s;
   margin-top: -.7rem; }
+
+.lastnew__desc {
+  transition: color .3s; }
 
 /* =/lastnews
 ---------------------------*/

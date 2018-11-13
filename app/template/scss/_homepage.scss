@@ -4,6 +4,7 @@
 	&:before{
 		@extend .before;
 		background: url(../images/bg-vline.gif);
+		
 		height: 100%;
 		left: 40%;
 		width: 60%;
@@ -234,7 +235,8 @@
 				color: $color1;
 				text-decoration: none;
 				.lastnew{
-					&__title{
+					&__desc
+					{
 						color: $color6;
 						text-decoration: none;
 					}
@@ -253,8 +255,11 @@
 		font-size: 1.7rem;
 		font-weight: 700;
 		line-height: 1.8;
-		transition: color .3s;
+		// transition: color .3s;
 		margin-top: -.7rem;
+	}
+	&__desc{
+		transition: color .3s;
 	}
 }
 /* =/lastnews

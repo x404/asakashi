@@ -105,14 +105,14 @@ em strong
 
 
 .form-control {
-   border: 1px solid $color3;
-   border-radius: 0;
-   margin-top: 0.6rem;
+   // border: 1px solid $color3;
+   // border-radius: 0;
+   // margin-top: 0.6rem;
 	font-size: 16px;
 	&:focus,
 	&:active{
-		border-color: $color5;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+		// border-color: $color5;
+		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
 	}
 }
 
@@ -120,8 +120,9 @@ em strong
 .btn{
 	border: 2px solid;
 	color: $color1;
+	cursor: pointer;
 	display: block;
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: 700;
 	height: 40px;
 	padding-right: 27px;
@@ -136,6 +137,14 @@ em strong
 		background-color: $color6;
 		text-decoration: none;
 		color: $color2;
+	}
+
+	&-red{
+		border-color: $color6;
+		background-color: $color2;
+		font-size: 1.7rem;
+		height: 5rem;
+		padding: 0 3rem;
 	}
 }
 
@@ -358,4 +367,71 @@ body{
 .cl-effect-11 a:focus::before {
 	max-width: 100%;
 	// left: 0;
+}
+
+
+
+.box-vline{
+	background-color: $color2;
+	border-left: 5px solid $color9;
+	padding: 7.2rem 12rem 8rem 10rem;
+	position: relative;
+	&:before{
+		@extend .before;
+		background:url("data:image/gif;base64,R0lGODlhMgABAIABAO7jLQAAACH5BAEAAAEALAAAAAAyAAEAAAILhB2ZhxoM3GMSygIAOw==") repeat-y;
+		// background: url(../images/vline-yellow.gif);
+		width: 50px;
+		height: 100%;
+		left: -55px;
+		top: 0;
+	};
+}
+
+.form-wrapper{
+	.title{
+		color: $color1;
+		font-size: 4rem;
+		font-weight: 700;
+		margin-bottom: 1.3rem;
+	}
+	p{
+		font-size: 1.5rem;
+	}
+
+	.form-control{
+		background: none;
+		border: none;
+		border-bottom: 2px solid $color10;
+		height: 40px;
+		letter-spacing: .1em;
+		width: 100%;
+	}
+
+	.textarea{
+		background:url('data:image/gif;base64,R0lGODlhAQAeAIABAO0dJAAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
+		border: none;
+		filter: grayscale(1) brightness(1.8);
+		height: 90px;
+		line-height: 30px;
+		overflow: hidden;
+		resize: none;
+		&:active,
+		&:focus{
+			filter: none
+		}
+	}
+
+	.form{
+		padding-top: 2rem;
+	}
+
+	.btn-submit{
+		margin-top: 3.2rem;
+	}
+}
+
+#modal-ask{
+	.modal-dialog{
+		max-width: 585px;
+	}
 }
