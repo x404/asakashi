@@ -142,8 +142,15 @@
 		}		
 	}
 
-	.slick-active .slide__bg{
-	  animation:fadeInRight .5s both .5s;
+	.slick-active{
+		.slide__link{
+			img{
+				animation:fadeIn .5s both .5s;
+			}
+		}
+		.slide__bg{
+			animation:fadeInRight 1s both 1s;
+		}
 	}
 }
 
