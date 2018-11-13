@@ -283,6 +283,7 @@
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
   cursor: pointer;
+
 }
 .selectize-control.single .selectize-input.input-active,
 .selectize-control.single .selectize-input.input-active input {
@@ -297,6 +298,7 @@
   right: 0;
   width: 17px;
   height: 9px;
+   transition: .3s transform;
   /*transition: .3s;*/
   /*filter: grayscale(1) brightness(2);*/
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMdJREFUeNpifCurUsfAwBAFxDFAfIaBeBAExBOAuIIJSDwDYnUg3gjEZiQYsByIpYH4NciQOUBcCsRSQLyJCIMCgXgpEDNBfbCbCSrRA3IWEIsD8XogNsZjwDIgZoYasJIBahoMdCK5aDMQm2PxwgqoAaDwWw2TYEJTCHJRGRBLAvEGIDaFigcgeQFkwCpkTSxYnNwNVdwBxGuAeBYQVyGFwWp0DYzAKMYVgCVQA0HgDxBHo7sAn0uQvcYDxIVAnIfLABAACDAA7o0i2NNlN5sAAAAASUVORK5CYII=") no-repeat left top;
