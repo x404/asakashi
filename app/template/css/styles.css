@@ -3446,17 +3446,17 @@ strong em,
 em strong {
   font-weight: normal; }
 
-.tdn {
+.tdn, .modal-menu .menu dd a {
   text-decoration: none; }
-  .tdn:hover {
+  .tdn:hover, .modal-menu .menu dd a:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .modal-menu .menu a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .modal-menu .menu a:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .box-vline:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before {
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3693,6 +3693,144 @@ body {
 
 #modal-ask .modal-dialog {
   max-width: 585px; }
+
+.close-modal,
+.close-menu {
+  cursor: pointer;
+  background: none !important;
+  border: none; }
+  .close-modal svg,
+  .close-menu svg {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .close-modal line,
+  .close-menu line {
+    stroke: #000;
+    stroke-width: 3; }
+  .close-modal:hover svg,
+  .close-menu:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.close-modal {
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  z-index: 99; }
+
+.modal-menu {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0 0 10rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: .5s all;
+  width: 100%;
+  z-index: -1; }
+  .modal-menu .inner {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 150px; }
+  .modal-menu .container {
+    padding: 5rem 8.3% 2rem;
+    position: relative; }
+  .modal-menu .close-modal {
+    right: 8.3%; }
+  .modal-menu .row {
+    flex-wrap: nowrap; }
+  .modal-menu .menu {
+    border-top: 5px solid #eee32d;
+    padding-top: 5.8rem;
+    width: 100%;
+    position: relative; }
+    .modal-menu .menu:before {
+      background: url(../images/hline-yellow.gif);
+      height: 50px;
+      width: 100%;
+      top: -55px;
+      z-index: 999; }
+    .modal-menu .menu a {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: 100;
+      transition: color .3s; }
+      .modal-menu .menu a:hover {
+        color: #ed1d24; }
+    .modal-menu .menu .title,
+    .modal-menu .menu dt {
+      color: #000;
+      font-size: 2.4rem;
+      position: relative;
+      margin-bottom: 25px;
+      font-weight: 700;
+      letter-spacing: .1em; }
+      .modal-menu .menu .title a,
+      .modal-menu .menu dt a {
+        font-size: inherit;
+        font-weight: inherit;
+        text-decoration: none; }
+    .modal-menu .menu .title {
+      text-transform: uppercase; }
+      .modal-menu .menu .title-mb {
+        margin-bottom: 4.5rem; }
+    .modal-menu .menu dd {
+      margin: 4rem 0;
+      position: relative; }
+      .modal-menu .menu dd a {
+        color: #737373;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none; }
+        .modal-menu .menu dd a:hover {
+          color: #ed1d24; }
+  .modal-menu .cell {
+    padding-top: 0; }
+  .modal-menu .contacts {
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    color: #000;
+    flex-grow: 2; }
+    .modal-menu .contacts__inner {
+      padding-left: 160px; }
+    .modal-menu .contacts__cell {
+      margin-top: 2rem; }
+      .modal-menu .contacts__cell p {
+        font-size: 2.4rem; }
+    .modal-menu .contacts .title {
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: 1.4;
+      margin-bottom: 4rem;
+      position: relative;
+      text-transform: none; }
+    .modal-menu .contacts .tel {
+      text-decoration: none;
+      font-size: 4rem; }
+    .modal-menu .contacts .email {
+      color: #ed1d24;
+      text-decoration: none;
+      font-size: 3rem;
+      border-bottom: 1px solid; }
+      .modal-menu .contacts .email:hover {
+        border-bottom: none; }
+  .modal-menu .btn-callback {
+    border-color: #000;
+    color: #000;
+    margin-top: .8rem;
+    text-align: center; }
+  .modal-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 9999; }
 
 .input-field {
   position: relative;
