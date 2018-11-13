@@ -1,18 +1,13 @@
 $(document).ready(function(){
 
-	$('#main-carousel').slick({
-		dots: true,
-		// prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
-		// nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+	$('#home-carousel').slick({
+		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: false,
 		autoplaySpeed: 4000,
 		arrows : false,
 		fade: true,
-		// appendArrows : $('.prevnext'),
-        // centerMode: true,
-        // centerPadding: '110px',
         infinite : true,
 		responsive: [
 		    {
@@ -47,6 +42,18 @@ $(document).ready(function(){
 		    }		    
 	    ]
 	});
+
+
+    $('.slider-tabs a').click(function(e){
+        e.preventDefault();
+        let $this = $(this),
+        	href = $this.attr('href'),
+	        slideIndex = href.substr(href.lastIndexOf('-') + 1);
+        $('.slider-tabs a').removeClass('active');
+        $this.addClass('active');
+        $('#home-carousel').slick('slickGoTo', parseInt(slideIndex) );
+    });
+
 
 
 	// mobile-menu

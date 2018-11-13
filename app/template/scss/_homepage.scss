@@ -17,11 +17,16 @@
 		top: 0;
 		width: 40%;
 	}
+	.footer{
+		padding-bottom: 1.5rem;
+	}
 	.main{
+		align-items: center;
+		display: flex;
 		position: relative;
 	}
 	.intro{
-		padding-top: 4rem;
+		padding-top: 5rem;
 		.title{
 			color: $color1;
 			font-size: 7rem;
@@ -72,7 +77,7 @@
 	.counter{
 		position: absolute;
 		left: 0;
-		bottom: 5.5rem;
+		bottom: 3.5rem;
 		font-size: 1.5rem;
 		width: 21rem;
 		.cifr{
@@ -97,13 +102,13 @@
 
 
 .homeslider{
-	margin-left: 130px;
+	margin-left: 170px;
 	position: relative;
 	top: -10px;
 	width: 750px;
 	height: 750px;
 	.slick-slide{
-		padding-bottom: 50px;
+		// padding-bottom: 50px;
 		position: relative;
 	}
 	.slide{
@@ -134,6 +139,62 @@
 				}
 			}
 		}		
+	}
+
+	.slick-active .slide__bg{
+	  animation:fadeInRight .5s both .5s;
+	}
+}
+
+.slider-tabs{
+	font-size: 1.3rem;
+	position: absolute;
+	left: -12px;
+	margin-top: 105px;
+	ul{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 470px;
+		justify-content: center;
+		text-align: center;
+		li{
+			margin: 10px 0;
+			text-align: center;	
+			img{
+				filter: grayscale(1) brightness(2);
+				display: block;
+				margin: 0 auto .3rem;
+				transition: filter .3s;
+			}	
+			a{
+				display: block;
+				color: $color8;
+				position: relative;
+				&:hover{
+					color: $color6;
+					text-decoration: none;
+					img{
+						filter: none;
+					}
+				}
+				&.active{
+					color: $color6;
+					img{
+						filter: none;
+					}
+					&:before{
+						@extend .before;
+						background: $color6;
+						border-radius: 50%;
+						height: 10px;
+						left: -35px;
+						top: 32%;
+						width: 10px;
+					};
+				}
+			}
+		}
 	}
 }
 

@@ -3456,7 +3456,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .homepage:before, .homepage:after {
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3658,10 +3658,14 @@ body {
     left: 0;
     top: 0;
     width: 40%; }
+  .homepage .footer {
+    padding-bottom: 1.5rem; }
   .homepage .main {
+    align-items: center;
+    display: flex;
     position: relative; }
   .homepage .intro {
-    padding-top: 4rem; }
+    padding-top: 5rem; }
     .homepage .intro .title {
       color: #000;
       font-size: 7rem;
@@ -3699,7 +3703,7 @@ body {
   .homepage .counter {
     position: absolute;
     left: 0;
-    bottom: 5.5rem;
+    bottom: 3.5rem;
     font-size: 1.5rem;
     width: 21rem; }
     .homepage .counter .cifr {
@@ -3717,13 +3721,12 @@ body {
     z-index: 2; }
 
 .homeslider {
-  margin-left: 130px;
+  margin-left: 170px;
   position: relative;
   top: -10px;
   width: 750px;
   height: 750px; }
   .homeslider .slick-slide {
-    padding-bottom: 50px;
     position: relative; }
   .homeslider .slide {
     height: 740px; }
@@ -3746,6 +3749,49 @@ body {
         margin: auto; }
       .homeslider .slide__link:hover img {
         transform: scale(1.1); }
+  .homeslider .slick-active .slide__bg {
+    animation: fadeInRight .5s both .5s; }
+
+.slider-tabs {
+  font-size: 1.3rem;
+  position: absolute;
+  left: -12px;
+  margin-top: 105px; }
+  .slider-tabs ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+    justify-content: center;
+    text-align: center; }
+    .slider-tabs ul li {
+      margin: 10px 0;
+      text-align: center; }
+      .slider-tabs ul li img {
+        filter: grayscale(1) brightness(2);
+        display: block;
+        margin: 0 auto .3rem;
+        transition: filter .3s; }
+      .slider-tabs ul li a {
+        display: block;
+        color: #8d8d8d;
+        position: relative; }
+        .slider-tabs ul li a:hover {
+          color: #ed1d24;
+          text-decoration: none; }
+          .slider-tabs ul li a:hover img {
+            filter: none; }
+        .slider-tabs ul li a.active {
+          color: #ed1d24; }
+          .slider-tabs ul li a.active img {
+            filter: none; }
+          .slider-tabs ul li a.active:before {
+            background: #ed1d24;
+            border-radius: 50%;
+            height: 10px;
+            left: -35px;
+            top: 32%;
+            width: 10px; }
 
 /* =lastnews
 ---------------------------*/
