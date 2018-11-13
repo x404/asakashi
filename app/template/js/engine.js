@@ -128,6 +128,21 @@ $(document).ready(function(){
 
 
 
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    var isEscape = false;
+    if ("key" in evt) {
+        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+    } else {
+        isEscape = (evt.keyCode == 27);
+    }
+    if (isEscape && document.querySelector('.modal-menu').classList.contains('open')) {
+    	document.querySelector('.modal-menu.open').classList.remove('open');
+    }
+};
+
+
+
 var closemodal2 = document.querySelectorAll('.close-modal');
 for (var i = 0; i < closemodal2.length; i++) {
     var self = closemodal2[i];
@@ -147,3 +162,39 @@ $(document).on('click', '.extra-toggle', function(e){
 		// document.querySelector('.apanel').classList.add('open');
 	}
 });
+
+
+
+
+// `closest` polyfill for IE11
+(function (ElementProto) {
+	if (typeof ElementProto.matches !== 'function') {
+		ElementProto.matches = ElementProto.msMatchesSelector || ElementProto.mozMatchesSelector || ElementProto.webkitMatchesSelector || function matches(selector) {
+			var element = this;
+			var elements = (element.document || element.ownerDocument).querySelectorAll(selector);
+			var index = 0;
+
+			while (elements[index] && elements[index] !== element) {
+				++index;
+			}
+
+			return Boolean(elements[index]);
+		};
+	}
+
+	if (typeof ElementProto.closest !== 'function') {
+		ElementProto.closest = function closest(selector) {
+			var element = this;
+
+			while (element && element.nodeType === 1) {
+				if (element.matches(selector)) {
+					return element;
+				}
+
+				element = element.parentNode;
+			}
+
+			return null;
+		};
+	}
+})(window.Element.prototype);
