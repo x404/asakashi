@@ -1,0 +1,158 @@
+.homepage{
+	flex-grow: 1;
+	position: relative;
+	&:before{
+		@extend .before;
+		background: url(../images/bg-vline.gif);
+		height: 100%;
+		left: 40%;
+		width: 60%;
+		z-index: 0;
+	};
+	&:after{
+		@extend .before;
+		background: radial-gradient(circle at 0px -250px, #bfbfbf, #f1f1f1 50%, #f6f6f6 100%);
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 40%;
+	}
+	.main{
+		position: relative;
+	}
+	.intro{
+		padding-top: 4rem;
+		.title{
+			color: $color1;
+			font-size: 7rem;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+		.subtitle{
+			background-color: $color6;
+			color: $color2;
+			display: inline-block;
+			font-size: 3rem;
+			padding: .3rem 1rem;
+		}
+	}
+	.advantages{
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: $color1;
+	}
+	.advantage{
+		&__pic{
+			width: 96px;
+			font-size: 7rem;
+			color: $color6;
+			font-weight: normal;
+		}
+		&__item{
+			margin-top: .1rem;
+			width: 50%;
+			line-height: 1.6;
+			min-height: 75px;
+			a{
+				text-decoration: none;
+				span{
+					color: $color6;
+					text-decoration: underline;
+				}
+				&:hover{
+					color: currentColor;
+					span{
+						text-decoration: none;
+					}
+				};
+			}
+		}
+	}
+
+	.counter{
+		position: absolute;
+		left: 0;
+		bottom: 5.5rem;
+		font-size: 1.5rem;
+		width: 21rem;
+		.cifr{
+			font-size: 7rem;
+			letter-spacing: .1em;
+			color: $color6;
+			line-height: 1;
+		}
+		p{
+			color: $color1;
+			line-height: 1;
+			font-size: 1.8rem;
+			font-weight: 700;
+		}
+	}
+
+	.main-grid{
+		position: relative;
+		z-index: 2;
+	}
+}
+
+
+/* =lastnews
+---------------------------*/
+.lastnews{
+	color: $color1;
+	position: relative;
+	padding-left: 5rem;
+	margin: 6rem 0;
+	h1{
+		position: absolute;
+		line-height: 1;
+		font-size: 7rem;
+		font-weight: normal;
+		left: -170px;
+		a{
+			transition: color .3s;
+			&:hover{
+				color: $color6;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.lastnew{
+	&__item{
+		border-left: 2px solid $color1;
+		padding-left: 3rem;
+		padding-right: 2rem;
+		margin-top: 1rem;
+		width: 33rem;
+		a{
+			&:hover{
+				color: $color1;
+				text-decoration: none;
+				.lastnew{
+					&__title{
+						color: $color6;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	&__pic{
+		margin-right: 1.4rem;
+		img{
+			border-radius: 50%;
+			border: 2px solid $color2;
+		}
+	}
+	&__title{
+		font-size: 1.7rem;
+		font-weight: 700;
+		line-height: 1.8;
+		transition: color .3s;
+		margin-top: -.7rem;
+	}
+}
+/* =/lastnews
+---------------------------*/

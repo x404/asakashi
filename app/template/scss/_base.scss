@@ -1,0 +1,361 @@
+/*** reset ***********/
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+header, section, footer, aside, nav, article {display:block}
+ul{list-style:none}
+
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:after,
+	&:before{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}
+}
+
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%
+}
+
+
+body{
+	background-color: $color2;
+	color: $color7;	
+	@include font-size(1.4);
+	flex-flow: column;
+	font-display: swap;
+	font-family: 'bender';
+}
+
+html, body{
+	height: 100%
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	//ie11
+}
+
+
+
+input::-moz-focus-inner{
+	border: 0;
+	padding: 0;
+}
+
+
+.outerwrapper{
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+/*** standart classes *****/
+p{}
+a{color:#020000}
+h1{font-size:2.5rem}
+h2{font-size:2.4rem}
+h3{font-size:1.6rem}
+
+strong,
+.bold{
+	font-weight: normal;
+	// font-family: "SegoeUIBold";
+}
+em, i, 
+.italic{
+	font-style: normal;
+	// font-family: "SegoeUIItalic";
+}
+
+strong em,
+em strong
+{
+	font-weight: normal;
+	// font-family: "SegoeUIBoldItalic";
+}
+
+
+.tdn{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.tdu{
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+
+.before{
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+
+.form-control {
+   border: 1px solid $color3;
+   border-radius: 0;
+   margin-top: 0.6rem;
+	font-size: 16px;
+	&:focus,
+	&:active{
+		border-color: $color5;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+	}
+}
+
+
+.btn{
+	border: 2px solid;
+	color: $color1;
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	height: 40px;
+	padding-right: 27px;
+	transition: .3s;
+	display: flex;
+	align-items: center;
+	&-icon{
+		padding-left: 42px;
+	}	
+	&:hover{
+		border-color: $color6;
+		background-color: $color6;
+		text-decoration: none;
+		color: $color2;
+	}
+}
+
+.icon{
+	&-question{
+		position: relative;
+		&:before{
+			@extend .before;
+
+			background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAAG9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbeq9RgAAACV0Uk5TABJpscz8CXjw/xjJG+EGD+13WhEzuyLY7uSI+WbzXUQee2y0z3HQzW4AAAC5SURBVHicXZFZEoMgEAVHQXEERSOJS0zidv8zRmQRfV9NFzXU8ACORDGhSUJJHMGZlGVok7HU2ZxjEJ4bKwq8pBDalhxv4eWu2d0iMgBZGaT1Hmq4kvCwttEDG+tjIAaUNk94mROB1kB33HO6B7/InsHpd6hHUHb2xw0xtrPYuif1YOWRwNdzPXiMQfrhanSUyWD55hcsDyXFW+jx5aK/2l6YD5+uNUy+tPksbfal6YqXdUPc1sVW/AdigBC9gdtZFQAAAABJRU5ErkJggg==") no-repeat left top;
+			// background: url(../images/icons/question.png) no-repeat left top;
+			height: 22px;
+			width: 22px;
+			left: 12px;
+			top: 50%;
+			margin-top: -11px;
+			transition: filter .3s;
+		};
+		&:hover{
+			&:before{
+				filter: invert(100);
+			};
+		}
+	}
+}
+
+
+.main-grid{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main{
+		flex-grow: 1;
+	}		
+}
+
+
+@supports (display:grid) {
+	.main-grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;			
+	}
+}
+
+
+
+
+/* =header
+---------------------------*/
+.header{
+	.logo{
+		padding-top: 4.5rem;
+	}
+	.navmenu{
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.7px;
+		font-size: 1.7rem;
+		ul{
+			padding-top: 6rem;
+			li{
+				position: relative;
+				margin-left: 37px;
+				padding-left: 25px;
+				&:before{
+					@extend .before;
+					background: $color6;
+					border-radius: 50%;
+					height: 10px;
+					left: 2px;
+					top: -15px;
+					width: 10px;
+				};
+				a{
+					white-space: nowrap;
+					&:hover{
+						color: currentColor;
+						text-decoration: none;
+					};
+				}
+			}
+		}
+	}
+
+	.btn-ask{
+		margin-top: 5rem;
+		width: 120px;
+	}
+}
+
+.extra-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	height: 34px;
+	margin: 51px 0 0 45px;
+	padding: 0;
+	position: relative;
+	width: 30px;
+	.icon-bar{
+		background: #000;
+		border-radius: 2px;
+		display: block;
+		height: 3px;
+		margin: 7px 0;
+		position: relative;
+		transition: .15s margin ease-out;
+		width: 100%;
+		z-index: 5;
+		transition: .3s background;
+	}
+	&:hover{
+		.icon-bar{
+			background: $color6;
+		}
+	}
+}
+
+/* =/header
+---------------------------*/
+
+
+
+/* =navigation
+---------------------------*/
+/* =/navigation
+---------------------------*/
+
+/* =main
+---------------------------*/
+body{
+	display: flex;
+	 flex-flow: column;
+}
+
+
+/* =footer
+---------------------------*/
+.footer{
+	padding-bottom: 3.5rem;
+}
+
+.copyright{
+	color: $color5;
+	padding-left: 4.5rem;
+}
+
+.lang{
+	font-size: 1.5rem;
+	padding-right: 4rem;
+	a, span{
+		padding-left: 20px;		
+	}
+
+	a{
+		color: $color4;
+		&:hover{
+			color: $color6;
+			text-decoration: none;
+		};
+	}
+
+	.current{
+		position: relative;
+		&:before{
+			@extend .before;
+			background: $color6;
+			border-radius: 50%;
+			height: 10px;
+			left: 0;
+			top: 5px;
+			width: 10px;
+		};
+	}
+}
+/* =/footer
+---------------------------*/
+
+
+
+
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+
+
+
+/* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11 a {
+	position: relative;
+	// color: #0972b4;
+	text-shadow: none;
+} 
+
+.cl-effect-11 a::before {
+	border-bottom: 2px solid $color6;
+	color: $color6;
+	content: attr(data-hover);
+	left: 0;
+	// right: 0;
+	max-width: 0;
+	overflow: hidden;
+	position: absolute;
+	transition: max-width 0.5s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+	// left: 0;
+}
