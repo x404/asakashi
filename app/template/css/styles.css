@@ -3925,13 +3925,14 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     color: #000; }
-  .homepage .advantage__pic {
-    width: 96px;
-    font-size: 7rem;
+  .homepage .advantage__cifr {
     color: #ed1d24;
+    font-size: 7rem;
     font-weight: normal; }
+  .homepage .advantage__pic, .homepage .advantage__cifr {
+    width: 96px; }
   .homepage .advantage__item {
-    margin-top: .1rem;
+    margin-top: 4rem;
     width: 50%;
     line-height: 1.6;
     min-height: 75px; }
@@ -3959,7 +3960,8 @@ body {
       color: #000;
       line-height: 1;
       font-size: 1.8rem;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-top: .7rem; }
   .homepage .main-grid {
     position: relative;
     z-index: 2; }
@@ -3993,8 +3995,10 @@ body {
         margin: auto; }
       .homeslider .slide__link:hover img {
         transform: scale(1.1); }
+  .homeslider .slick-active .slide__link img {
+    animation: fadeIn .5s both .5s; }
   .homeslider .slick-active .slide__bg {
-    animation: fadeInRight .5s both .5s; }
+    animation: fadeInRight 1s both 1s; }
 
 .slider-tabs {
   font-size: 1.3rem;
@@ -4491,3 +4495,142 @@ body {
 
 ::-ms-clear {
   display: none; }
+
+@media (max-width: 1800px) {
+  .header .navmenu ul li {
+    margin-left: 28px; }
+    .header .navmenu ul li:first-child {
+      margin-left: 0; } }
+
+@media (max-width: 1600px) {
+  .navmenu-wrapper {
+    margin-left: 15%;
+    max-width: 100%;
+    flex-grow: 1; }
+  .ask-wrapper {
+    margin-right: 40px; } }
+
+@media (max-width: 1360px) {
+  .header .navmenu {
+    font-size: 1.6rem; }
+    .header .navmenu ul li {
+      margin-left: 20px; }
+  .logo-wrapper {
+    max-width: max-content; }
+  .navmenu-wrapper {
+    margin-left: 3%; }
+  .lastnews h1 {
+    left: -145px; }
+  .lastnew__item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media (max-width: 1280px) {
+  .homepage .main {
+    overflow: hidden; } }
+
+@media (max-width: 1750px) {
+  .homeslider {
+    margin-left: 110px; }
+  .lastnews {
+    padding-left: 3rem; }
+    .lastnews h1 {
+      font-size: 6rem;
+      padding-top: 1rem; } }
+
+@media (max-width: 1650px) {
+  .homepage .intro .title {
+    font-size: 6rem; }
+  .homepage .intro .subtitle {
+    font-size: 2.8rem; }
+  .homepage .counter .cifr {
+    font-size: 6rem; }
+  .homepage .slide__link {
+    height: 500px;
+    width: 500px; }
+    .homepage .slide__link img {
+      width: 70%; }
+  .homepage .advantage__pic img {
+    max-width: 75%; }
+  .homepage .advantage__cifr {
+    font-size: 5rem; }
+  .homeslider {
+    height: 650px;
+    width: 580px;
+    top: 40px; }
+    .homeslider .slide {
+      height: 600px;
+      width: 500px; }
+      .homeslider .slide__link {
+        margin-left: 20px; }
+      .homeslider .slide__bg {
+        width: 310px; }
+  .lastnew__title {
+    font-size: 1.6rem; }
+  .lastnews {
+    padding-left: 1rem; }
+    .lastnews h1 {
+      font-size: 5rem;
+      padding-top: 2rem; } }
+
+@media (max-width: 1450px) {
+  .homeslider {
+    width: 470px; }
+    .homeslider .slide__link {
+      box-shadow: 20px 10px 40px rgba(255, 98, 40, 0.7); }
+  .homepage .intro .title {
+    font-size: 5rem; }
+  .homepage .intro .subtitle {
+    font-size: 2.4rem; }
+  .homepage .advantages {
+    font-size: 1.6rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem; }
+  .homepage .advantage__item {
+    min-height: 0;
+    margin-top: 3rem; }
+  .homepage .counter .cifr {
+    font-size: 5rem; }
+  .homepage .slide {
+    height: 500px;
+    width: 450px; }
+    .homepage .slide__link {
+      height: 400px;
+      width: 400px; }
+      .homepage .slide__link img {
+        width: 70%; }
+    .homepage .slide__bg {
+      width: 240px; }
+  .lastnew__title {
+    font-size: 1.5rem; }
+  .slider-tabs {
+    margin-top: 4rem; } }
+
+@media (max-width: 1279px) {
+  .homepage .main {
+    overflow: hidden; } }
+
+@media (max-width: 1249px) {
+  .extra-toggle {
+    margin-left: 30px; }
+  .homepage .main {
+    padding-left: 68px;
+    padding-right: 30px; }
+  .homeslider {
+    height: 450px;
+    width: 430px;
+    top: 40px; }
+    .homeslider .slide {
+      height: 420px;
+      width: 365px; }
+      .homeslider .slide__link {
+        margin-left: 20px;
+        height: 365px;
+        width: 365px; }
+        .homeslider .slide__link img {
+          width: 70%; }
+      .homeslider .slide__bg {
+        top: 17px;
+        width: 210px; }
+  .lastnew__item {
+    width: 100%; } }

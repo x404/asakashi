@@ -48,14 +48,17 @@
 		color: $color1;
 	}
 	.advantage{
-		&__pic{
-			width: 96px;
-			font-size: 7rem;
+		&__cifr{
 			color: $color6;
+			font-size: 7rem;
 			font-weight: normal;
 		}
+		&__pic,
+		&__cifr{
+			width: 96px;
+		}
 		&__item{
-			margin-top: .1rem;
+			margin-top: 4rem;
 			width: 50%;
 			line-height: 1.6;
 			min-height: 75px;
@@ -92,6 +95,7 @@
 			line-height: 1;
 			font-size: 1.8rem;
 			font-weight: 700;
+			margin-top: .7rem;
 		}
 	}
 

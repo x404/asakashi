@@ -1,2 +1,196 @@
-@media (max-width: 1024px){
+@media (max-width: 1750px){
+	.homeslider{
+		margin-left: 110px;
+	}
+
+	.lastnews{
+		padding-left: 3rem;
+		h1{
+			font-size: 6rem;
+			padding-top: 1rem;
+		}
+	}
+}
+
+
+@media (max-width: 1650px){
+	.homepage{
+		.intro{
+			.title{
+				font-size: 6rem;
+			}
+			.subtitle{
+				font-size: 2.8rem;
+			}	
+		}
+
+		.counter .cifr{
+			font-size: 6rem;
+		}
+
+		.slide__link{
+			height: 500px;
+			width: 500px;
+			img{
+				width: 70%;
+			}
+		}
+
+		.advantage{
+			&__pic{
+				img{
+					max-width: 75%;
+				}
+			}
+			&__cifr{
+				font-size: 5rem;
+			}
+
+		}
+	}
+
+	.homeslider{
+	    height: 650px;
+	    width: 580px;
+	    top: 40px;
+		.slide{
+			height: 600px;
+			width: 500px;
+			&__link{
+				margin-left: 20px;
+			}
+			&__bg{
+				width: 310px;
+			}
+		}
+	}
+
+	.lastnew__title{
+		font-size: 1.6rem;
+	}
+
+	.lastnews{
+		padding-left: 1rem;
+		h1{
+			font-size: 5rem;
+			padding-top: 2rem;
+		}
+	}
+}
+
+
+@media (max-width: 1520px){
+}
+
+
+@media (max-width: 1450px){
+	.homeslider{
+		width: 470px;
+		.slide__link{
+			box-shadow: 20px 10px 40px rgba(255,98,40,.7)
+		}
+	}
+	.homepage{
+		.intro{
+			.title{
+				font-size: 5rem;
+			}
+			.subtitle{
+				font-size: 2.4rem;
+			}	
+		}
+		.advantages{
+			font-size: 1.6rem;
+			padding-top: .7rem;
+			padding-bottom: .7rem;
+		}
+
+		.advantage{
+			&__item{
+				min-height: 0;
+				margin-top: 3rem;
+			}
+		}
+
+		.counter .cifr{
+			font-size: 5rem;
+		}
+
+
+
+		.slide{
+			height: 500px;
+			width: 450px;
+			&__link{
+				height: 400px;
+				width: 400px;
+				img{
+					width: 70%;
+				}
+			}
+			&__bg{
+				width: 240px;
+			}
+		}
+	}
+	.lastnew__title{
+		font-size: 1.5rem;
+	}
+
+	.slider-tabs{
+		margin-top: 4rem;
+	}
+}
+
+
+
+
+
+@media (max-width: 1279px){
+	.homepage{
+		.main{
+			overflow: hidden;
+		}
+	}
+}
+
+
+@media (max-width: 1249px){
+	.extra-toggle{
+		margin-left: 30px;
+	}
+	.homepage{
+		.main{
+			padding-left: 68px;
+			padding-right: 30px;
+		}
+	}
+
+
+
+	.homeslider{
+	    height: 450px;
+	    width: 430px;
+	    top: 40px;
+		.slide{
+			height: 420px;
+			width: 365px;
+			&__link{
+				margin-left: 20px;
+				height: 365px;
+				width: 365px;
+				img{
+					width: 70%;
+				}
+			}
+			&__bg{
+				top: 17px;
+				width: 210px;
+			}
+		}
+	}
+
+	.lastnew__item{
+		width: 100%;
+	}
 }
