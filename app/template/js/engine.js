@@ -104,8 +104,9 @@ $(document).ready(function(){
 		  }
 		}, 60);
 	});
-});
 
+
+});
 
 
 document.onkeydown = function(evt) {
@@ -139,10 +140,55 @@ $(document).on('click', '.extra-toggle', function(e){
 		$('#' + modal).addClass('open');
 		// document.querySelector('body').classList.add('modal-open-my')
 	} else{
-		// document.querySelector('.apanel').classList.add('open');
+		// for mobile menu
+		document.querySelector('.apanel').classList.add('open');
 	}
 });
 
+
+
+// mobile menu
+var apanelfolder = document.querySelectorAll('.apanel .folder span');
+for (var i = 0; i < apanelfolder.length;i++)
+{
+	var self = apanelfolder[i];
+	self.addEventListener("click", function(e){
+		e.preventDefault();
+		let $this = $(this),
+			menuItem = $this.data('name');
+
+		document.querySelector('.page-asubnav').classList.add('open');
+		document.querySelector('.apanel .subnav_content-' + menuItem).classList.add('subnav_content-active');
+	});
+}
+
+
+// closemenu and back button of modal menu
+document.querySelector('.apanel .close-menu').addEventListener("click", function(){
+	document.querySelector('.apanel.open').classList.remove('open');
+	resetpanel();
+}, false);
+
+document.querySelector('.asubnav .back_btn').addEventListener("click", function(){
+	resetpanel();
+}, false);
+
+
+
+function resetpanel(){
+	let subnavs= document.querySelectorAll('.asubnav_content');
+		for (var i = 0; i < subnavs.length;i++)
+		{
+			var self = subnavs[i];
+			if (self.classList.contains('subnav_content-active')){
+				console.log (self.classList.contains('subnav_content-active'));
+				self.classList.remove('subnav_content-active');
+				
+			}
+		}
+	document.querySelector('.page-asubnav.open').classList.remove('open');
+}
+// =/mobile menu
 
 
 

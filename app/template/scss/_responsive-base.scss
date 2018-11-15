@@ -203,6 +203,13 @@
 	}
 }
 
+
+@media (min-width: 651px){
+	.apanel {
+	    display: none!important;
+	}
+}
+
 @media (max-width: 650px){
 	.modal-menu {
 	    display: none!important;
