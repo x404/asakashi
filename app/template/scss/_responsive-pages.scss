@@ -671,4 +671,14 @@
 			margin-left: 0;
 		}		
 	}
+
+	.lastnew{
+		&__item{
+			margin: 1.5rem 0;
+		}
+		&__title{
+			font-size: 1.4rem;
+			line-height: 1.5;
+		}
+	}
 }
