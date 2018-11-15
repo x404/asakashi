@@ -3860,6 +3860,19 @@ em strong {
     opacity: 1;
     z-index: 9999; }
 
+.nicescroll-cursors {
+  border-radius: 0 !important;
+  border: none !important;
+  background: #ed1d24 !important;
+  width: 7px !important;
+  left: -4px; }
+
+.nicescroll-rails {
+  height: 100% !important;
+  background: #d4d4d4;
+  left: calc(100% - 14px) !important;
+  width: 14px !important; }
+
 .input-field {
   position: relative;
   margin-top: 3.2rem; }
