@@ -282,6 +282,28 @@
   max-height: 200px;
   -webkit-overflow-scrolling: touch;
 }
+
+
+
+/*
+
+.selectize-dropdown-content::-webkit-scrollbar {
+  width: 14px;
+}
+.selectize-dropdown-content::-webkit-scrollbar-track {
+  background-color: #d4d4d4;
+}
+.selectize-dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #ed1d24;
+}
+*/
+
+
+
+
+
+
+
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
   cursor: pointer;

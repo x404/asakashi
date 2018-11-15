@@ -3663,17 +3663,29 @@ em strong {
 .cl-effect-11 a:focus::before {
   max-width: 100%; }
 
+.vline {
+  position: relative; }
+  .vline:before {
+    background: linear-gradient(to right, #eee32d 50%, transparent 50%);
+    background-size: 10px 100%;
+    height: 100%;
+    width: 50px; }
+
+.hline {
+  position: relative; }
+  .hline:before {
+    background: linear-gradient(to bottom, #eee32d 50%, #fff 50%);
+    background-size: 100% 10px;
+    height: 50px;
+    width: 100%;
+    top: -55px; }
+
 .box-vline {
   background-color: #fff;
   border-left: 5px solid #eee32d;
   padding: 7.2rem 12rem 8rem 10rem;
   position: relative; }
   .box-vline:before {
-    background: url("data:image/gif;base64,R0lGODlhMgABAIABAO7jLQAAACH5BAEAAAEALAAAAAAyAAEAAAILhB2ZhxoM3GMSygIAOw==") repeat-y;
-    background: linear-gradient(to right, #eee32d 50%, transparent 50%);
-    background-size: 10px 100%;
-    width: 50px;
-    height: 100%;
     left: -55px;
     top: 0; }
 
@@ -3773,12 +3785,6 @@ em strong {
     width: 100%;
     position: relative; }
     .modal-menu .menu:before {
-      background: url(../images/hline-yellow.gif);
-      background: linear-gradient(to bottom, #eee32d 50%, #fff 50%);
-      background-size: 100% 10px;
-      height: 50px;
-      width: 100%;
-      top: -55px;
       z-index: 999; }
     .modal-menu .menu a {
       color: #000;
@@ -4351,10 +4357,7 @@ em strong {
       right: 0;
       top: 4px;
       width: 261px;
-      height: 55px;
-      z-index: 999;
-      background: linear-gradient(to bottom, #eee32d 50%, #fff 50%);
-      background-size: 100% 10px; }
+      z-index: 999; }
   .apanel__top {
     align-items: center;
     height: 8rem;
@@ -4756,10 +4759,7 @@ em strong {
       right: 0;
       top: 4px;
       width: 261px;
-      height: 55px;
-      z-index: 999;
-      background: linear-gradient(to bottom, #eee32d 50%, #fff 50%);
-      background-size: 100% 10px; }
+      z-index: 999; }
   .apanel__top {
     align-items: center;
     height: 8rem;
