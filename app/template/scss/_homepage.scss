@@ -6,8 +6,8 @@
 		background: url(../images/bg-vline.gif);
 		
 		height: 100%;
-		left: 40%;
-		width: 60%;
+		left: 33%;
+		width: 67%;
 		z-index: 0;
 	};
 	&:after{
@@ -16,7 +16,7 @@
 		height: 100%;
 		left: 0;
 		top: 0;
-		width: 40%;
+		width: 33%;
 	}
 	.footer{
 		padding-bottom: 1.5rem;
@@ -24,6 +24,7 @@
 	.main{
 		align-items: center;
 		display: flex;
+		flex-direction: column;
 		position: relative;
 	}
 	.intro{
@@ -51,6 +52,7 @@
 		&__cifr{
 			color: $color6;
 			font-size: 7rem;
+			line-height: 1;
 			font-weight: normal;
 		}
 		&__pic,
@@ -58,10 +60,10 @@
 			width: 96px;
 		}
 		&__item{
-			margin-top: 4rem;
+			margin-top: 3.5rem;
 			width: 50%;
 			line-height: 1.6;
-			min-height: 75px;
+			min-height: 70px;
 			a{
 				text-decoration: none;
 				span{

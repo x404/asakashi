@@ -29,7 +29,7 @@ body{
 	background-color: $color2;
 	color: $color7;	
 	@include font-size(1.4);
-	flex-flow: column;
+	// flex-flow: column;
 	font-display: swap;
 	font-family: 'bender';
 }
@@ -201,6 +201,19 @@ em strong
 /* =header
 ---------------------------*/
 .header{
+	&__left{
+		// width: 32rem;
+	}
+
+	&__menu
+	{
+		flex-grow: 1;
+		padding-right: 160px;
+	}
+	&__right{
+		padding-right: 50px;
+	}
+
 	.logo{
 		padding-top: 4.5rem;
 	}
@@ -210,11 +223,15 @@ em strong
 		letter-spacing: 1.7px;
 		font-size: 1.7rem;
 		ul{
+			justify-content: flex-end;
 			padding-top: 6rem;
 			li{
 				position: relative;
 				margin-left: 37px;
 				padding-left: 25px;
+				&:first-child{
+					margin-left: 0;
+				}
 				&:before{
 					@extend .before;
 					background: $color6;
@@ -247,10 +264,11 @@ em strong
 	cursor: pointer;
 	display: block;
 	height: 34px;
-	margin: 51px 0 0 45px;
+	margin: 51px 8rem 0 4.5rem;
 	padding: 0;
 	position: relative;
 	width: 30px;
+	flex-shrink: 0;
 	.icon-bar{
 		background: #000;
 		border-radius: 2px;
@@ -283,8 +301,8 @@ em strong
 /* =main
 ---------------------------*/
 body{
-	display: flex;
-	 flex-flow: column;
+	// display: flex;
+	 // flex-flow: column;
 }
 
 

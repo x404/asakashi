@@ -85,6 +85,7 @@
 
 @media (max-width: 1450px){
 	.homeslider{
+		height: 500px;
 		width: 470px;
 		.slide__link{
 			box-shadow: 20px 10px 40px rgba(255,98,40,.7)
@@ -133,6 +134,11 @@
 			}
 		}
 	}
+
+
+	.lastnews{
+		padding-left: 0;
+	}
 	.lastnew__title{
 		font-size: 1.5rem;
 	}
@@ -164,7 +170,21 @@
 			padding-left: 68px;
 			padding-right: 30px;
 		}
+		.intro{
+			.title{
+				font-size: 4.5rem;
+			}
+			.subtitle{
+				font-size: 2.2rem;
+			}	
+		}
+
+		.counter .cifr{
+			font-size: 5rem;
+		}
 	}
+
+
 
 
 
@@ -190,7 +210,17 @@
 		}
 	}
 
+
+
+
 	.lastnew__item{
 		width: 100%;
+	}
+}
+
+
+@media (max-width: 1199px){
+	.lastnews h1{
+		padding-top: 1rem;
 	}
 }

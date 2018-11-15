@@ -40,16 +40,13 @@
 	<div class="main-grid">
 		<!-- =header -->
 		<header class="header">
-			<div class="d-flex">
-				<div class="col-xl-1">
+			<div class="d-flex">	
+				<div class="header__left d-flex">
 					<button type="button" class="extra-toggle" data-popup="modal-menu" aria-label="Show / hide menu">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-				</div>
-			
-				<div class="logo-wrapper col-xl-1">
 					<!-- =logo -->
 					<div class="logo">
 						<a href="/" title="">
@@ -59,7 +56,7 @@
 					<!-- =/logo -->
 				</div>
 			
-				<div class="navmenu-wrapper col-xl-6 offset-xl-3">
+				<div class="header__menu">
 					<!-- =nav -->
 					<div class="navmenu">
 						<div class="navmenu__inner">
@@ -89,7 +86,7 @@
 					<!-- =/nav -->					
 				</div>
 
-				<div class="ask-wrapper col-xl-1">
+				<div class="header__right">
 					<a href="#" class="btn btn-icon btn-ask icon-question" data-toggle="modal" data-target="#modal-ask">Ask us</a>
 				</div>
 			</div>
@@ -183,12 +180,7 @@
 					</div>
 					<!-- =/homeslider -->
 
-					<!-- =counter -->
-					<div class="counter">
-						<div class="cifr"><span data-number="5575">5575</span></div>
-						<p>JS Products</p>
-					</div>
-					<!-- =/counter -->
+
 				</div>
 				<div class="col-xl-5">
 					<div class="intro">
@@ -252,38 +244,47 @@
 						</div>
 					</div>
 					<!-- =/advantages -->
-
-					<!-- =lastnews -->
-					<section class="lastnews d-flex">
-						<header>
-							<h1><a href="news.html">NEWS</a></h1>
-						</header>
-						<article class="lastnew__item">
-							<a href="#" title="" class="d-flex">
-								<div class="lastnew__pic">
-									<img src="tmp/new-1.png" alt="" />
-								</div>
-								<div class="lastnew__desc">
-									<p class="lastnew__title">International Auto Aftermarket Expo Japan Tokyo 2016</p>
-								</div>
-							</a>
-						</article>
-						<article class="lastnew__item">
-							<a href="#" title="" class="d-flex">
-								<div class="lastnew__pic">
-									<img src="tmp/new-2.png" alt="" />
-								</div>
-								<div class="lastnew__desc">
-									<p class="lastnew__title">AUTOMECHANIKA DUBAI 2014</p>
-									<p class="date">
-										June 3-5 2014
-									</p>
-								</div>
-							</a>
-						</article>
-					</section>
-					<!-- =/lastnews -->
 				</div>
+			</div>
+
+			<div class="d-flex justify-content-between">
+				<!-- =counter -->
+				<div class="counter">
+					<div class="cifr"><span data-number="5575">5575</span></div>
+					<p>JS Products</p>
+				</div>
+				<!-- =/counter -->
+
+				<!-- =lastnews -->
+				<section class="lastnews d-flex">
+					<header>
+						<h1><a href="news.html">NEWS</a></h1>
+					</header>
+					<article class="lastnew__item">
+						<a href="#" title="" class="d-flex">
+							<div class="lastnew__pic">
+								<img src="tmp/new-1.png" alt="" />
+							</div>
+							<div class="lastnew__desc">
+								<p class="lastnew__title">International Auto Aftermarket Expo Japan Tokyo 2016</p>
+							</div>
+						</a>
+					</article>
+					<article class="lastnew__item">
+						<a href="#" title="" class="d-flex">
+							<div class="lastnew__pic">
+								<img src="tmp/new-2.png" alt="" />
+							</div>
+							<div class="lastnew__desc">
+								<p class="lastnew__title">AUTOMECHANIKA DUBAI 2014</p>
+								<p class="date">
+									June 3-5 2014
+								</p>
+							</div>
+						</a>
+					</article>
+				</section>
+				<!-- =/lastnews -->					
 			</div>
 
 		</div>
