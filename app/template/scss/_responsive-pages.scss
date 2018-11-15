@@ -3,13 +3,21 @@
 		margin-left: 110px;
 	}
 
+	.homepage .counter{
+		margin-top: -8rem;
+	}
+	
+
 	.lastnews{
+		margin-top: -10rem;
 		padding-left: 3rem;
 		h1{
 			font-size: 6rem;
 			padding-top: 1rem;
 		}
 	}
+
+
 }
 
 
@@ -39,7 +47,7 @@
 		.advantage{
 			&__pic{
 				img{
-					max-width: 75%;
+					// max-width: 75%;
 				}
 			}
 			&__cifr{
@@ -69,7 +77,13 @@
 		font-size: 1.6rem;
 	}
 
+
+	.homepage .counter{
+		margin-top: -4rem;
+	}
+
 	.lastnews{
+		margin-top: -5rem;
 		padding-left: 1rem;
 		h1{
 			font-size: 5rem;
@@ -113,8 +127,11 @@
 			}
 		}
 
-		.counter .cifr{
-			font-size: 5rem;
+		.counter{
+			margin-top: 0;
+			.cifr{
+				font-size: 5rem;
+			}
 		}
 
 
@@ -136,8 +153,17 @@
 	}
 
 
+	.homepage .counter-lastnews{
+		margin: 10rem 0 5rem;
+	}
+
+
 	.lastnews{
+		margin-top: 0;
 		padding-left: 0;
+		h1{
+			padding-top: 1rem;
+		}
 	}
 	.lastnew__title{
 		font-size: 1.5rem;
@@ -213,8 +239,15 @@
 
 
 
+	.lastnews{
+		padding-right: 0;
+		h1{
+			position: static;
+			padding-right: 3rem;
+		}
+	}
 	.lastnew__item{
-		width: 100%;
+		// width: 100%;
 	}
 }
 
@@ -223,4 +256,61 @@
 	.lastnews h1{
 		padding-top: 1rem;
 	}
+}
+
+
+@media (max-width: 1100px){
+	.homepage{
+		.counter{
+			width: auto;
+		}
+		.advantages{
+			font-size: 1.5rem;
+		}
+		.advantage{
+			&__item{
+				margin-right: 5%;
+				width: 45%;
+			}
+			&__cifr, 
+			&__pic{
+				width: 70px;
+				margin-right: 10px;
+			}
+		}
+	}
+	.lastnew__item{
+		width: 25rem;
+	}
+}
+
+@media (max-width: 980px){
+	.homepage{
+		// .main{
+		// 	padding-left: 68px;
+		// 	padding-right: 30px;
+		// }
+		.intro{
+			.title{
+				font-size: 4rem;
+			}
+			.subtitle{
+				font-size: 2rem;
+			}	
+		}
+
+		.counter{
+			.cifr{
+				font-size: 4rem;
+			}
+			p{
+				font-size: 1.6rem;
+			}
+		}
+
+		.advantage__item{
+			width: 28.3%;
+		}
+	}
+
 }

@@ -80,10 +80,15 @@
 		}
 	}
 
+	// .counter-lastnews
+	.counter-lastnews{
+		width: 100%;
+	}
 	.counter{
-		position: absolute;
-		left: 0;
-		bottom: 3.5rem;
+		margin-top: -15rem;
+		// position: absolute;
+		// left: 0;
+		// bottom: 3.5rem;
 		font-size: 1.5rem;
 		width: 21rem;
 		.cifr{
@@ -100,7 +105,7 @@
 			margin-top: .7rem;
 		}
 	}
-
+	// =/counter-lastnews
 	.main-grid{
 		position: relative;
 		z-index: 2;
@@ -216,10 +221,12 @@
 /* =lastnews
 ---------------------------*/
 .lastnews{
+	margin-top: -15rem;
 	color: $color1;
 	position: relative;
 	padding-left: 5rem;
-	margin: 6rem 0;
+	padding-right: 9rem;
+	// margin: 6rem 0;
 	h1{
 		position: absolute;
 		line-height: 1;
@@ -238,6 +245,7 @@
 
 .lastnew{
 	&__item{
+		align-self: flex-start;
 		border-left: 2px solid $color1;
 		padding-left: 3rem;
 		padding-right: 2rem;
