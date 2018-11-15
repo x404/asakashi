@@ -90,7 +90,7 @@ $(document).ready(function(){
 	var inter = 1;
 	$('.cifr span').each(function() {
 	  $(this).attr('data-number', parseInt($(this).text()));
-		var count = parseInt($(this).attr('data-number')),
+		let count = parseInt($(this).attr('data-number')),
 			block = $(this),
 			timeout = null,
 			step = 1;
