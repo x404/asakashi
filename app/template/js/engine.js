@@ -34,39 +34,19 @@ $(document).ready(function(){
 		autoplaySpeed: 4000,
 		arrows : false,
 		fade: true,
-        infinite : true,
-		responsive: [
-		    {
-		      breakpoint: 1700,
-		      settings: {
-		        centerPadding: "70px"
-		      }
-		    },
-			{
-		      breakpoint: 991,
-		      settings: {
-		        centerPadding: "50px"
-		      }
-		    },
-			{
-		      breakpoint: 850,
-		      settings: {
-		        centerPadding: "30px"
-		      }
-		    },
-			{
-		      breakpoint: 768,
-		      settings: {
-		        centerPadding: "0px"
-		      }
-		    },
-			{
-		      breakpoint: 740,
-		      settings: {
-		        centerPadding: "10px"
-		      }
-		    }		    
-	    ]
+        infinite : true
+	});
+
+
+	$('#home-carousel-mobile').slick({
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		arrows : false,
+		fade: true,
+        infinite : true
 	});
 
 

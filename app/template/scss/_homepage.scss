@@ -1,3 +1,7 @@
+.homeslider-sm{
+	display: none;
+}
+
 .homepage{
 	flex-grow: 1;
 	position: relative;
@@ -85,11 +89,8 @@
 		width: 100%;
 	}
 	.counter{
-		margin-top: -15rem;
-		// position: absolute;
-		// left: 0;
-		// bottom: 3.5rem;
 		font-size: 1.5rem;
+		margin-top: -15rem;
 		width: 21rem;
 		.cifr{
 			font-size: 7rem;
@@ -120,7 +121,6 @@
 	width: 750px;
 	height: 750px;
 	.slick-slide{
-		// padding-bottom: 50px;
 		position: relative;
 	}
 	.slide{
@@ -140,7 +140,6 @@
 			position: relative;
 			z-index: 1;
 			margin-top: 45px;
-			// margin-left: 60px;
 			img{
 				transition: transform .5s;
 				margin: auto;
@@ -226,7 +225,6 @@
 	position: relative;
 	padding-left: 5rem;
 	padding-right: 9rem;
-	// margin: 6rem 0;
 	h1{
 		position: absolute;
 		line-height: 1;
@@ -276,7 +274,6 @@
 		font-size: 1.7rem;
 		font-weight: 700;
 		line-height: 1.8;
-		// transition: color .3s;
 		margin-top: -.7rem;
 	}
 	&__desc{

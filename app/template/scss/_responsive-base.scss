@@ -151,15 +151,32 @@
 			margin-top: 1.4rem;
 		}
 	}
-	.header__menu,
-	.homeslider
+	.header__menu
 	{
 		display: none;
 	}
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 600px){
+	.header__right{
+		padding-right: 2rem;
+	}
+
+	.footer{
+		.copyright{
+			font-size: 1.3rem;
+			padding-left: 0;
+			padding-right: 15px;
+		}
+		.lang{
+			font-size: 1.4rem;
+			padding-right: 0;
+			.current:before{
+				top: 4px;
+			}
+		}
+	}
 }
 
 @media (max-width: 545px){
