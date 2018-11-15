@@ -221,9 +221,9 @@
   right: 0;
 }
 .selectize-dropdown {
+
   position: absolute;
   z-index: 10;
-  /*border: 1px solid #d0d0d0;*/
   background: #ffff;
   color : #000;
   margin: 0 0 0 0;
@@ -231,6 +231,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .selectize-dropdown [data-selectable] {
   cursor: pointer;
