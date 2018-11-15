@@ -4533,6 +4533,19 @@ em strong {
   .extra-toggle {
     margin-right: 5rem; } }
 
+@media (max-width: 1545px) {
+  .modal-menu .contacts .tel {
+    font-size: 3rem; }
+  .modal-menu .contacts {
+    flex-grow: 1; }
+    .modal-menu .contacts__inner {
+      padding-left: 0; } }
+
+@media (max-width: 1300px) {
+  .modal-menu .contacts .tel,
+  .modal-menu .contacts .email {
+    font-size: 2.8rem; } }
+
 @media (max-width: 1360px) {
   .header .navmenu {
     font-size: 1.6rem; }
@@ -4551,6 +4564,10 @@ em strong {
 @media (max-width: 1270px) {
   .header__right {
     padding-right: 3rem; } }
+
+@media (max-width: 1250px) {
+  .modal-menu .contacts {
+    display: none; } }
 
 @media (max-width: 1250px) {
   .footer .container {
@@ -4576,6 +4593,11 @@ em strong {
     .header .navmenu ul li {
       padding-left: 10px; } }
 
+@media (max-width: 991px) {
+  .modal-menu .container {
+    padding-left: 1%;
+    padding-right: 1%; } }
+
 @media (max-width: 980px) {
   .extra-toggle {
     margin-top: 1.8rem; }
@@ -4590,11 +4612,19 @@ em strong {
 
 @media (max-width: 768px) {
   #modal-ask .modal-dialog {
-    left: 20px; } }
+    left: 20px; }
+  .modal-menu .container {
+    padding-left: 1%;
+    padding-right: 1%;
+    max-width: 95%; } }
 
 @media (max-width: 680px) {
   #modal-ask .modal-dialog {
     max-width: 85%; } }
+
+@media (max-width: 650px) {
+  .modal-menu {
+    display: none !important; } }
 
 @media (max-width: 600px) {
   .header__right {
