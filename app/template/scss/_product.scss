@@ -1,0 +1,119 @@
+.products-list{
+	margin-top: 6rem;
+}
+
+.product{
+	&__item{
+		overflow: hidden;
+		&-left{
+			.product{
+				&__box{
+					padding-left: 21rem;
+					padding-right: 6rem;
+				}
+			}
+		}
+		&-right{
+			.product{
+				&__box{
+					padding-left: 6rem;
+					padding-right: 16rem;
+				}
+			}
+		}
+		img{
+			transition: transform .3s;
+		}
+		.img-center{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__link{
+		min-height: 44rem;
+  		&:hover{
+  			color: $color1;
+			text-decoration: none;
+			img{
+				transform: scale(1.1);
+			}
+			.product{
+				&__box{
+					.circle-half{
+						background-color: $color6;
+						background-position: 68px center;
+						&-right{
+							background-position: right 48px top 50% !important;
+						}
+					}
+				}
+				&__desc{
+					transform: translateX(20px);
+				}
+			}
+		};
+	}
+
+	&__box{
+		background-color: $color2;
+		overflow: hidden;
+		position: relative;
+
+		.circle-half{
+			transition: .3s;
+			$s: 318px;
+			background-image: url(../images/arrow.png);
+			background-repeat: no-repeat;
+			background-color: $color14;
+			border-radius: 50%;
+			height: $s;
+			position: absolute;
+			width: $s;
+			top: 50%;
+			margin-top: -$s/2;
+			&-left{
+				background-position: 58px center;
+				right: -178px;
+			}
+			&-right{
+				background-position: right 58px top 50%;
+				left: -178px;
+			}
+		}
+	}
+
+	&__desc{
+		padding-right: 30px;
+		transition: .3s;
+		.btn{
+			font-size: 2rem;
+			height: 60px;
+			justify-content: center;
+			margin-top: 2rem;
+			padding-right: 0;
+			text-align: center;
+			width: 160px;
+		}
+	}
+
+	&__title{
+		font-size: 4rem;
+		margin-bottom: .5rem;
+	}
+	&__subtitle{
+		background-color: $color6;
+		color: $color2;
+		display: inline-block;
+		font-size: 1.7rem;
+		padding: .7rem 1.2rem;
+	}
+
+	&__intro{
+		font-size: 1.8rem;
+		margin-top: 1.5rem;		
+		p{
+			line-height: 2;
+		}
+	}
+}

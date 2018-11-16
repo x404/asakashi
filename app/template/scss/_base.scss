@@ -317,13 +317,25 @@ body{
 
 /* =footer
 ---------------------------*/
-.footer{
+.body .footer{
 	padding-bottom: 3.5rem;
+	.container{
+		padding-left: 5px;
+		padding-right: 5px;
+		max-width: 1920px !important;
+	}
 }
 
 .copyright{
+	display: flex;
 	color: $color5;
 	padding-left: 4.5rem;
+	p{
+		padding-right: .5rem;
+		&:last-child{
+			padding-right: 0;
+		}
+	}
 }
 
 .lang{

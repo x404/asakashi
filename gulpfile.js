@@ -128,6 +128,18 @@ gulp.task('img', function() {
 
 
 
+gulp.task('img2', function() {
+    return gulp.src('app/images/**/*') // Берем все изображения из app
+        .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        })))
+        .pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
+});
+
+
 // File where the favicon markups are stored
 var FAVICON_DATA_FILE = 'faviconData.json';
 
@@ -230,7 +242,18 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
-	var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
+	// var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
+	
+	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
+		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/modernizr-custom-webp.js',
+		config.templateDir + '/js/libs.min.js',
+		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/selectize.min.js'
+	])
+	.pipe(gulp.dest(config.destDir + '/js'));
+
+
 	var buildTmp = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
 	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
 	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/template/fonts')); // Переносим шрифты в продакшен
