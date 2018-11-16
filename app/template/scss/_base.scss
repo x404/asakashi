@@ -301,12 +301,6 @@ em strong
 ---------------------------*/
 
 
-
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-
 /* =main
 ---------------------------*/
 body{
@@ -328,6 +322,7 @@ body{
 
 .copyright{
 	display: flex;
+	flex-wrap: wrap;
 	color: $color5;
 	padding-left: 4.5rem;
 	p{

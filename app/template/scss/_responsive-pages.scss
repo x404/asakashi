@@ -181,6 +181,13 @@
 			overflow: hidden;
 		}
 	}
+
+	// .product__item 
+	.bg-radial:not(.img-center) img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 }
 
 
@@ -281,7 +288,7 @@
 }
 
 @media (max-width: 991px){
-	.header,
+	.homepage.header,
 	.slider-intro{
 		background: url(../images/bg-hline.gif);
 	}
@@ -453,6 +460,28 @@
 	.slider-intro{
 		padding-bottom: 4rem;
 	}
+
+	.bg-radial{
+		display: none !important;
+	}
+
+
+
+	// products
+	.product{
+		&__item{
+			margin: 2rem 0;
+			&-right .product__box{
+				// padding-left: 0;
+				// padding-right: 0;
+				width: 100%;
+			}
+		}
+		&__link{
+			min-height: 30rem
+		}
+	}
+
 }
 
 @media (max-width: 850px){
@@ -471,8 +500,15 @@
 			width: 370px;
 		}
 	}
-
 }
+
+@media (max-width: 750px){
+	.product__box{
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+}
+
 
 @media (max-width: 720px){
 	.homepage{
@@ -511,6 +547,28 @@
 	}
 
 
+}
+
+
+@media (max-width: 650px){
+	.product{
+		&__title{
+			font-size: 3.2rem;
+		}
+		&__subtitle{
+			font-size: 1.5rem;
+		}
+		&__intro{
+			font-size: 1.5rem;
+			p{
+				line-height: 1.6;
+			}
+		}
+		&__desc .btn{
+			font-size: 1.8rem;
+			height: 50px;
+		}
+	}
 }
 
 
@@ -554,6 +612,27 @@
 	.lastnew__item{
 		width: 50%;
 	}
+
+
+	// products
+	.product__link{
+		min-height: 0;
+	}
+	.product{
+		&__box{
+			padding: 2rem 30px !important;
+			.circle-half{
+				display: none;
+			}
+		}
+		&__title{
+			font-size: 2.8rem;
+		}
+		&__subtitle{
+			font-size: 1.5rem;
+		}
+	}
+
 }
 
 
@@ -609,6 +688,25 @@
 			padding-left: 8%;
 		}
 	}
+
+	// products
+
+	.product__link{
+		min-height: 0;
+	}
+
+	.product__box{
+		padding: 2rem 0;
+		.circle-half{
+			display: none !important;
+		}
+	}
+
+	.product__item-right .product__box{
+		padding-right: 30px;
+		padding-left: 30px;
+		width: 100%;
+	}
 }
 
 
@@ -660,6 +758,41 @@
 	}
 
 
+	.product{
+		&__box{
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+
+		&__title{
+			font-size: 3rem;
+			text-align: center;
+		}
+		&__subtitle{
+			display: block;
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		&__intro{
+			font-size: 1.4rem;
+			text-align: justify;
+			p{
+				line-height: 1.5;
+			}
+		}
+
+		&__desc{
+			.btn{
+				font-size: 1.6rem;
+				height: 45px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+
+
 }
 
 @media (max-width: 340px){
@@ -679,6 +812,12 @@
 		&__title{
 			font-size: 1.4rem;
 			line-height: 1.5;
+		}
+	}
+
+	.product{
+		&__title{
+			font-size: 2.6rem;
 		}
 	}
 }
