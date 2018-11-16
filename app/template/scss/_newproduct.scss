@@ -96,19 +96,17 @@
 		content: "";
 		margin-left: 15px;
 		background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAVCAYAAACdbmSKAAAA4UlEQVQ4T+2Tyw2DMBBEbVwB55RBDTlZ0EVICXEJSToIZYA4QQmhjJypAJwZy0aEj9IASMj2ap53WWal2HjSNL0xPI5jV9d1u5TIHcj6uKmq6nFAQhyN+OuILMvyYRjos45ieG9lI611opRKyrIspDfnHdoeBj0TXEIEoihqoInxmjnEJA6E4B3Kw7mdAQwb53Lc/MKSe2HvbxTW2qeU8hLOWAu4/jqNxgIM0/DB5uQPDuD+Z552QOomYAXhg2N0qEFZSUiF8jp0lg1i2e5ZTe4c3AI2IQYJYmE2/rspQ8j0BeqentKJgB/RAAAAAElFTkSuQmCC") no-repeat;
-		// left: 55%;
-		// top: 50%;
 		width: 13px;
 		height: 21px;
 		margin-top: 0;
 		transition: filter .3s
-	};
+	}
 
 	&:hover{
 		background-color: $color6;
 		color: $color2;
 		&:before{
 			filter: brightness(5);
-		};
-	};
+		}
+	}
 }

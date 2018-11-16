@@ -4583,8 +4583,7 @@ em strong {
     font-size: 2rem;
     padding-top: 6rem; }
   .inner .intro {
-    padding-top: 2.7rem;
-    padding-left: 152px; }
+    padding-top: 2.7rem; }
     .inner .intro p {
       line-height: 1.7; }
   .inner .title {
@@ -5118,8 +5117,6 @@ em strong {
     padding-left: 115px; }
     .inner .title:before {
       left: -30px; }
-  .inner .intro {
-    padding-left: 118px; }
   .inner-padding {
     padding-left: 118px; } }
 
@@ -5137,8 +5134,6 @@ em strong {
     .inner .title:before {
       left: -30px;
       width: 100px; }
-  .inner .intro {
-    padding-left: 100px; }
   .inner-padding {
     padding-left: 100px; } }
 
@@ -5204,8 +5199,6 @@ em strong {
   .inner .title {
     font-size: 5.5rem;
     padding-left: 98px; }
-  .inner .intro {
-    padding-left: 100px; }
   .product__item-right .product__box {
     padding-left: 4rem; }
   .product__title {
@@ -5314,7 +5307,6 @@ em strong {
     .inner .title:before {
       display: none; }
   .inner .intro {
-    padding-left: 0;
     padding-top: 1.5rem; }
   .inner-padding {
     padding-left: 0; } }

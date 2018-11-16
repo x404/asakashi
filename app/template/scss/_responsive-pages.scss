@@ -310,7 +310,7 @@
 		&:after,
 		&:before{
 			display: none;
-		};
+		}
 		.advantage__item{
 			margin-top: 2rem;
 		}
@@ -412,7 +412,7 @@
 							height: $s;
 							margin-top: -$s/2;
 							margin-left: -$s/2;
-						};
+						}
 					}
 				}	
 			}	
@@ -434,7 +434,7 @@
 					position: absolute;
 					left: 50%;
 					top: 50%;		
-				};
+				}
 				
 				&:before{
 					background: #a2a2a2;
@@ -741,7 +741,6 @@
 	}
 
 	// products
-
 	.product__link{
 		min-height: 0;
 	}
@@ -771,9 +770,6 @@
 			br{
 				display: none !important;
 			}
-		}
-		.intro .title{
-			// font-size: 3.2rem;
 		}
 		.advantage__pic{
 			img{
