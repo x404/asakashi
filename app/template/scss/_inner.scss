@@ -1,0 +1,33 @@
+.webp{   
+	
+}
+
+.inner{
+	.container{
+		padding-left: 160px;
+		padding-right: 160px;
+	}
+	&-products{
+		background: $color13;
+	}
+	.main{
+		font-size: 2rem;
+		padding-top: 8rem;
+	}
+	.title{
+		font-size: 7rem;
+		font-weight: 700;
+		padding-left: 160px;
+		position: relative;
+		color: $color1;
+		&:before{
+			@extend .before;
+			border-top: 5px solid $color6;
+			width: 118px;
+			left: 0;
+			top: 50%;
+			margin-top: -3px;
+		};
+
+	}
+}

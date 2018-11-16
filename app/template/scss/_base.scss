@@ -248,6 +248,15 @@ em strong
 						text-decoration: none;
 					};
 				}
+				&.current{
+					a, span{
+						color: $color6;
+						&::before {
+							border-bottom: 2px solid $color6;
+							max-width: 100%;
+						}						
+					}
+				}
 			}
 		}
 	}
@@ -366,7 +375,6 @@ body{
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
 .cl-effect-11 a {
 	position: relative;
-	// color: #0972b4;
 	text-shadow: none;
 } 
 
@@ -375,7 +383,6 @@ body{
 	color: $color6;
 	content: attr(data-hover);
 	left: 0;
-	// right: 0;
 	max-width: 0;
 	overflow: hidden;
 	position: absolute;
@@ -385,7 +392,6 @@ body{
 .cl-effect-11 a:hover::before,
 .cl-effect-11 a:focus::before {
 	max-width: 100%;
-	// left: 0;
 }
 
 
@@ -550,11 +556,6 @@ body{
 		position: relative;
 		&:before{
 			@extend .before;
-			// background:url("data:image/gif;base64,R0lGODlhAQAKANCQAQDQvtCzLQAAACHRiQQBAAABACwAAAAAAQAKAAACBNCUHdCpBQA7");
-			// background: url(../images/hline-yellow.gif);
-
-
-
 			z-index: 999;
 		};
 		a{

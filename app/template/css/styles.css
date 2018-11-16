@@ -3467,7 +3467,7 @@ em strong {
   .tdu:hover, .modal-menu .menu a:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before {
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .title:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3568,6 +3568,11 @@ em strong {
         .header .navmenu ul li a:hover {
           color: currentColor;
           text-decoration: none; }
+      .header .navmenu ul li.current a, .header .navmenu ul li.current span {
+        color: #ed1d24; }
+        .header .navmenu ul li.current a::before, .header .navmenu ul li.current span::before {
+          border-bottom: 2px solid #ed1d24;
+          max-width: 100%; }
 
 .header .btn-ask {
   margin-top: 5rem;
@@ -4539,6 +4544,30 @@ em strong {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.inner .container {
+  padding-left: 160px;
+  padding-right: 160px; }
+
+.inner-products {
+  background: #efefef; }
+
+.inner .main {
+  font-size: 2rem;
+  padding-top: 8rem; }
+
+.inner .title {
+  font-size: 7rem;
+  font-weight: 700;
+  padding-left: 160px;
+  position: relative;
+  color: #000; }
+  .inner .title:before {
+    border-top: 5px solid #ed1d24;
+    width: 118px;
+    left: 0;
+    top: 50%;
+    margin-top: -3px; }
 
 /* =mobile-menu
 ---------------------------*/
