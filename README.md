@@ -1,7 +1,7 @@
 Название проекта
 ================
 
-Верстка расположена по адресу []()
+Верстка расположена по адресу [http://asakashi.proverstka.com.ua](http://asakashi.proverstka.com.ua)
 
 Все комментарии вроде "InstanceBegin, InstanceBeginEditable, InstanceEndEditable" из кода при программировании убирать! Такие комментарии оставляет шаблонизатор dreamweaver.
 
