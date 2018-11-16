@@ -4551,17 +4551,27 @@ em strong {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.webp .inner-products {
-  background-image: url(../images/bg/bg-inner-1.webp); }
+.webp .inner {
+  background-image: url(../images/bg/bg-inner-2.webp);
+  background-position: center bottom; }
+  .webp .inner-products {
+    background-image: url(../images/bg/bg-inner-1.webp);
+    background-position: center top; }
 
-.no-webp .inner-products {
-  background-image: url(../images/bg/bg-inner-1.jpg); }
+.no-webp .inner {
+  background-image: url(../images/bg/bg-inner-2.jpg);
+  background-position: center bottom; }
+  .no-webp .inner-products {
+    background-image: url(../images/bg/bg-inner-1.jpg);
+    background-position: center top; }
 
 .bg-radial {
   background: radial-gradient(circle at center, #dedfe0 0%, #888a8d 100%); }
 
 .inner {
   background-repeat: no-repeat; }
+  .inner-padding {
+    padding-left: 152px; }
   .inner .footer {
     padding-top: 3.5rem; }
   .inner .container {
@@ -4673,6 +4683,93 @@ em strong {
   margin-top: 1.5rem; }
   .product__intro p {
     line-height: 2; }
+
+.newproducts {
+  margin-bottom: 5rem; }
+  .newproducts .until-date {
+    color: #494949;
+    margin: 2rem 0; }
+  .newproducts__list {
+    padding-top: 1rem; }
+
+.newproduct__cell {
+  background-color: #fff;
+  margin: 1rem 0;
+  text-align: center;
+  width: 25%; }
+
+.newproduct__link {
+  display: block;
+  width: 290px;
+  height: 390px;
+  transition: box-shadow .3s; }
+  .newproduct__link:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none; }
+    .newproduct__link:hover .newproduct__title {
+      color: #ed1d24; }
+    .newproduct__link:hover .newproduct__date {
+      color: #4b4b4b; }
+    .newproduct__link:hover .newproduct__title span {
+      border-bottom-color: rgba(0, 0, 0, 0); }
+
+.newproduct__pic {
+  align-items: center;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px; }
+  .newproduct__pic img {
+    max-width: 100%; }
+
+.newproduct__title {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  transition: color .3s; }
+  .newproduct__title span {
+    border-bottom: 2px solid #ed1d24;
+    display: inline-block;
+    transition: border-color .3s; }
+
+.newproduct__date {
+  color: #4b4b4b;
+  font-size: 1.7rem;
+  margin-top: 1.4rem; }
+
+.btn-more {
+  align-items: center;
+  background-color: #eee32d;
+  border: none;
+  color: #5c5c5c;
+  cursor: pointer;
+  display: flex;
+  font-size: 2.4rem;
+  height: 7rem;
+  justify-content: center;
+  margin-top: 5rem;
+  position: relative;
+  text-align: center;
+  transition: background-color .3s, color .3s;
+  width: 100%; }
+  .btn-more:after {
+    content: "";
+    margin-left: 15px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAVCAYAAACdbmSKAAAA4UlEQVQ4T+2Tyw2DMBBEbVwB55RBDTlZ0EVICXEJSToIZYA4QQmhjJypAJwZy0aEj9IASMj2ap53WWal2HjSNL0xPI5jV9d1u5TIHcj6uKmq6nFAQhyN+OuILMvyYRjos45ieG9lI611opRKyrIspDfnHdoeBj0TXEIEoihqoInxmjnEJA6E4B3Kw7mdAQwb53Lc/MKSe2HvbxTW2qeU8hLOWAu4/jqNxgIM0/DB5uQPDuD+Z552QOomYAXhg2N0qEFZSUiF8jp0lg1i2e5ZTe4c3AI2IQYJYmE2/rspQ8j0BeqentKJgB/RAAAAAElFTkSuQmCC") no-repeat;
+    width: 13px;
+    height: 21px;
+    margin-top: 0;
+    transition: filter .3s; }
+  .btn-more:hover {
+    background-color: #ed1d24;
+    color: #fff; }
+    .btn-more:hover:before {
+      filter: brightness(5); }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5022,6 +5119,8 @@ em strong {
     .inner .title:before {
       left: -30px; }
   .inner .intro {
+    padding-left: 118px; }
+  .inner-padding {
     padding-left: 118px; } }
 
 @media (max-width: 1545px) {
@@ -5039,6 +5138,8 @@ em strong {
       left: -30px;
       width: 100px; }
   .inner .intro {
+    padding-left: 100px; }
+  .inner-padding {
     padding-left: 100px; } }
 
 @media (max-width: 1300px) {
@@ -5214,7 +5315,9 @@ em strong {
       display: none; }
   .inner .intro {
     padding-left: 0;
-    padding-top: 1.5rem; } }
+    padding-top: 1.5rem; }
+  .inner-padding {
+    padding-left: 0; } }
 
 @media (max-width: 575px) {
   .modal-dialog {
@@ -5289,7 +5392,9 @@ em strong {
     padding-left: 3rem; }
     .lastnews h1 {
       font-size: 6rem;
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+  .newproduct__cell {
+    width: 33.3%; } }
 
 @media (max-width: 1650px) {
   .homepage .intro .title {
@@ -5370,7 +5475,14 @@ em strong {
   .lastnew__title {
     font-size: 1.5rem; }
   .slider-tabs {
-    margin-top: 4rem; } }
+    margin-top: 4rem; }
+  .newproduct__cell {
+    width: 50%; }
+  .newproduct__title {
+    font-size: 2.6rem; }
+  .newproduct__link {
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (max-width: 1279px) {
   .homepage .main {
@@ -5552,7 +5664,21 @@ em strong {
     .product__item-right .product__box {
       width: 100%; }
   .product__link {
-    min-height: 30rem; } }
+    min-height: 30rem; }
+  .newproducts__list {
+    padding-left: 5px; }
+  .newproduct__cell {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%; }
+  .newproduct__link {
+    width: 100%; }
+  .newproduct__pic {
+    width: 100%; }
+    .newproduct__pic img {
+      max-width: 90%; }
+  .newproduct__title {
+    font-size: 2.4rem; } }
 
 @media (max-width: 850px) {
   .homeslider {
@@ -5641,7 +5767,12 @@ em strong {
 
 @media (max-width: 540px) {
   .lastnew__title {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .newproduct__cell {
+    border: 1px solid #ccc;
+    width: 100%; }
+  .newproduct__link {
+    width: 290px; } }
 
 @media (max-width: 460px) {
   .lastnew__item {
@@ -5728,7 +5859,21 @@ em strong {
     font-size: 1.6rem;
     height: 45px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .newproducts__list {
+    padding-left: 0;
+    padding-right: 0; }
+  .newproduct__cell {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .newproduct__link {
+    width: 100%; }
+  .newproduct__pic {
+    height: auto;
+    min-height: 200px;
+    margin: 4rem 0; } }
 
 @media (max-width: 340px) {
   .homepage .slick-list {
@@ -5741,4 +5886,8 @@ em strong {
     font-size: 1.4rem;
     line-height: 1.5; }
   .product__title {
-    font-size: 2.6rem; } }
+    font-size: 2.6rem; }
+  .btn-more {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    height: 6rem; } }

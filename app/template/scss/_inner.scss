@@ -1,16 +1,21 @@
 .webp{  
 	.inner{
+		background-image: url(../images/bg/bg-inner-2.webp);
+		background-position: center bottom;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.webp);
+			background-position: center top;
 		}
 	}
-
 }
 
 .no-webp{
 	.inner{
+		background-image: url(../images/bg/bg-inner-2.jpg);
+		background-position: center bottom;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.jpg);
+			background-position: center top;
 		}
 	}
 }
@@ -21,8 +26,13 @@
 }
 
 
+
+
 .inner{
 	background-repeat: no-repeat;
+	&-padding{
+		padding-left: 152px;
+	}
 	.footer{
 		padding-top: 3.5rem;
 	}

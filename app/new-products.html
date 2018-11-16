@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en"><!-- InstanceBegin template="/Templates/inner.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -19,8 +19,9 @@
 <meta name="msapplication-TileImage" content="/the_favicon/mstile-144x144.png">
 <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-
-<title>Products</title>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>New products</title>
+<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="/template/css/styles.min.css" />
 <script src="/template/js/modernizr-custom-webp.js"></script>
 <script src="/template/js/libs.min.js"></script>
@@ -33,11 +34,12 @@
 <!--[if IE]>
 	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
 </head>
 <body>
 
-
-<div class="body inner inner-products">
+<div class="body inner">
 	<div class="main-grid">
 		<!-- =header -->
 		<header class="header">
@@ -64,14 +66,16 @@
 							<nav id="navbar">
 								<div class="mainnav__list">
 									<ul class="nav nav-tabs d-flex cl-effect-11">
-										<li><a href="about.html" title="" data-hover="Company">Company</a></li>
-										<li class="current"><a href="#" title="" data-hover="Products">Products</a></li>
-										<li><a href="catalogue.html" title="" data-hover="Catalogue">Catalogue</a></li>
-										<li><a href="know.html" title="" data-hover="Did you know?">Did you know?</a></li>
-										<li><a href="contacts.html" title="" data-hover="Contact us">Contact us</a></li>
+										<!-- InstanceBeginEditable name="EditRegion4" -->
+											<li><a href="about.html" title="" data-hover="Company">Company</a></li>
+											<li class="current"><a href="#" title="" data-hover="Products">Products</a></li>
+											<li><a href="catalogue.html" title="" data-hover="Catalogue">Catalogue</a></li>
+											<li><a href="know.html" title="" data-hover="Did you know?">Did you know?</a></li>
+											<li><a href="contacts.html" title="" data-hover="Contact us">Contact us</a></li>
+										<!-- InstanceEndEditable -->
 									</ul>
 								</div>
-							</nav>	
+							</nav>
 						</div>
 					</div>
 					<!-- =/nav -->					
@@ -86,97 +90,79 @@
 
 		<!-- =main -->
 		<div class="main">
+		<!-- InstanceBeginEditable name="EditRegion3" -->
 			<main>
 				<div class="container">
-					<h1 class="title">Products</h1>
-					<div class="intro col-xl-11 col-lg-12">
-						<p>JS Asakashi represents a wide range of filtration products for the after-sales service of cars of almost all world brands. JS filters combine high cleaning performance, reliability, durability and ease of replacement and use. Manufacturer JS Asakashi as quickly as possible responds to all changes and innovations in the automotive market, continuously improves production processes and introduces advanced technologies to achieve the best effect.</p>
-					</div>
+					<section class="newproducts">
+						<header>
+							<h1 class="title">New products</h1>
+							<p class="until-date inner-padding">Until 01-Nov-18</p>							
+						</header>
+						<div class="newproducts__list d-flex flex-wrap inner-padding col-xl-11 col-lg-12">
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-1.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>FR1012</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-2.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>AC0098C</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-3.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>AC0265C</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-4.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>A0757</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-5.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>AC0264</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>
+							<article class="newproduct__cell">
+								<a href="#" title="" class="newproduct__link">
+									<div class="newproduct__pic">
+										<img src="images/product-6.jpg" alt="" />
+									</div>
+									<h3 class="newproduct__title"><span>A0756</span></h3>
+									<p class="newproduct__date">17 Oct 2018</p>
+								</a>
+							</article>					
+
+							<!-- =for ajax products -->	
+							<div id="load"></div>
+							<!-- =/for ajax products -->	
+						</div>
+						<button type="button" class="btn-more">Show more</button>
+					</section>
 				</div>
-				<!-- =products-list -->
-				<section class="products-list">
-					<article class="product__item product__item-right">
-						<a href="#" title="" class="product__link d-flex">
-							<div class="col-lg-6 bg-radial"></div>
-							<div class="product__box col-lg-6 col-12 col-12 d-flex align-items-center">
-								<div class="product__desc">
-									<h3 class="product__title">Air filters</h3>
-									<div class="product__subtitle">Let your car engine breathe clean air.</div>
-									<div class="product__intro">
-										<p>Using world-class filter element technology to block almost all airborne dust and dirt including particles as small as a grain of salt that can harm engine.</p>
-									</div>
-								</div>
-								<div class="circle-half circle-half-left"></div>
-							</div>
-						</a>
-					</article>
-					<article class="product__item product__item-left">
-						<a href="#" title="" class="product__link d-flex">
-							<div class="product__box col-lg-6 col-12 d-flex align-items-center">
-								<div class="product__desc">
-									<h3 class="product__title">Oil filters</h3>
-									<div class="product__subtitle">Keep your car engine run longer on clear oil!</div>
-									<div class="product__intro">
-										<p>Using world-class filter element technology to block almost all airborne dust and dirt including particles as small as a grain of salt that can harm engine.</p>
-									</div>
-									<span class="btn">Learn more</span>
-								</div>
-								<div class="circle-half circle-half-right"></div>
-							</div>
-							<div class="col-lg-6 bg-radial img-center"><img src="images/product-oil.png" alt="" /></div>
-						</a>
-					</article>
-					<article class="product__item product__item-right">
-						<a href="#" title="" class="product__link d-flex">
-							<div class="col-lg-6 bg-radial"></div>
-							<div class="product__box col-lg-6 col-12 d-flex align-items-center">
-								<div class="product__desc">
-									<h3 class="product__title">Cabin filters</h3>
-									<div class="product__subtitle">Let your car engine breathe clean air.</div>
-									<div class="product__intro">
-										<p>Using world-class filter element technology to block almost all airborne dust and dirt including particles as small as a grain of salt that can harm engine.</p>
-									</div>
-								</div>
-								<div class="circle-half circle-half-left"></div>
-							</div>
-						</a>
-					</article>
-					<article class="product__item product__item-left">
-						<a href="#" title="" class="product__link d-flex">
-							<div class="product__box col-lg-6 col-12 d-flex align-items-center">
-								<div class="product__desc">
-									<h3 class="product__title">Fuel filters</h3>
-									<div class="product__subtitle">Keep your car engine run longer on clear oil!</div>
-									<div class="product__intro">
-										<p>Using world-class filter element technology to block almost all airborne dust and dirt including particles as small as a grain of salt that can harm engine.</p>
-									</div>
-									<span class="btn">Learn more</span>
-								</div>
-								<div class="circle-half circle-half-right"></div>
-							</div>
-							<div class="col-lg-6 bg-radial"></div>
-						</a>
-					</article>
-					<article class="product__item product__item-right">
-						<a href="#" title="" class="product__link d-flex">
-							<div class="col-lg-6 bg-radial">
-								<img src="images/product-transmition.png" alt="">
-							</div>
-							<div class="product__box col-lg-6 d-flex align-items-center">
-								<div class="product__desc">
-									<h3 class="product__title">Transmission filters</h3>
-									<div class="product__subtitle">Let your car engine breathe clean air.</div>
-									<div class="product__intro">
-										<p>Using world-class filter element technology to block almost all airborne dust and dirt including particles as small as a grain of salt that can harm engine.</p>
-									</div>
-								</div>
-								<div class="circle-half circle-half-left"></div>
-							</div>
-						</a>
-					</article>
-				</section>
-				<!-- =/products-list -->
 			</main>
+		<!-- InstanceEndEditable -->		
 		</div>
 		<!-- =/main -->
 
@@ -381,6 +367,8 @@
 
 
 <div id="outdated"></div>
+<!-- InstanceBeginEditable name="EditRegion5" -->
+<!-- InstanceEndEditable --> 
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/selectize.min.js"></script>
 <script src="/template/js/engine.js"></script>
@@ -388,4 +376,4 @@
 <link rel="stylesheet" property="stylesheet" href="/template/css/selectize.css" />    
 <link rel="stylesheet" property="stylesheet" href="/template/css/animate.css" />    
 </body>
-</html>
+<!-- InstanceEnd --></html>
