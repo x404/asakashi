@@ -282,8 +282,9 @@
 
 	// news
 	.secondary-menu{
-		width: 100%;
+		margin-left: 4.5rem;
 		order: 0;
+		width: calc(100% - 4.5rem);
 	}
 
 	.articles-wrapper{

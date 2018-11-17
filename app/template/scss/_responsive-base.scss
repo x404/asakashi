@@ -451,6 +451,11 @@
 
 
 @media (max-width: 480px){
+	.inner{
+		.title{
+			font-size: 3.5rem;
+		}
+	}
 	.product{
 		&__intro{
 			font-size: 1.5rem;
@@ -521,6 +526,19 @@
 }
 
 
+@media (max-width: 440px){
+	.inner{
+		.title{
+			margin-left: 0;
+			font-size: 3.2rem;
+			&:before{
+				margin-top: 0;
+				top: 20px;
+			};
+		}
+	}
+}
+
 @media (max-width: 340px){
 	.extra-toggle{
 		margin-left: 1.5rem;
@@ -540,7 +558,7 @@
 		.title{
 			font-size: 3.2rem;
 			padding-left: 30px;
-			margin-left: 15px;
+			// margin-left: 15px;
 			&:before{
 				width: 17px;
 			}
