@@ -213,6 +213,9 @@
 	}
 
 	.articles-wrapper{
+		.content{
+			width: 100%
+		}
 		flex-wrap: wrap;
 		.secondary-menu{
 			order: 0;

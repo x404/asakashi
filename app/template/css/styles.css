@@ -4850,6 +4850,8 @@ em strong {
 
 .articles {
   margin-top: -1.6rem; }
+  .articles-wrapper .content {
+    width: calc(100% - 320px); }
 
 .article__item {
   margin: 4rem 0;
@@ -5634,6 +5636,8 @@ em strong {
     order: 0; }
   .articles-wrapper {
     flex-wrap: wrap; }
+    .articles-wrapper .content {
+      width: 100%; }
     .articles-wrapper .secondary-menu {
       order: 0;
       margin-bottom: 2.5rem; }

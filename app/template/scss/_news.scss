@@ -1,5 +1,11 @@
 .articles{
 	margin-top: -1.6rem;
+	&-wrapper{
+		.content{
+			width: calc(100% - 320px);
+			
+		}
+	}
 }
 
 
