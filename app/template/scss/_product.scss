@@ -34,6 +34,7 @@
 	}
 	&__link{
 		min-height: 44rem;
+		// hover
   		&:hover{
   			color: $color1;
 			text-decoration: none;
@@ -44,9 +45,15 @@
 				&__box{
 					.circle-half{
 						background-color: $color6;
-						background-position: 68px center;
 						&-right{
-							background-position: right 48px top 50% !important;
+							&:before{
+								right: 48px;
+							}
+						}
+						&-left{
+							&:before{
+								left: 68px;
+							}
 						}
 					}
 				}
@@ -63,24 +70,34 @@
 		position: relative;
 
 		.circle-half{
-			transition: .3s;
 			$s: 318px;
-			background-image: url(../images/arrow.png);
-			background-repeat: no-repeat;
 			background-color: $color14;
 			border-radius: 50%;
 			height: $s;
-			position: absolute;
 			width: $s;
-			top: 50%;
 			margin-top: -$s/2;
+			position: absolute;
+			top: 50%;
+			&:before{
+				transition: .3s;
+				@extend .before;
+				background: url(../images/arrow.png) no-repeat left top;
+				top: 50%;
+				width: 61px;
+				height: 42px;
+				margin-top: -21px;
+			};
 			&-left{
-				background-position: 58px center;
 				right: -178px;
+				&:before{
+					left: 58px;
+				};
 			}
 			&-right{
-				background-position: right 58px top 50%;
 				left: -178px;
+				&:before{
+					right: 58px;
+				};				
 			}
 		}
 	}
