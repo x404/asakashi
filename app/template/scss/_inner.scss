@@ -46,6 +46,9 @@
 	.main{
 		font-size: 2rem;
 		padding-top: 6rem;
+		img{
+			max-width: 100%
+		}
 	}
 	.intro{
 		padding-top: 2.7rem;
@@ -71,3 +74,109 @@
 }
 
 
+
+
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// =pagination
+.pagination{
+	@extend .flex-center;
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin: 5rem 0 3rem;
+	a, span{
+		@extend .flex-center;
+		text-align: center;
+	}
+	a,
+	span{
+		margin-left: 1.8rem;
+		margin-right: 1.8rem;
+		text-decoration: none;
+	}
+	a:not([class]),
+	span:not(.separator){
+		color: $color17;
+		transition: .3s;
+	}
+
+	a:not([class]){
+		&:hover{
+			color: $color6;
+		}		
+	}
+
+	.current{
+		color: $color1 !important;
+		cursor: default;
+		position: relative;
+		&:before{
+			@extend .before;
+			background-color: $color6;
+			border-radius: 50%;
+			bottom: -12px;
+			height: 10px;
+			left: 50%;
+			margin-left: -5px;
+			width: 10px;
+		};
+	}
+
+	.prev,
+	.next{
+		@extend .tdu;
+		color: $color17;
+		margin-right: 0;
+		position: relative;
+		text-decoration: none;
+		transition: .3s color ;
+		&:hover{
+			color: $color6;
+		}
+	}
+	.prev{
+		margin-right: 6rem;
+	}
+	.next{
+		margin-left: 8rem;
+	}
+}
+// =/pagination
+
+
+// =aside
+.secondary-menu{
+	align-self: start;
+	background-color: $color2;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+	flex-shrink: 0;
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-top: 2.7rem;
+	padding: .5rem 6rem 0 4.5rem;
+	width: 320px;
+	li{
+		line-height: 1.4;
+		margin: 3.5rem 0; 
+		&.active{
+			span,
+			a{
+				color: $color6;
+			}
+		}
+	}
+	a{
+		color: #737373;
+		transition: color .3s;
+		&:hover{
+			color: $color6;
+			text-decoration: none;
+		};
+	}
+}
+// =/aside

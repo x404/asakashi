@@ -96,6 +96,22 @@
 
 
 @media (max-width: 1520px){
+	.secondary-menu{
+		font-size: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: 280px;
+		li{
+			margin: 2rem 0;
+		}
+	}
+
+	// news
+	.article{
+		&__title{
+			font-size: 2.8rem;
+		}
+	}
 }
 
 
@@ -188,6 +204,35 @@
 			margin-right: auto;
 		}
 	}
+
+
+	// news
+	.secondary-menu{
+		width: 100%;
+		order: 0;
+	}
+
+	.articles-wrapper{
+		flex-wrap: wrap;
+		.secondary-menu{
+			order: 0;
+			margin-bottom: 2.5rem;
+			ul{
+				display: flex;
+				justify-content: space-between
+			}
+		}
+
+		.content{
+			order: 1;
+		}
+	}
+
+	.article{
+		&__item{
+			padding-right: 0;
+		}
+	}
 }
 
 
@@ -272,6 +317,10 @@
 	.lastnews h1{
 		padding-top: 1rem;
 	}
+
+	.secondary-menu{
+		font-size: 1.8rem;
+	}
 }
 
 
@@ -297,6 +346,12 @@
 	}
 	.lastnew__item{
 		width: 25rem;
+	}
+
+	.secondary-menu{
+		font-size: 1.6rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 
@@ -513,16 +568,43 @@
 				max-width: 90%
 			}
 		}
-		&__title{
-			font-size: 2.4rem;
-		}
 	}
 
+	.newproduct,
+	.article,
+	{
+		&__title{
+			font-size: 2.4rem;
+		}		
+	}
+
+	.article{
+		&__intro{
+			font-size: 1.6rem;
+		}
+	}
 }
+
+@media (max-width: 900px){
+	.secondary-menu{
+		font-size: 1.5rem;
+	}
+
+	.article{
+		&__pic{
+			width: 220px;
+		}
+	}
+}
+
 
 @media (max-width: 850px){
 	.homeslider{
 		margin-left: 0;
+	}
+
+	.secondary-menu{
+		display: none;
 	}
 }
 
@@ -537,6 +619,25 @@
 		}
 	}
 }
+
+
+@media (max-width: 768px){
+	.article{
+		&__link{
+			align-items: start !important
+		}
+		&__pic{
+			margin-right: 2rem;
+			width: 180px;
+		}
+
+		&__title{
+			font-size: 2.2rem;
+		}
+	}
+}
+
+
 
 @media (max-width: 750px){
 	.product__box{
@@ -583,6 +684,23 @@
 	}
 
 
+	// news
+	.articles{
+		padding-left: 0;
+	}
+
+	.article{
+		&__link{
+			display: block !important;
+			text-align: center;
+		}
+		&__pic{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+			width: 250px;
+		}
+	}
 }
 
 
@@ -668,11 +786,6 @@
 			font-size: 1.5rem;
 		}
 	}
-
-
-
-
-
 }
 
 
@@ -690,6 +803,17 @@
 		}
 		&__link{
 			width: 290px;
+		}
+	}
+
+
+	// article
+	.article{
+		&__title{
+			font-size: 2rem;
+		}
+		&__intro{
+			font-size: 1.5rem;
 		}
 	}
 }

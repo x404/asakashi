@@ -296,6 +296,25 @@
 		padding-right: 1%;
 		max-width: 95%;
 	}
+
+	.pagination{
+		font-size: 1.6rem;
+		a,
+		.current{
+			margin: 0 1rem;
+		}
+		.prev{
+			margin-right: 1.5rem;
+		}
+		.next{
+			margin-left: 1rem;
+		}
+	}
+}
+
+
+@media (max-width: 720px){
+
 }
 
 
@@ -398,6 +417,28 @@
 	}
 	.form-wrapper p{
 		font-size: 1.4rem;
+	}
+}
+
+
+@media (max-width: 540px){
+	.pagination{
+		flex-wrap: wrap;
+		margin-top: 1rem;
+		width: 100%;
+		.prev, 
+		.next{
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+		.prev{
+			margin-bottom: 1.5rem;
+		}
+
+		.next{
+			margin-top: 1.5rem;
+		}
 	}
 }
 

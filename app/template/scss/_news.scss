@@ -1,0 +1,59 @@
+.articles{
+	margin-top: -1.6rem;
+}
+
+
+.article{
+	&__item{
+		margin: 4rem 0;
+		padding-right: 10rem;
+	}
+	&__link{
+		display: block;
+		&:hover{
+			text-decoration: none;
+			color: $color1;
+			.article{
+				&__title{
+					color: $color6;
+					span{
+						border-bottom-color: rgba(0,0,0,0);
+					}
+				}
+
+				&__pic{
+					img{
+						transform: scale(1.1)
+					}
+				}
+			}
+		}
+	}
+
+	&__pic{
+		border-left: 2rem solid $color6;
+		margin-right: 3.5rem;
+		overflow: hidden;
+		flex-shrink: 0;
+		img{
+			transition: transform .3s
+		}
+	}
+
+	&__title{
+		transition: color .3s;
+		font-size: 3rem;
+		span{
+			border-bottom: 2px solid $color6;
+			display: inline-block;
+			transition: border-color .3s;
+		}
+	}
+
+	&__intro{
+		color: $color7;
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		line-height: 1.8;
+	}
+}
