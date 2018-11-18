@@ -1,3 +1,11 @@
+.main__body{
+	.content{
+		padding-right: 160px;		
+	}
+}
+
+
+
 .articles{
 	margin-top: -1.6rem;
 	&-wrapper{
@@ -16,6 +24,7 @@
 	}
 	&__link{
 		display: block;
+		text-decoration: none !important;
 		&:hover{
 			text-decoration: none;
 			color: $color1;
@@ -51,7 +60,7 @@
 		font-size: 3rem;
 		span{
 			border-bottom: 2px solid $color6;
-			display: inline-block;
+			// display: inline-block;
 			transition: border-color .3s;
 		}
 	}
@@ -61,5 +70,34 @@
 		font-size: 1.7rem;
 		padding-top: 1rem;
 		line-height: 1.8;
+	}
+}
+
+
+// aside
+.learn__list{
+	margin-top: 7rem;
+	.heading{
+		color: $color1;
+		font-weight: 700;
+		font-size: 4rem;
+		padding-left: 0;
+		margin-bottom: -1rem;
+		&:before{
+			display: none;
+		}
+	}
+	.lastnew{
+		&__item{
+			border-left: none;
+			margin-top: 4.5rem;
+			padding-left: 0;
+			width: auto;
+		}
+		&__desc{
+			.date{
+				font-size: 1.5rem;
+			}
+		}
 	}
 }

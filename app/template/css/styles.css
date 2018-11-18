@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3462,14 +3463,15 @@ em strong {
   .tdn:hover, .modal-menu .menu dd a:hover {
     text-decoration: underline; }
 
-.tdu, .modal-menu .menu a, .pagination .prev,
+.tdu, .modal-menu .menu a, .inner .main main a, .pagination .prev,
 .pagination .next {
   text-decoration: underline; }
-  .tdu:hover, .modal-menu .menu a:hover, .pagination .prev:hover,
+  .tdu:hover, .modal-menu .menu a:hover, .inner .main main a:hover, .pagination .prev:hover,
   .pagination .next:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .title:before, .pagination .current:before, .product__box .circle-half:before {
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main main ul li:before, .inner .main h1:before,
+.inner .main .title:before, .pagination .current:before, .product__box .circle-half:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4138,6 +4140,7 @@ em strong {
       text-decoration: none; }
 
 .lastnew__pic {
+  flex-shrink: 0;
   margin-right: 1.4rem; }
   .lastnew__pic img {
     border-radius: 50%;
@@ -4589,22 +4592,181 @@ em strong {
     padding-top: 6rem; }
     .inner .main img {
       max-width: 100%; }
+    .inner .main main h1:not(.title), .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
+      color: #000;
+      font-weight: 700;
+      margin: 0; }
+    .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
+      padding: 0; }
+    .inner .main main h1:not(.title) {
+      font-size: 50px;
+      margin-bottom: 40px; }
+    .inner .main main h1:before {
+      top: 35px; }
+    .inner .main main h2 {
+      font-size: 40px;
+      line-height: 1.4; }
+    .inner .main main h3 {
+      font-size: 35px;
+      line-height: 1.4; }
+    .inner .main main h4 {
+      font-size: 30px; }
+    .inner .main main h5 {
+      font-size: 26px; }
+    .inner .main main h2 + p,
+    .inner .main main h3 + p,
+    .inner .main main h4 + p,
+    .inner .main main h5 + p {
+      margin-top: 5px; }
+    .inner .main main p > strong {
+      font-size: inherit;
+      color: #000; }
+    .inner .main main strong {
+      color: #000;
+      font-weight: 700; }
+    .inner .main main a {
+      color: #ed1d24; }
+    .inner .main main p {
+      line-height: 1.8;
+      margin: 3px 0; }
+    .inner .main main img {
+      max-width: 100%; }
+    .inner .main main img.justifyleft, .inner .main main table.justifyleft {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .inner .main main img.justifyright, .inner .main main table.justifyright {
+      float: right;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+    .inner .main main img.justifycenter, .inner .main main table.justifycenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .inner .main main .text-center {
+      text-align: center; }
+    .inner .main main .text-right {
+      text-align: right; }
+    .inner .main main .alignleft {
+      float: left;
+      margin: 20px 20px 10px 0; }
+    .inner .main main .alignright {
+      float: right;
+      margin: 7px 0 10px 10px; }
+    .inner .main main .aligncenter {
+      clear: both;
+      display: block;
+      margin: 10px auto; }
+    .inner .main main ol {
+      counter-reset: li;
+      margin-left: 0;
+      list-style: none;
+      font-size: 20px;
+      margin-bottom: 20px; }
+      .inner .main main ol li {
+        position: relative;
+        padding-left: 30px;
+        margin: 15px 0; }
+        .inner .main main ol li:before {
+          color: #ed1d24;
+          border-radius: 3.1rem;
+          content: counter(li) ")";
+          /* В качестве данных используем счетчик */
+          counter-increment: li;
+          /* Увеличиваем значение счетчика на 1 */
+          /* Позиционируем и стилизируем цифры */
+          position: absolute;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0px;
+          left: 0;
+          font-size: 20px;
+          font-weight: 700; }
+        .inner .main main ol li ol {
+          counter-reset: li;
+          margin-left: -10px; }
+          .inner .main main ol li ol li {
+            padding-left: 30px; }
+            .inner .main main ol li ol li:before {
+              background: none;
+              color: #ed1d24;
+              content: counter(li) ")";
+              display: block;
+              font-weight: 500;
+              top: 0; }
+    .inner .main main ul {
+      list-style: none; }
+      .inner .main main ul li {
+        margin: 1rem 0;
+        position: relative;
+        padding-left: 50px; }
+        .inner .main main ul li:before {
+          border-top: 4px solid #ed1d24;
+          left: 0;
+          top: 12px;
+          width: 17px; }
+    .inner .main main blockquote {
+      background: #eee32d;
+      color: #4b4b4b;
+      font-size: 20px;
+      line-height: 1.5;
+      border-left: 10px solid #ed1d24;
+      margin-left: 0;
+      margin-top: 20px;
+      padding: 30px 60px 30px 40px;
+      letter-spacing: .05em; }
+    .inner .main main .table-responsive {
+      overflow-x: auto; }
+    .inner .main main table {
+      background-color: #fff;
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+      border-collapse: collapse;
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin: 3rem 0 5rem; }
+      .inner .main main table tr th, .inner .main main table tr td {
+        padding: 1.8rem .2rem 1.8rem 2.8rem;
+        text-align: left; }
+      .inner .main main table tr th {
+        border-bottom: 3px solid #ed1d24;
+        color: #000;
+        font-weight: 700;
+        font-size: 17px; }
+      .inner .main main table tr td {
+        border-bottom: 1px solid #d2d5d6;
+        padding-top: 3rem;
+        padding-bottom: 3rem; }
+    .inner .main h1,
+    .inner .main .title {
+      font-size: 7rem;
+      font-weight: 700;
+      padding-left: 149px;
+      position: relative;
+      color: #000; }
+      .inner .main h1:before,
+      .inner .main .title:before {
+        border-top: 5px solid #ed1d24;
+        width: 118px;
+        left: 0;
+        top: 50px;
+        margin-top: -3px; }
+    .inner .main .content {
+      position: relative; }
+      .inner .main .content .back {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAAzklEQVQ4T7WTQQrCMBBF/yjtDQp246puCt6h4MoLduFJBNFLiF2UrnRRQU9QNWMaiaQhiKk1uwyTl5n/ZwiOUydJNL5RTkyb6FiuXDmuGNnBeiJBIbYEmoNpHZ3KZS+YCRJEhQhEFlfVxRtmghi8fzRYxOfvQe2Hqs0hQAo2FEjBrtPZAcwpk5RcBtgQyL6b2pnOtW8IvHvBgFQnatgnkG2IypXOv9scyVEQPYXX8GEN0FRtxC8VdjagM/1AcW8485m1/62T2XIQUs7wW/QncIp330OGfgoAAAAASUVORK5CYII=") no-repeat left center;
+        padding-left: 35px;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        color: #ed1d24;
+        font-weight: 700; }
   .inner .intro {
     padding-top: 2.7rem; }
     .inner .intro p {
       line-height: 1.7; }
-  .inner .title {
-    font-size: 7rem;
-    font-weight: 700;
-    padding-left: 149px;
-    position: relative;
-    color: #000; }
-    .inner .title:before {
-      border-top: 5px solid #ed1d24;
-      width: 118px;
-      left: 0;
-      top: 50%;
-      margin-top: -3px; }
 
 .flex-center, .pagination, .pagination a, .pagination span {
   display: flex;
@@ -4654,16 +4816,19 @@ em strong {
   .pagination .next {
     margin-left: 8rem; }
 
-.secondary-menu {
+.side-panel {
   align-self: start;
+  align-self: start;
+  width: 320px;
+  flex-shrink: 0;
+  margin-top: 2.7rem; }
+
+.secondary-menu {
   background-color: #fff;
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
   font-size: 2.4rem;
   font-weight: 700;
-  margin-top: 2.7rem;
-  padding: .5rem 6rem 0 4.5rem;
-  width: 320px; }
+  padding: .5rem 6rem 1rem 4.5rem; }
   .secondary-menu li {
     line-height: 1.4;
     margin: 3.5rem 0; }
@@ -4855,6 +5020,9 @@ em strong {
     .btn-more:hover:before {
       filter: brightness(5); }
 
+.main__body .content {
+  padding-right: 160px; }
+
 .articles {
   margin-top: -1.6rem; }
   .articles-wrapper .content {
@@ -4865,7 +5033,8 @@ em strong {
   padding-right: 10rem; }
 
 .article__link {
-  display: block; }
+  display: block;
+  text-decoration: none !important; }
   .article__link:hover {
     text-decoration: none;
     color: #000; }
@@ -4889,7 +5058,6 @@ em strong {
   font-size: 3rem; }
   .article__title span {
     border-bottom: 2px solid #ed1d24;
-    display: inline-block;
     transition: border-color .3s; }
 
 .article__intro {
@@ -4897,6 +5065,24 @@ em strong {
   font-size: 1.7rem;
   padding-top: 1rem;
   line-height: 1.8; }
+
+.learn__list {
+  margin-top: 7rem; }
+  .learn__list .heading {
+    color: #000;
+    font-weight: 700;
+    font-size: 4rem;
+    padding-left: 0;
+    margin-bottom: -1rem; }
+    .learn__list .heading:before {
+      display: none; }
+  .learn__list .lastnew__item {
+    border-left: none;
+    margin-top: 4.5rem;
+    padding-left: 0;
+    width: auto; }
+  .learn__list .lastnew__desc .date {
+    font-size: 1.5rem; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5244,10 +5430,10 @@ em strong {
   .inner .container {
     padding-left: 4.5rem;
     padding-right: 4.5rem; }
-  .inner .title {
+  .inner .main .title {
     font-size: 6rem;
     padding-left: 128px; }
-    .inner .title:before {
+    .inner .main .title:before {
       left: 0;
       width: 86px; }
   .inner .intro {
@@ -5284,10 +5470,11 @@ em strong {
     padding-right: 1.5rem; } }
 
 @media (max-width: 1280px) {
-  .inner .title {
+  .inner .main .title {
     font-size: 4.5rem;
     padding-left: 78px; }
-    .inner .title:before {
+    .inner .main .title:before {
+      top: 35px;
       width: 56px; }
   .inner .intro {
     font-size: 1.7rem;
@@ -5365,11 +5552,12 @@ em strong {
   .inner .container {
     padding-left: 2.5rem;
     padding-right: 2.5rem; }
-  .inner .title {
+  .inner .main .title {
     padding-left: 6rem;
     font-size: 4rem; }
-    .inner .title:before {
-      width: 40px; }
+    .inner .main .title:before {
+      width: 40px;
+      top: 30px; }
   .inner .intro {
     font-size: 1.6rem; }
   .inner-padding {
@@ -5443,7 +5631,7 @@ em strong {
       margin-top: 1.5rem; } }
 
 @media (max-width: 480px) {
-  .inner .title {
+  .inner .main .title {
     font-size: 3.5rem; }
   .product__intro {
     font-size: 1.5rem; } }
@@ -5486,10 +5674,10 @@ em strong {
     max-width: 95%; } }
 
 @media (max-width: 440px) {
-  .inner .title {
+  .inner .main .title {
     margin-left: 0;
     font-size: 3.2rem; }
-    .inner .title:before {
+    .inner .main .title:before {
       margin-top: 0;
       top: 20px; } }
 
@@ -5502,10 +5690,10 @@ em strong {
   .inner .container {
     padding-left: 15px;
     padding-right: 15px; }
-  .inner .title {
+  .inner .main .title {
     font-size: 3.2rem;
     padding-left: 30px; }
-    .inner .title:before {
+    .inner .main .title:before {
       width: 17px; } }
 
 @media (max-width: 1750px) {
@@ -5593,15 +5781,16 @@ em strong {
     padding-left: 165px; } }
 
 @media (max-width: 1520px) {
-  .secondary-menu {
-    font-size: 2rem;
+  .side-panel {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 280px; }
-    .secondary-menu li {
-      margin: 2rem 0; }
+    .side-panel .secondary-menu {
+      font-size: 2rem; }
+      .side-panel .secondary-menu li {
+        margin: 2rem 0; }
   .article__title {
-    font-size: 2.8rem; } }
+    font-size: 2.8rem !important; } }
 
 @media (max-width: 1450px) {
   .homeslider {
@@ -5652,7 +5841,7 @@ em strong {
   .newproduct__link {
     margin-left: auto;
     margin-right: auto; }
-  .secondary-menu {
+  .side-panel {
     margin-left: 4.5rem;
     order: 0;
     width: calc(100% - 4.5rem); }
@@ -5660,10 +5849,10 @@ em strong {
     flex-wrap: wrap; }
     .articles-wrapper .content {
       width: 100%; }
-    .articles-wrapper .secondary-menu {
+    .articles-wrapper .side-panel {
       order: 0;
       margin-bottom: 2.5rem; }
-      .articles-wrapper .secondary-menu ul {
+      .articles-wrapper .side-panel .secondary-menu ul {
         display: flex;
         justify-content: space-between; }
     .articles-wrapper .content {
@@ -5724,7 +5913,7 @@ em strong {
 @media (max-width: 1199px) {
   .lastnews h1 {
     padding-top: 1rem; }
-  .secondary-menu {
+  .side-panel {
     font-size: 1.8rem; }
   .product__box .circle-half {
     height: 178px;
@@ -5774,7 +5963,7 @@ em strong {
     margin-right: 10px; }
   .lastnew__item {
     width: 25rem; }
-  .secondary-menu {
+  .side-panel .secondary-menu {
     font-size: 1.6rem;
     padding-left: 1rem;
     padding-right: 1rem; } }
@@ -5912,7 +6101,7 @@ em strong {
     font-size: 1.6rem; } }
 
 @media (max-width: 900px) {
-  .secondary-menu {
+  .side-panel .secondary-menu {
     font-size: 1.5rem; }
   .article__pic {
     width: 220px; } }
@@ -5920,7 +6109,7 @@ em strong {
 @media (max-width: 850px) {
   .homeslider {
     margin-left: 0; }
-  .secondary-menu {
+  .side-panel {
     display: none; }
   .product__box .circle-half {
     display: none !important; }
@@ -5944,7 +6133,7 @@ em strong {
     margin-right: 2rem;
     width: 180px; }
   .article__title {
-    font-size: 2.2rem; }
+    font-size: 2.2rem !important; }
   .products-list {
     margin-top: 3rem; }
   .product__link {
@@ -6079,7 +6268,7 @@ em strong {
   .newproduct__link {
     width: 290px; }
   .article__title {
-    font-size: 2rem; }
+    font-size: 2rem !important !important; }
   .article__intro {
     font-size: 1.5rem; } }
 

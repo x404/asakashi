@@ -170,20 +170,22 @@
 
 
 @media (max-width: 1520px){
-	.secondary-menu{
-		font-size: 2rem;
+	.side-panel{
 		padding-left: 2rem;
 		padding-right: 2rem;
 		width: 280px;
-		li{
-			margin: 2rem 0;
+		.secondary-menu{
+			font-size: 2rem;
+			li{
+				margin: 2rem 0;
+			}
 		}
 	}
 
 	// news
 	.article{
 		&__title{
-			font-size: 2.8rem;
+			font-size: 2.8rem !important;
 		}
 	}
 }
@@ -281,7 +283,7 @@
 
 
 	// news
-	.secondary-menu{
+	.side-panel{
 		margin-left: 4.5rem;
 		order: 0;
 		width: calc(100% - 4.5rem);
@@ -292,12 +294,14 @@
 			width: 100%
 		}
 		flex-wrap: wrap;
-		.secondary-menu{
+		.side-panel{
 			order: 0;
 			margin-bottom: 2.5rem;
-			ul{
-				display: flex;
-				justify-content: space-between
+			.secondary-menu{
+				ul{
+					display: flex;
+					justify-content: space-between
+				}				
 			}
 		}
 
@@ -458,7 +462,7 @@
 		padding-top: 1rem;
 	}
 
-	.secondary-menu{
+	.side-panel{
 		font-size: 1.8rem;
 	}
 
@@ -562,10 +566,12 @@
 		width: 25rem;
 	}
 
-	.secondary-menu{
-		font-size: 1.6rem;
-		padding-left: 1rem;
-		padding-right: 1rem;
+	.side-panel{
+		.secondary-menu{
+			font-size: 1.6rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 	}
 }
 
@@ -781,8 +787,10 @@
 }
 
 @media (max-width: 900px){
-	.secondary-menu{
-		font-size: 1.5rem;
+	.side-panel{
+		.secondary-menu{
+			font-size: 1.5rem;
+		}
 	}
 
 	.article{
@@ -798,7 +806,7 @@
 		margin-left: 0;
 	}
 
-	.secondary-menu{
+	.side-panel{
 		display: none;
 	}
 
@@ -844,7 +852,7 @@
 		}
 
 		&__title{
-			font-size: 2.2rem;
+			font-size: 2.2rem !important;
 		}
 	}
 
@@ -1085,7 +1093,7 @@
 	// article
 	.article{
 		&__title{
-			font-size: 2rem;
+			font-size: 2rem !important !important;
 		}
 		&__intro{
 			font-size: 1.5rem;

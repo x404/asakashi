@@ -22,12 +22,14 @@
 			padding-left: 4.5rem;
 			padding-right: 4.5rem;
 		}
-		.title{
-			font-size: 6rem;
-			padding-left: 128px;
-			&:before{
-				left: 0;
-				width: 86px;
+		.main{
+			.title{
+				font-size: 6rem;
+				padding-left: 128px;
+				&:before{
+					left: 0;
+					width: 86px;
+				}
 			}
 		}
 		.intro{
@@ -126,11 +128,14 @@
 
 @media (max-width: 1280px){
 	.inner{
-		.title{
-			font-size: 4.5rem;
-			padding-left: 78px;
-			&:before{
-				width: 56px;
+		.main{
+			.title{
+				font-size: 4.5rem;
+				padding-left: 78px;
+				&:before{
+					top: 35px;
+					width: 56px;
+				}
 			}
 		}
 		.intro{
@@ -298,11 +303,14 @@
 			padding-left: 2.5rem;
 			padding-right: 2.5rem;
 		}
-		.title{
-			padding-left: 6rem;
-			font-size: 4rem;
-			&:before{
-				width: 40px;
+		.main{
+			.title{
+				padding-left: 6rem;
+				font-size: 4rem;
+				&:before{
+					width: 40px;
+					top: 30px;
+				}
 			}
 		}
 		.intro{
@@ -452,8 +460,10 @@
 
 @media (max-width: 480px){
 	.inner{
-		.title{
-			font-size: 3.5rem;
+		.main{
+			.title{
+				font-size: 3.5rem;
+			}
 		}
 	}
 	.product{
@@ -528,13 +538,15 @@
 
 @media (max-width: 440px){
 	.inner{
-		.title{
-			margin-left: 0;
-			font-size: 3.2rem;
-			&:before{
-				margin-top: 0;
-				top: 20px;
-			};
+		.main{
+			.title{
+				margin-left: 0;
+				font-size: 3.2rem;
+				&:before{
+					margin-top: 0;
+					top: 20px;
+				};
+			}
 		}
 	}
 }
@@ -555,12 +567,13 @@
 	}
 
 	.inner{
-		.title{
-			font-size: 3.2rem;
-			padding-left: 30px;
-			// margin-left: 15px;
-			&:before{
-				width: 17px;
+		.main{
+			.title{
+				font-size: 3.2rem;			padding-left: 30px;
+				// margin-left: 15px;
+				&:before{
+					width: 17px;
+				}
 			}
 		}
 	}
