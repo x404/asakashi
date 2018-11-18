@@ -170,6 +170,10 @@
 
 
 @media (max-width: 1520px){
+	.inner .main .content{
+		width: calc(100% - 280px)
+	}
+
 	.side-panel{
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -288,6 +292,11 @@
 
 
 	// news
+	.inner .main .content{
+		width: 100%;
+		padding-right: 0;
+	}
+
 	.side-panel{
 		display: contents !important;
 		margin-left: 4.5rem;
@@ -308,8 +317,9 @@
 			margin-bottom: 2.5rem;
 			.secondary-menu{
 				margin-bottom: 4rem;
-				width: 100%;
+				margin-left: 50px;
 				order: 0;
+				width: 100%;
 				ul{
 					display: flex;
 					justify-content: space-between
@@ -435,7 +445,6 @@
 }
 
 @media (max-width: 1249px){
-
 	.homepage{
 		.slider-intro,
 		.counter-lastnews{
@@ -919,6 +928,11 @@
 	.product__box{
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
+	}
+
+	#sertificats-carousel{
+		margin-left: -30px;
+		margin-right: -30px;
 	}
 }
 

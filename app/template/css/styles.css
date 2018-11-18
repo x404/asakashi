@@ -4589,7 +4589,8 @@ em strong {
     background-color: #efefef; }
   .inner .main {
     font-size: 2rem;
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    overflow: hidden; }
     .inner .main img {
       max-width: 100%; }
     .inner .main main h1:not(.title), .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
@@ -4664,11 +4665,11 @@ em strong {
       list-style: none;
       font-size: 20px;
       margin-bottom: 20px; }
-      .inner .main main ol li {
+      .inner .main main ol > li {
         position: relative;
         padding-left: 30px;
         margin: 15px 0; }
-        .inner .main main ol li:before {
+        .inner .main main ol > li:before {
           color: #ed1d24;
           border-radius: 3.1rem;
           content: counter(li) ")";
@@ -4685,18 +4686,13 @@ em strong {
           left: 0;
           font-size: 20px;
           font-weight: 700; }
-        .inner .main main ol li ol {
-          counter-reset: li;
-          margin-left: -10px; }
-          .inner .main main ol li ol li {
-            padding-left: 30px; }
-            .inner .main main ol li ol li:before {
-              background: none;
-              color: #ed1d24;
-              content: counter(li) ")";
-              display: block;
-              font-weight: 500;
-              top: 0; }
+        .inner .main main ol > li ol {
+          list-style-type: lower-alpha;
+          margin-left: 18px; }
+          .inner .main main ol > li ol li {
+            padding-left: 10px; }
+            .inner .main main ol > li ol li:before {
+              display: none; }
     .inner .main main ul {
       list-style: none; }
       .inner .main main ul li {
@@ -4754,6 +4750,7 @@ em strong {
         top: 50px;
         margin-top: -3px; }
     .inner .main .content {
+      width: calc(100% - 320px);
       position: relative; }
       .inner .main .content .back {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAAzklEQVQ4T7WTQQrCMBBF/yjtDQp246puCt6h4MoLduFJBNFLiF2UrnRRQU9QNWMaiaQhiKk1uwyTl5n/ZwiOUydJNL5RTkyb6FiuXDmuGNnBeiJBIbYEmoNpHZ3KZS+YCRJEhQhEFlfVxRtmghi8fzRYxOfvQe2Hqs0hQAo2FEjBrtPZAcwpk5RcBtgQyL6b2pnOtW8IvHvBgFQnatgnkG2IypXOv9scyVEQPYXX8GEN0FRtxC8VdjagM/1AcW8485m1/62T2XIQUs7wW/QncIp330OGfgoAAAAASUVORK5CYII=") no-repeat left center;
@@ -4842,6 +4839,29 @@ em strong {
     .secondary-menu a:hover {
       color: #ed1d24;
       text-decoration: none; }
+
+#sertificats-carousel {
+  color: #4b4b4b;
+  display: flex;
+  margin: 2.5rem 0;
+  font-size: 1.7rem; }
+  #sertificats-carousel .slick-slide,
+  #sertificats-carousel .owl-item {
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    #sertificats-carousel .slick-slide .pic,
+    #sertificats-carousel .owl-item .pic {
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+      width: 172px;
+      height: 172px;
+      margin: 0 auto 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #sertificats-carousel .slick-slide .pic img,
+      #sertificats-carousel .owl-item .pic img {
+        max-width: none;
+        width: auto; }
 
 .products-list {
   margin-top: 6rem; }
@@ -5850,6 +5870,8 @@ em strong {
     padding-left: 165px; } }
 
 @media (max-width: 1520px) {
+  .inner .main .content {
+    width: calc(100% - 280px); }
   .side-panel {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -5914,6 +5936,9 @@ em strong {
   .newproduct__link {
     margin-left: auto;
     margin-right: auto; }
+  .inner .main .content {
+    width: 100%;
+    padding-right: 0; }
   .side-panel {
     display: contents !important;
     margin-left: 4.5rem;
@@ -5927,8 +5952,9 @@ em strong {
       margin-bottom: 2.5rem; }
       .main__body .side-panel .secondary-menu {
         margin-bottom: 4rem;
-        width: 100%;
-        order: 0; }
+        margin-left: 50px;
+        order: 0;
+        width: 100%; }
         .main__body .side-panel .secondary-menu ul {
           display: flex;
           justify-content: space-between; }
@@ -6237,7 +6263,10 @@ em strong {
 @media (max-width: 750px) {
   .product__box {
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem; } }
+    padding-bottom: 2.5rem; }
+  #sertificats-carousel {
+    margin-left: -30px;
+    margin-right: -30px; } }
 
 @media (max-width: 720px) {
   .homepage .advantage__item {

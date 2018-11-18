@@ -46,6 +46,8 @@
 	.main{
 		font-size: 2rem;
 		padding-top: 6rem;
+
+		overflow: hidden;
 		img{
 			max-width: 100%
 		}
@@ -155,7 +157,7 @@ main{
 				list-style: none;
 				font-size: 20px;
 				margin-bottom: 20px;
-				& li{
+				& > li{
 					position: relative;
 					padding-left: 30px;
 					margin: 15px 0;
@@ -163,8 +165,6 @@ main{
 						// background: $color_1;
 						color: #ed1d24;
 						$s: 3.1rem;
-						// height: $s;
-						// width: $s;
 						border-radius: $s;
 						content: counter(li) ")";; /* В качестве данных используем счетчик */
 						counter-increment:li; /* Увеличиваем значение счетчика на 1 */
@@ -180,18 +180,15 @@ main{
 						font-weight: 700;
 					}
 					ol{
-						counter-reset:li;
-						margin-left: -10px;
-						li{
-							padding-left: 30px;
-							&:before{
-								background: none;
-								color: #ed1d24;
-								content: counter(li) ")";
-								display: block;
-								font-weight: 500;
-								top: 0;
+						list-style-type: lower-alpha;
 
+
+						// counter-reset:li;
+						margin-left: 18px;
+						li{
+							padding-left: 10px;
+							&:before{
+								display: none;
 							}
 						}
 					}
@@ -276,6 +273,7 @@ main{
 		}
 
 		.content{
+			width: calc(100% - 320px);
 			position: relative;
 			.back{
 				background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAAzklEQVQ4T7WTQQrCMBBF/yjtDQp246puCt6h4MoLduFJBNFLiF2UrnRRQU9QNWMaiaQhiKk1uwyTl5n/ZwiOUydJNL5RTkyb6FiuXDmuGNnBeiJBIbYEmoNpHZ3KZS+YCRJEhQhEFlfVxRtmghi8fzRYxOfvQe2Hqs0hQAo2FEjBrtPZAcwpk5RcBtgQyL6b2pnOtW8IvHvBgFQnatgnkG2IypXOv9scyVEQPYXX8GEN0FRtxC8VdjagM/1AcW8485m1/62T2XIQUs7wW/QncIp330OGfgoAAAAASUVORK5CYII=") no-repeat left center;
@@ -410,3 +408,34 @@ main{
 	}
 }
 // =/aside
+
+
+
+// certificats
+#sertificats-carousel{
+	color: $color7;
+	display: flex;
+	margin: 2.5rem 0;
+	font-size: 1.7rem;
+
+	.slick-slide,
+	.owl-item{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		.pic{
+			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+			width: 172px;
+			height: 172px;
+			margin: 0 auto 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: none;
+				width: auto;
+			}
+		}
+	}
+}
+
+

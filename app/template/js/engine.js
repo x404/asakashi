@@ -50,6 +50,103 @@ $(document).ready(function(){
 	});
 
 
+	$('#sertificats-carousel').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		prevArrow: '',
+		nextArrow: '',
+		responsive: [
+			{
+				breakpoint: 1250,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '100px'
+				}
+			},
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '70px'
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '40px'
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '15px'
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: '70px'
+				}
+			}
+		]
+	});
+
+
+	$('#sertificats-carousel2').owlCarousel({
+		items: 5,
+		responsive : {
+		    // breakpoint from 0 up
+		        0 : {
+		        	items: 1
+		        },
+		    // breakpoint from 480 up
+		        480 : {
+		        	items: 1
+		        },	
+		        768 : {
+		        	items: 2
+		        },	
+		        991 : {
+		        	items: 3
+		        },
+		        1250: {
+		        	items: 4
+		        } ,
+		        1650: {
+		        	items: 5
+		        }     
+		       
+		}
+	});
+
+
     $('.slider-tabs a').click(function(e){
         e.preventDefault();
         let $this = $(this),
