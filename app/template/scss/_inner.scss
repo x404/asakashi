@@ -1,21 +1,30 @@
 .webp{  
 	.inner{
-		background-image: url(../images/bg/bg-inner-2.webp);
+		background-image: url(../images/bg/bg-inner-3.webp);
 		background-position: center bottom;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.webp);
 			background-position: center top;
+		}
+		&-health{
+			background-image: url(../images/bg/bg-1.webp);
+			background-position: center top;			
 		}
 	}
 }
 
 .no-webp{
 	.inner{
-		background-image: url(../images/bg/bg-inner-2.jpg);
+		background-image: url(../images/bg/bg-inner-3.jpg);
 		background-position: center bottom;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.jpg);
 			background-position: center top;
+		}
+		&-health{
+			background-image: url(../images/bg/bg-1.jpg);
+			background-position: center top;
+			background-size: cover;
 		}
 	}
 }
@@ -42,6 +51,9 @@
 	}
 	&-products{
 		background-color: $color13;
+	}
+	&-health{
+
 	}
 	.main{
 		font-size: 2rem;

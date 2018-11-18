@@ -3448,7 +3448,7 @@ h3 {
 
 strong,
 .bold {
-  font-weight: normal; }
+  font-weight: 700; }
 
 em, i,
 .italic {
@@ -3471,7 +3471,7 @@ em strong {
     text-decoration: none; }
 
 .before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main main ul li:before, .inner .main h1:before,
-.inner .main .title:before, .pagination .current:before, .product__box .circle-half:before {
+.inner .main .title:before, .pagination .current:before, .product__box .circle-half:before, .inner-health .o2clean-body ul li:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4560,18 +4560,25 @@ em strong {
   display: none; }
 
 .webp .inner {
-  background-image: url(../images/bg/bg-inner-2.webp);
+  background-image: url(../images/bg/bg-inner-3.webp);
   background-position: center bottom; }
   .webp .inner-products {
     background-image: url(../images/bg/bg-inner-1.webp);
     background-position: center top; }
+  .webp .inner-health {
+    background-image: url(../images/bg/bg-1.webp);
+    background-position: center top; }
 
 .no-webp .inner {
-  background-image: url(../images/bg/bg-inner-2.jpg);
+  background-image: url(../images/bg/bg-inner-3.jpg);
   background-position: center bottom; }
   .no-webp .inner-products {
     background-image: url(../images/bg/bg-inner-1.jpg);
     background-position: center top; }
+  .no-webp .inner-health {
+    background-image: url(../images/bg/bg-1.jpg);
+    background-position: center top;
+    background-size: cover; }
 
 .bg-radial {
   background: radial-gradient(circle at center, #dedfe0 0%, #888a8d 100%); }
@@ -5111,6 +5118,34 @@ em strong {
     width: auto; }
   .learnlist .lastnew__desc .date {
     font-size: 1.5rem; }
+
+.inner-health .main__body {
+  padding-bottom: 85px; }
+
+.inner-health .o2clean-body {
+  background: url(../images/bg/bg-2.webp) center top;
+  background-size: cover;
+  min-height: 1540px;
+  color: #000; }
+  .inner-health .o2clean-body .o2clean-text-top {
+    color: #fff;
+    padding-top: 18.5rem; }
+  .inner-health .o2clean-body .o2clean-text-bottom {
+    padding-top: 32rem; }
+  .inner-health .o2clean-body .heading {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    line-height: 1.4; }
+  .inner-health .o2clean-body ul li {
+    position: relative;
+    padding-left: 35px;
+    margin: .7rem 0; }
+    .inner-health .o2clean-body ul li:before {
+      width: 17px;
+      border-top: 4px solid #ed1d24;
+      left: 0;
+      top: 14px; }
 
 /* =mobile-menu
 ---------------------------*/

@@ -118,35 +118,6 @@ $(document).ready(function(){
 		]
 	});
 
-
-	$('#sertificats-carousel2').owlCarousel({
-		items: 5,
-		responsive : {
-		    // breakpoint from 0 up
-		        0 : {
-		        	items: 1
-		        },
-		    // breakpoint from 480 up
-		        480 : {
-		        	items: 1
-		        },	
-		        768 : {
-		        	items: 2
-		        },	
-		        991 : {
-		        	items: 3
-		        },
-		        1250: {
-		        	items: 4
-		        } ,
-		        1650: {
-		        	items: 5
-		        }     
-		       
-		}
-	});
-
-
     $('.slider-tabs a').click(function(e){
         e.preventDefault();
         let $this = $(this),

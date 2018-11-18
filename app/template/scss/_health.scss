@@ -1,0 +1,41 @@
+.inner-health{
+	.main__body{
+		padding-bottom: 85px;
+	}
+	.o2clean-body{
+		background: url(../images/bg/bg-2.webp) center top;
+		background-size: cover;
+		min-height: 1540px;
+		color: $color1;
+		.o2clean-text{
+			&-top{
+				color: $color2 ;
+				padding-top: 18.5rem;
+			}
+			&-bottom{
+				padding-top: 32rem;
+			}
+		}
+		.heading{
+			font-weight: 700;
+			font-size: 4rem;
+			padding-bottom: 2rem;
+			line-height: 1.4;
+		}
+
+		ul{
+			li{
+				position: relative;
+				padding-left: 35px;
+				margin: .7rem 0;
+				&:before{
+					@extend .before;
+					width: 17px;
+					border-top: 4px solid $color6;
+					left: 0;
+					top: 14px;
+				}
+			}
+		}
+	}
+}
