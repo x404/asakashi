@@ -4598,7 +4598,7 @@ em strong {
       margin: 0; }
     .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
       padding: 0; }
-    .inner .main main h1:not(.title) {
+    .inner .main main h1 {
       font-size: 50px;
       margin-bottom: 40px; }
     .inner .main main h1:before {
@@ -4762,7 +4762,8 @@ em strong {
         left: 0;
         top: 80px;
         color: #ed1d24;
-        font-weight: 700; }
+        font-weight: 700;
+        text-decoration: none; }
   .inner .intro {
     padding-top: 2.7rem; }
     .inner .intro p {
@@ -5066,22 +5067,24 @@ em strong {
   padding-top: 1rem;
   line-height: 1.8; }
 
-.learn__list {
+.learnlist {
   margin-top: 7rem; }
-  .learn__list .heading {
+  .learnlist .heading {
     color: #000;
     font-weight: 700;
     font-size: 4rem;
     padding-left: 0;
     margin-bottom: -1rem; }
-    .learn__list .heading:before {
+    .learnlist .heading:before {
       display: none; }
-  .learn__list .lastnew__item {
+  .learnlist .lastnews {
+    flex-direction: column; }
+  .learnlist .lastnew__item {
     border-left: none;
     margin-top: 4.5rem;
     padding-left: 0;
     width: auto; }
-  .learn__list .lastnew__desc .date {
+  .learnlist .lastnew__desc .date {
     font-size: 1.5rem; }
 
 /* =mobile-menu
@@ -5430,12 +5433,20 @@ em strong {
   .inner .container {
     padding-left: 4.5rem;
     padding-right: 4.5rem; }
-  .inner .main .title {
-    font-size: 6rem;
+  .inner .main main h1,
+  .inner .main main .title {
+    font-size: 5rem;
     padding-left: 128px; }
-    .inner .main .title:before {
+    .inner .main main h1:before,
+    .inner .main main .title:before {
       left: 0;
       width: 86px; }
+  .inner .main main h2 {
+    font-size: 3.5rem; }
+  .inner .main main h3 {
+    font-size: 3rem; }
+  .inner .main main h4 {
+    font-size: 2.5rem; }
   .inner .intro {
     font-size: 1.8rem; }
   .inner-padding {
@@ -5470,12 +5481,23 @@ em strong {
     padding-right: 1.5rem; } }
 
 @media (max-width: 1280px) {
-  .inner .main .title {
+  .inner .main main h1,
+  .inner .main main .title {
     font-size: 4.5rem;
     padding-left: 78px; }
-    .inner .main .title:before {
+    .inner .main main h1:before,
+    .inner .main main .title:before {
       top: 35px;
       width: 56px; }
+  .inner .main main h2 {
+    font-size: 3rem; }
+  .inner .main main h3 {
+    font-size: 2.5rem; }
+  .inner .main main h4 {
+    font-size: 2rem; }
+  .inner .main .content .back {
+    padding-left: 25px;
+    top: 60px; }
   .inner .intro {
     font-size: 1.7rem;
     padding-top: 1rem; }
@@ -5519,7 +5541,12 @@ em strong {
 @media (max-width: 991px) {
   .modal-menu .container {
     padding-left: 1%;
-    padding-right: 1%; } }
+    padding-right: 1%; }
+  .inner .main main img.justifyleft {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; } }
 
 @media (max-width: 980px) {
   .extra-toggle {
@@ -5552,12 +5579,24 @@ em strong {
   .inner .container {
     padding-left: 2.5rem;
     padding-right: 2.5rem; }
-  .inner .main .title {
+  .inner .main main h1,
+  .inner .main main .title {
     padding-left: 6rem;
     font-size: 4rem; }
-    .inner .main .title:before {
+    .inner .main main h1:before,
+    .inner .main main .title:before {
       width: 40px;
       top: 30px; }
+  .inner .main main h2 {
+    font-size: 2.8rem; }
+  .inner .main main h3 {
+    font-size: 2.2rem; }
+  .inner .main main h4 {
+    font-size: 1.9rem; }
+  .inner .main .content .back {
+    display: block;
+    margin: 2rem 0;
+    position: static; }
   .inner .intro {
     font-size: 1.6rem; }
   .inner-padding {
@@ -5575,7 +5614,12 @@ em strong {
   .modal-menu {
     display: none !important; }
   .inner .main {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+    .inner .main main ol,
+    .inner .main main ul {
+      font-size: 1.5rem; }
+    .inner .main main blockquote {
+      font-size: 1.6rem; } }
 
 @media (max-width: 600px) {
   .header__right {
@@ -5631,8 +5675,15 @@ em strong {
       margin-top: 1.5rem; } }
 
 @media (max-width: 480px) {
-  .inner .main .title {
+  .inner .main main h1,
+  .inner .main main .title {
     font-size: 3.5rem; }
+  .inner .main main h2 {
+    font-size: 2.6rem; }
+  .inner .main main h3 {
+    font-size: 2.2rem; }
+  .inner .main main h4 {
+    font-size: 1.8rem; }
   .product__intro {
     font-size: 1.5rem; } }
 
@@ -5674,12 +5725,20 @@ em strong {
     max-width: 95%; } }
 
 @media (max-width: 440px) {
-  .inner .main .title {
+  .inner .main main h1,
+  .inner .main main .title {
     margin-left: 0;
     font-size: 3.2rem; }
-    .inner .main .title:before {
+    .inner .main main h1:before,
+    .inner .main main .title:before {
       margin-top: 0;
-      top: 20px; } }
+      top: 20px; }
+  .inner .main main h2 {
+    font-size: 2.5rem; }
+  .inner .main main h3 {
+    font-size: 2.1rem; }
+  .inner .main main h4 {
+    font-size: 1.7rem; } }
 
 @media (max-width: 340px) {
   .extra-toggle {
@@ -5690,11 +5749,21 @@ em strong {
   .inner .container {
     padding-left: 15px;
     padding-right: 15px; }
-  .inner .main .title {
-    font-size: 3.2rem;
-    padding-left: 30px; }
-    .inner .main .title:before {
-      width: 17px; } }
+  .inner .main main {
+    text-align: justify; }
+    .inner .main main h1,
+    .inner .main main .title {
+      font-size: 3.2rem;
+      padding-left: 30px; }
+      .inner .main main h1:before,
+      .inner .main main .title:before {
+        width: 17px; }
+  .inner .main h2 {
+    font-size: 2.4rem; }
+  .inner .main h3 {
+    font-size: 2rem; }
+  .inner .main h4 {
+    font-size: 1.6rem; } }
 
 @media (max-width: 1750px) {
   .homeslider {
@@ -5786,9 +5855,13 @@ em strong {
     padding-right: 2rem;
     width: 280px; }
     .side-panel .secondary-menu {
-      font-size: 2rem; }
+      font-size: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem; }
       .side-panel .secondary-menu li {
         margin: 2rem 0; }
+  .learnlist .heading {
+    font-size: 3.5rem; }
   .article__title {
     font-size: 2.8rem !important; } }
 
@@ -5842,20 +5915,32 @@ em strong {
     margin-left: auto;
     margin-right: auto; }
   .side-panel {
+    display: contents !important;
     margin-left: 4.5rem;
-    order: 0;
     width: calc(100% - 4.5rem); }
-  .articles-wrapper {
+  .main__body {
     flex-wrap: wrap; }
-    .articles-wrapper .content {
+    .main__body .content {
+      order: 1;
       width: 100%; }
-    .articles-wrapper .side-panel {
-      order: 0;
+    .main__body .side-panel {
       margin-bottom: 2.5rem; }
-      .articles-wrapper .side-panel .secondary-menu ul {
-        display: flex;
-        justify-content: space-between; }
-    .articles-wrapper .content {
+      .main__body .side-panel .secondary-menu {
+        margin-bottom: 4rem;
+        width: 100%;
+        order: 0; }
+        .main__body .side-panel .secondary-menu ul {
+          display: flex;
+          justify-content: space-between; }
+      .main__body .side-panel .learnlist {
+        order: 2; }
+        .main__body .side-panel .learnlist__wrapper {
+          flex-direction: row !important; }
+        .main__body .side-panel .learnlist .lastnew__item {
+          width: 33%; }
+          .main__body .side-panel .learnlist .lastnew__item .d-flex {
+            align-items: center; }
+    .main__body .content {
       order: 1; }
   .article__item {
     padding-right: 0; } }
@@ -5875,7 +5960,9 @@ em strong {
   .product__intro p {
     line-height: 1.8; }
   .product__link {
-    min-height: 350px; } }
+    min-height: 350px; }
+  .main__body .content {
+    padding-right: 0; } }
 
 @media (max-width: 1249px) {
   .homepage .slider-intro,
@@ -6143,6 +6230,10 @@ em strong {
   .product__intro p {
     line-height: 1.6; } }
 
+@media (max-width: 767px) {
+  .main__body .side-panel .secondary-menu {
+    display: none; } }
+
 @media (max-width: 750px) {
   .product__box {
     padding-top: 2.5rem;
@@ -6179,7 +6270,16 @@ em strong {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    width: 250px; } }
+    width: 250px; }
+  .main__body .side-panel .learnlist {
+    margin-top: 0; }
+    .main__body .side-panel .learnlist .heading {
+      margin-bottom: 2rem; }
+    .main__body .side-panel .learnlist__wrapper {
+      display: block !important; }
+    .main__body .side-panel .learnlist .lastnew__item {
+      margin-top: 2rem;
+      width: 100%; } }
 
 @media (max-width: 650px) {
   .product__title {

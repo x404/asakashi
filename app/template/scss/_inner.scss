@@ -60,7 +60,7 @@ main{
 				padding: 0;
 			}
 
-			h1:not(.title){
+			h1{
 				font-size: 50px;
 				margin-bottom: 40px;
 			}
@@ -285,6 +285,7 @@ main{
 				top: 80px;
 				color: $color6;
 				font-weight: 700;
+				text-decoration: none;
 			}
 		}
 	}
