@@ -825,6 +825,11 @@
 			font-size: 1.6rem;
 		}
 	}
+
+	// materials
+	.materials{
+		font-size: 2rem;
+	}
 }
 
 @media (max-width: 900px){
@@ -1144,6 +1149,29 @@
 
 
 
+@media (max-width: 576px){
+	.materials{
+		.row{
+			margin: 5rem 0;
+			text-align: center;
+			.pic{
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.row-pic-right{
+			&>div:first-child{
+				order: 1;
+			}
+			&>div:last-child{
+				order: 0;
+			}
+		}
+	}
+}
+
+
 @media (max-width: 540px){
 	.lastnew__title{
 		font-size: 1.4rem;
@@ -1188,6 +1216,10 @@
 			height: 40px;
 			font-size: 1.5rem;
 		}
+	}
+
+	.materials{
+		font-size: 1.8rem;
 	}
 }
 

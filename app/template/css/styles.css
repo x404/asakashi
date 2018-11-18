@@ -4593,6 +4593,8 @@ em strong {
     overflow: hidden; }
     .inner .main img {
       max-width: 100%; }
+    .inner .main .row {
+      margin-bottom: 2.5rem; }
     .inner .main main h1:not(.title), .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
       color: #000;
       font-weight: 700;
@@ -4862,6 +4864,9 @@ em strong {
       #sertificats-carousel .owl-item .pic img {
         max-width: none;
         width: auto; }
+
+.materials {
+  font-size: 2.4rem; }
 
 .products-list {
   margin-top: 6rem; }
@@ -6211,7 +6216,9 @@ em strong {
   .article__title {
     font-size: 2.4rem; }
   .article__intro {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .materials {
+    font-size: 2rem; } }
 
 @media (max-width: 900px) {
   .side-panel .secondary-menu {
@@ -6388,6 +6395,19 @@ em strong {
       width: auto;
       max-width: 70% !important; } }
 
+@media (max-width: 576px) {
+  .materials .row {
+    margin: 5rem 0;
+    text-align: center; }
+    .materials .row .pic {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+  .materials .row-pic-right > div:first-child {
+    order: 1; }
+  .materials .row-pic-right > div:last-child {
+    order: 0; } }
+
 @media (max-width: 540px) {
   .lastnew__title {
     font-size: 1.4rem; }
@@ -6411,7 +6431,9 @@ em strong {
   .product__desc .btn {
     width: 109px;
     height: 40px;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .materials {
+    font-size: 1.8rem; } }
 
 @media (max-width: 460px) {
   .lastnew__item {
