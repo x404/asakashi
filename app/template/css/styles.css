@@ -3463,14 +3463,17 @@ em strong {
   .tdn:hover, .modal-menu .menu dd a:hover {
     text-decoration: underline; }
 
-.tdu, .modal-menu .menu a, .inner .main main a, .pagination .prev,
+.tdu, .modal-menu .menu a, .inner .main .text a,
+.inner .main main a, .pagination .prev,
 .pagination .next {
   text-decoration: underline; }
-  .tdu:hover, .modal-menu .menu a:hover, .inner .main main a:hover, .pagination .prev:hover,
+  .tdu:hover, .modal-menu .menu a:hover, .inner .main .text a:hover,
+  .inner .main main a:hover, .pagination .prev:hover,
   .pagination .next:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main main ul li:before, .inner .main h1:before,
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main .text ul li:before,
+.inner .main main ul li:before, .inner .main h1:before,
 .inner .main .title:before, .pagination .current:before, .product__box .circle-half:before, .inner-health .o2clean-body ul li:before {
   content: "";
   display: block;
@@ -4566,8 +4569,12 @@ em strong {
     background-image: url(../images/bg/bg-inner-1.webp);
     background-position: center top; }
   .webp .inner-health {
-    background-image: url(../images/bg/bg-1.webp);
-    background-position: center top; }
+    background-image: url(../images/bg/bg-inner-3.webp);
+    background-position: center bottom; }
+    .webp .inner-health .main-grid {
+      background-image: url(../images/bg/bg-1.webp);
+      background-position: center top;
+      background-repeat: no-repeat; }
 
 .no-webp .inner {
   background-image: url(../images/bg/bg-inner-3.jpg);
@@ -4576,9 +4583,12 @@ em strong {
     background-image: url(../images/bg/bg-inner-1.jpg);
     background-position: center top; }
   .no-webp .inner-health {
-    background-image: url(../images/bg/bg-1.jpg);
-    background-position: center top;
-    background-size: cover; }
+    background-image: url(../images/bg/bg-inner-3.jpg);
+    background-position: center bottom; }
+    .no-webp .inner-health .main-grid {
+      background-image: url(../images/bg/bg-1.jpg);
+      background-position: center top;
+      background-repeat: no-repeat; }
 
 .bg-radial {
   background: radial-gradient(circle at center, #dedfe0 0%, #888a8d 100%); }
@@ -4602,82 +4612,129 @@ em strong {
       max-width: 100%; }
     .inner .main .row {
       margin-bottom: 2.5rem; }
-    .inner .main main h1:not(.title), .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
+    .inner .main .text h1:not(.title), .inner .main .text h2, .inner .main .text h3, .inner .main .text h4, .inner .main .text h5, .inner .main .text h6,
+    .inner .main main h1:not(.title),
+    .inner .main main h2,
+    .inner .main main h3,
+    .inner .main main h4,
+    .inner .main main h5,
+    .inner .main main h6 {
       color: #000;
       font-weight: 700;
       margin: 0; }
-    .inner .main main h2, .inner .main main h3, .inner .main main h4, .inner .main main h5, .inner .main main h6 {
+    .inner .main .text h2, .inner .main .text h3, .inner .main .text h4, .inner .main .text h5, .inner .main .text h6,
+    .inner .main main h2,
+    .inner .main main h3,
+    .inner .main main h4,
+    .inner .main main h5,
+    .inner .main main h6 {
       padding: 0; }
+    .inner .main .text h1,
     .inner .main main h1 {
       font-size: 50px;
       margin-bottom: 40px; }
+    .inner .main .text h1:before,
     .inner .main main h1:before {
       top: 35px; }
+    .inner .main .text h2,
     .inner .main main h2 {
       font-size: 40px;
       line-height: 1.4; }
+    .inner .main .text h3,
     .inner .main main h3 {
       font-size: 35px;
       line-height: 1.4; }
+    .inner .main .text h4,
     .inner .main main h4 {
       font-size: 30px; }
+    .inner .main .text h5,
     .inner .main main h5 {
       font-size: 26px; }
+    .inner .main .text h2 + p,
+    .inner .main .text h3 + p,
+    .inner .main .text h4 + p,
+    .inner .main .text h5 + p,
     .inner .main main h2 + p,
     .inner .main main h3 + p,
     .inner .main main h4 + p,
     .inner .main main h5 + p {
       margin-top: 5px; }
+    .inner .main .text p > strong,
     .inner .main main p > strong {
       font-size: inherit;
       color: #000; }
+    .inner .main .text strong,
     .inner .main main strong {
       color: #000;
       font-weight: 700; }
+    .inner .main .text a,
     .inner .main main a {
       color: #ed1d24; }
+    .inner .main .text p,
     .inner .main main p {
       line-height: 1.8;
       margin: 3px 0; }
+    .inner .main .text .heading,
+    .inner .main main .heading {
+      color: #000;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem; }
+    .inner .main .text img,
     .inner .main main img {
       max-width: 100%; }
-    .inner .main main img.justifyleft, .inner .main main table.justifyleft {
+    .inner .main .text img.justifyleft, .inner .main .text table.justifyleft,
+    .inner .main main img.justifyleft,
+    .inner .main main table.justifyleft {
       float: left;
       margin-right: 20px;
       margin-bottom: 10px;
       margin-top: 10px; }
-    .inner .main main img.justifyright, .inner .main main table.justifyright {
+    .inner .main .text img.justifyright, .inner .main .text table.justifyright,
+    .inner .main main img.justifyright,
+    .inner .main main table.justifyright {
       float: right;
       margin-left: 10px;
       margin-bottom: 10px; }
-    .inner .main main img.justifycenter, .inner .main main table.justifycenter {
+    .inner .main .text img.justifycenter, .inner .main .text table.justifycenter,
+    .inner .main main img.justifycenter,
+    .inner .main main table.justifycenter {
       display: block;
       margin-left: auto;
       margin-right: auto; }
+    .inner .main .text .text-center,
     .inner .main main .text-center {
       text-align: center; }
+    .inner .main .text .text-right,
     .inner .main main .text-right {
       text-align: right; }
+    .inner .main .text .alignleft,
     .inner .main main .alignleft {
       float: left;
       margin: 20px 20px 10px 0; }
+    .inner .main .text .alignright,
     .inner .main main .alignright {
       float: right;
       margin: 7px 0 10px 10px; }
+    .inner .main .text .aligncenter,
     .inner .main main .aligncenter {
       clear: both;
       display: block;
       margin: 10px auto; }
+    .inner .main .text ol,
     .inner .main main ol {
       counter-reset: li;
       margin-left: 0;
       list-style: none;
       font-size: 20px;
       margin-bottom: 20px; }
+      .inner .main .text ol > li,
       .inner .main main ol > li {
         position: relative;
         padding-left: 30px;
         margin: 15px 0; }
+        .inner .main .text ol > li:before,
         .inner .main main ol > li:before {
           color: #ed1d24;
           border-radius: 3.1rem;
@@ -4695,24 +4752,31 @@ em strong {
           left: 0;
           font-size: 20px;
           font-weight: 700; }
+        .inner .main .text ol > li ol,
         .inner .main main ol > li ol {
           list-style-type: lower-alpha;
           margin-left: 18px; }
+          .inner .main .text ol > li ol li,
           .inner .main main ol > li ol li {
             padding-left: 10px; }
+            .inner .main .text ol > li ol li:before,
             .inner .main main ol > li ol li:before {
               display: none; }
+    .inner .main .text ul,
     .inner .main main ul {
       list-style: none; }
+      .inner .main .text ul li,
       .inner .main main ul li {
         margin: 1rem 0;
         position: relative;
         padding-left: 50px; }
+        .inner .main .text ul li:before,
         .inner .main main ul li:before {
           border-top: 4px solid #ed1d24;
           left: 0;
           top: 12px;
           width: 17px; }
+    .inner .main .text blockquote,
     .inner .main main blockquote {
       background: #eee32d;
       color: #4b4b4b;
@@ -4723,8 +4787,10 @@ em strong {
       margin-top: 20px;
       padding: 30px 60px 30px 40px;
       letter-spacing: .05em; }
+    .inner .main .text .table-responsive,
     .inner .main main .table-responsive {
       overflow-x: auto; }
+    .inner .main .text table,
     .inner .main main table {
       background-color: #fff;
       box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
@@ -4732,14 +4798,18 @@ em strong {
       font-size: 1.5rem;
       line-height: 1.3;
       margin: 3rem 0 5rem; }
-      .inner .main main table tr th, .inner .main main table tr td {
+      .inner .main .text table tr th, .inner .main .text table tr td,
+      .inner .main main table tr th,
+      .inner .main main table tr td {
         padding: 1.8rem .2rem 1.8rem 2.8rem;
         text-align: left; }
+      .inner .main .text table tr th,
       .inner .main main table tr th {
         border-bottom: 3px solid #ed1d24;
         color: #000;
         font-weight: 700;
         font-size: 17px; }
+      .inner .main .text table tr td,
       .inner .main main table tr td {
         border-bottom: 1px solid #d2d5d6;
         padding-top: 3rem;
@@ -5122,30 +5192,54 @@ em strong {
 .inner-health .main__body {
   padding-bottom: 85px; }
 
+.inner-health main {
+  font-size: 2.4rem; }
+
 .inner-health .o2clean-body {
-  background: url(../images/bg/bg-2.webp) center top;
-  background-size: cover;
+  background: url(../images/bg/bg-2.webp) center top no-repeat;
   min-height: 1540px;
-  color: #000; }
+  color: #000;
+  padding-bottom: 8rem; }
   .inner-health .o2clean-body .o2clean-text-top {
     color: #fff;
     padding-top: 18.5rem; }
-  .inner-health .o2clean-body .o2clean-text-bottom {
-    padding-top: 32rem; }
+    .inner-health .o2clean-body .o2clean-text-top .heading {
+      color: #fff; }
   .inner-health .o2clean-body .heading {
-    font-weight: 700;
-    font-size: 4rem;
     padding-bottom: 2rem;
     line-height: 1.4; }
+  .inner-health .o2clean-body .row {
+    margin-bottom: 22rem; }
+    .inner-health .o2clean-body .row:nth-child(3) {
+      margin-top: 37rem;
+      margin-bottom: 16rem; }
+    .inner-health .o2clean-body .row:last-child {
+      margin-bottom: 5rem; }
   .inner-health .o2clean-body ul li {
     position: relative;
     padding-left: 35px;
     margin: .7rem 0; }
     .inner-health .o2clean-body ul li:before {
-      width: 17px;
       border-top: 4px solid #ed1d24;
       left: 0;
-      top: 14px; }
+      top: 14px;
+      width: 17px; }
+
+.inner-health .bottom {
+  color: #000;
+  margin-bottom: 7rem; }
+  .inner-health .bottom p {
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .inner-health .bottom .cell {
+    display: flex;
+    align-items: center; }
+    .inner-health .bottom .cell:first-child {
+      margin-right: -65px; }
+      .inner-health .bottom .cell:first-child p {
+        margin-right: 4rem; }
+    .inner-health .bottom .cell:last-child p {
+      margin-left: 4rem; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5710,14 +5804,16 @@ em strong {
   .inner-padding {
     padding-left: 0; } }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .modal-dialog {
     margin-left: auto;
     margin-right: auto; }
     .modal-dialog .title {
       font-size: 3.5rem; }
   .form-wrapper p {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .hide-col-sm {
+    display: none; } }
 
 @media (max-width: 540px) {
   .pagination {
@@ -6028,7 +6124,11 @@ em strong {
   .product__link {
     min-height: 350px; }
   .main__body .content {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .inner-health main {
+    font-size: 2rem; }
+  .inner-health .o2clean-body .o2clean-text-top {
+    padding-top: 12rem; } }
 
 @media (max-width: 1249px) {
   .homepage .slider-intro,
@@ -6253,7 +6353,15 @@ em strong {
   .article__intro {
     font-size: 1.6rem; }
   .materials {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .inner-health .o2clean-body .row {
+    margin-bottom: 12rem; }
+    .inner-health .o2clean-body .row:nth-child(3) {
+      margin-top: 20rem; }
+  .inner-health .bottom .cell img {
+    width: 235px; }
+  .inner-health .main .text .heading {
+    font-size: 3.4rem; } }
 
 @media (max-width: 900px) {
   .side-panel .secondary-menu {
@@ -6272,7 +6380,13 @@ em strong {
     padding-left: 3rem;
     padding-right: 3rem; }
   .product__desc {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .inner-health .main .text .heading {
+    font-size: 3rem; }
+  .inner-health .bottom .cell img {
+    width: 180px; }
+  .inner-health .bottom p {
+    font-size: 2rem; } }
 
 @media (max-width: 800px) {
   .homepage .counter-lastnews .homeslider-sm {
@@ -6441,7 +6555,29 @@ em strong {
   .materials .row-pic-right > div:first-child {
     order: 1; }
   .materials .row-pic-right > div:last-child {
-    order: 0; } }
+    order: 0; }
+  .inner-health main {
+    font-size: 1.6rem; }
+  .inner-health .main__body {
+    padding-bottom: 40px; }
+  .inner-health .o2clean-body {
+    padding-bottom: 0; }
+    .inner-health .o2clean-body .o2clean-text-top {
+      padding-top: 8rem; }
+    .inner-health .o2clean-body .row {
+      margin-bottom: 8rem; }
+      .inner-health .o2clean-body .row:nth-child(3) {
+        margin-top: 0; }
+  .inner-health .bottom .cell p {
+    font-size: 1.5rem; }
+  .inner-health .bottom .cell img {
+    width: 100px; }
+  .inner-health .bottom .cell:first-child {
+    margin-right: -20px; }
+    .inner-health .bottom .cell:first-child p {
+      margin-right: 2rem; }
+  .inner-health .bottom .cell:last-child p {
+    margin-left: 2rem; } }
 
 @media (max-width: 540px) {
   .lastnew__title {
@@ -6562,7 +6698,28 @@ em strong {
   .newproduct__pic {
     height: auto;
     min-height: 200px;
-    margin: 4rem 0; } }
+    margin: 4rem 0; }
+  .inner-health .main .text .heading {
+    font-size: 2.4rem; }
+  .inner-health .o2clean-body .o2clean-text-top {
+    padding-right: 0;
+    padding-top: 4rem; }
+  .inner-health .o2clean-body .row {
+    margin-bottom: 4rem; }
+    .inner-health .o2clean-body .row:nth-child(3) {
+      margin-bottom: 4rem; }
+  .inner-health .bottom .d-flex {
+    display: block !important; }
+  .inner-health .bottom .cell {
+    margin: 1.5rem 0 !important;
+    flex-wrap: wrap; }
+    .inner-health .bottom .cell p {
+      margin: 1rem 0 !important;
+      font-size: 2.2rem;
+      width: 100%;
+      text-align: center; }
+    .inner-health .bottom .cell img {
+      width: 100%; } }
 
 @media (max-width: 340px) {
   .homepage .slick-list {

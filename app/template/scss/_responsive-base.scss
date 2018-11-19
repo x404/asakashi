@@ -462,7 +462,7 @@
 	}
 }
 
-@media (max-width: 575px){
+@media (max-width: 576px){
 	.modal-dialog{
 		margin-left: auto;
 		margin-right: auto;
@@ -472,6 +472,10 @@
 	}
 	.form-wrapper p{
 		font-size: 1.4rem;
+	}
+
+	.hide-col-sm{
+		display: none;
 	}
 }
 

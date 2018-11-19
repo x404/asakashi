@@ -391,6 +391,17 @@
 	.main__body .content{
 		padding-right: 0;
 	}
+
+
+	// health
+	.inner-health{
+		main{
+			font-size: 2rem;
+		}
+		.o2clean-body .o2clean-text-top{
+			padding-top: 12rem;
+		}
+	}
 }
 
 
@@ -830,6 +841,29 @@
 	.materials{
 		font-size: 2rem;
 	}
+
+
+	.inner-health{
+		.o2clean-body .row{
+			margin-bottom: 12rem;
+			&:nth-child(3){
+				margin-top: 20rem;
+			}
+		}
+
+		.bottom .cell{
+			img{
+				width: 235px
+			}
+		}
+		.main{
+			.text{
+				.heading{
+					font-size: 3.4rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 900px){
@@ -870,6 +904,22 @@
 		}
 		&__desc{
 			padding-right: 0;
+		}
+	}
+
+	.inner-health{
+		.main .text .heading{
+			font-size: 3rem;
+		}
+		.bottom{
+			.cell{
+				img{
+					width: 180px
+				}
+			}
+			p{
+				font-size: 2rem;
+			}
 		}
 	}
 }
@@ -1036,6 +1086,9 @@
 			height: 50px;
 		}
 	}
+
+	// health
+
 }
 
 
@@ -1169,6 +1222,49 @@
 			}
 		}
 	}
+
+
+	.inner-health{
+		main{
+			font-size: 1.6rem;
+		}
+		.main__body{
+			padding-bottom: 40px;
+		}
+
+		.o2clean-body{
+			padding-bottom: 0;
+			.o2clean-text-top{
+				padding-top: 8rem;
+			}
+			.row{
+				margin-bottom: 8rem;
+				&:nth-child(3){
+					margin-top: 0;
+				}
+			}
+		}
+
+		.bottom .cell{
+			p{
+				font-size: 1.5rem;
+			}
+			img{
+				width: 100px;
+			}
+			&:first-child{
+				margin-right: -20px;
+				p{
+					margin-right: 2rem;
+				}
+			}
+			&:last-child{
+				p{
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1286,6 +1382,8 @@
 		padding-left: 30px;
 		width: 100%;
 	}
+
+
 }
 
 
@@ -1378,6 +1476,44 @@
 			height: auto;
 			min-height: 200px;
 			margin: 4rem 0;
+		}
+	}
+
+
+	// helth
+	.inner-health{
+		.main .text .heading{
+			font-size: 2.4rem;
+		}
+		.o2clean-body{
+			.o2clean-text-top{
+				padding-right: 0;
+				padding-top: 4rem;
+			}
+			.row{
+				margin-bottom: 4rem;
+				&:nth-child(3){
+					margin-bottom: 4rem;
+				}
+			}
+		}
+		.bottom{
+			.d-flex{
+				display: block !important;
+			}
+			.cell{
+				margin: 1.5rem 0 !important;
+				flex-wrap: wrap;
+				p{
+					margin: 1rem 0 !important;
+					font-size: 2.2rem;
+					width: 100%;
+					text-align: center;
+				}
+				img{
+					width: 100%;
+				}
+			}
 		}
 	}
 }

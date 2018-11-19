@@ -2,25 +2,39 @@
 	.main__body{
 		padding-bottom: 85px;
 	}
+
+	main{
+		font-size: 2.4rem;
+	}
 	.o2clean-body{
-		background: url(../images/bg/bg-2.webp) center top;
-		background-size: cover;
+		background: url(../images/bg/bg-2.webp) center top no-repeat;
+		// background-size: cover;
 		min-height: 1540px;
 		color: $color1;
+		padding-bottom: 8rem;
 		.o2clean-text{
 			&-top{
-				color: $color2 ;
+				color: $color2;
 				padding-top: 18.5rem;
-			}
-			&-bottom{
-				padding-top: 32rem;
+				.heading{
+					color: $color2;
+				}
 			}
 		}
 		.heading{
-			font-weight: 700;
-			font-size: 4rem;
 			padding-bottom: 2rem;
 			line-height: 1.4;
+		}
+
+		.row{
+			margin-bottom: 22rem;
+			&:nth-child(3){
+				margin-top: 37rem;
+				margin-bottom: 16rem;
+			}
+			&:last-child{
+				margin-bottom: 5rem;
+			}
 		}
 
 		ul{
@@ -30,10 +44,40 @@
 				margin: .7rem 0;
 				&:before{
 					@extend .before;
-					width: 17px;
 					border-top: 4px solid $color6;
 					left: 0;
 					top: 14px;
+					width: 17px;
+				}
+			}
+		}
+	}
+
+	// .bottom-text{
+	// 	.row:first-child(){
+	// 		margin-bottom: 12rem;
+	// 	}
+	// }
+
+	.bottom{
+		color: $color1;
+		margin-bottom: 7rem;
+		p{
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+		.cell{
+			display: flex;
+			align-items: center;
+			&:first-child{
+				margin-right: -65px;
+				p{
+					margin-right: 4rem;
+				}
+			}
+			&:last-child{
+				p{
+					margin-left: 4rem;
 				}
 			}
 		}

@@ -7,8 +7,13 @@
 			background-position: center top;
 		}
 		&-health{
-			background-image: url(../images/bg/bg-1.webp);
-			background-position: center top;			
+			background-image: url(../images/bg/bg-inner-3.webp);
+			background-position: center bottom;
+			.main-grid{
+				background-image: url(../images/bg/bg-1.webp);
+				background-position: center top;
+				background-repeat: no-repeat;
+			}
 		}
 	}
 }
@@ -22,9 +27,13 @@
 			background-position: center top;
 		}
 		&-health{
-			background-image: url(../images/bg/bg-1.jpg);
-			background-position: center top;
-			background-size: cover;
+			background-image: url(../images/bg/bg-inner-3.jpg);
+			background-position: center bottom;
+			.main-grid{
+				background-image: url(../images/bg/bg-1.jpg);
+				background-position: center top;
+				background-repeat: no-repeat;
+			}
 		}
 	}
 }
@@ -68,6 +77,7 @@
 			margin-bottom: 2.5rem;
 		}
 
+.text,
 main{
 			h1:not(.title), h2, h3, h4, h5, h6{
 				color: #000;
@@ -132,6 +142,14 @@ main{
 				line-height: 1.8;
 				margin: 3px 0;
 			} 
+
+			.heading{
+				color: $color1;
+				font-weight: 700;
+				font-size: 4rem;
+				line-height: 1.2;
+				margin-bottom: 1.5rem;
+			}
 
 			img{
 				max-width: 100%;
