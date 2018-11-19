@@ -1,3 +1,13 @@
+@media (max-width: 1870px){
+	.inner-contacts .main{
+		.contacts a.tel{
+			font-size: 3rem;
+		}
+	}
+}
+
+
+
 @media (max-width: 1750px){
 	.homeslider{
 		margin-left: 110px;
@@ -50,7 +60,6 @@
 			&__cifr{
 				font-size: 5rem;
 			}
-
 		}
 	}
 
@@ -253,11 +262,10 @@
 				width: 240px;
 			}
 		}
-	}
 
-
-	.homepage .counter-lastnews{
-		margin: 10rem 0 5rem;
+		.counter-lastnews{
+			margin: 10rem 0 5rem;
+		}
 	}
 
 
@@ -351,6 +359,26 @@
 			padding-right: 0;
 		}
 	}
+
+
+	// contacts
+	.inner-contacts .main{
+		main{
+			.subtitle{
+				font-size: 2.8rem;
+			}
+			.contacts{
+				&__cell{
+					&:first-child{
+						margin-right: 3rem;
+					}
+				}
+			}
+		}
+		.form-wrapper{
+			padding: 5rem;
+		}
+	}
 }
 
 
@@ -358,6 +386,15 @@
 	.product__item-right .product__box{
 		width: calc(100% - 16rem);
 		padding-right: 12rem;
+	}
+
+	.inner-contacts .main main{
+		.d-flex{
+			display: block !important;
+		}
+		.subtitle{
+			font-size: 2.4rem;
+		}
 	}
 }
 
@@ -423,35 +460,16 @@
 
 
 @media (max-width: 1250px){
-
-	// .product__link:hover .product__box{
-	// 	.circle-half{
-	// 		background-position: 20px center;		
-	// 		&-right{
-	// 		}
-	// 	}
-	// }
-
-	// .product__item-left .product__box{
-	// 	padding-left: 10rem;
-	// }
-
-	// .product__desc{
-	// 	padding-right: 0;
-	// }
-
-
-	// .product{
-	// 	&__item-right .product__box{
-	// 		padding-left: 4rem;
-	// 	}
-	// 	&__title{
-	// 		font-size: 3.6rem;
-	// 	}
-	// 	&__intro{
-	// 		font-size: 1.6rem;
-	// 	}
-	// }
+	.inner-contacts .main{
+		main{
+			.subtitle{
+				font-size: 2.2rem;
+			}
+		}
+		.contacts a.tel{
+			font-size: 2.8rem;
+		}
+	}
 
 }
 
@@ -862,6 +880,21 @@
 					font-size: 3.4rem;
 				}
 			}
+		}
+	}
+
+
+	// contacts
+	.inner-contacts .main{
+		main{
+			.contacts{
+				padding-right: 0;
+			}			
+		}
+		.right{
+			margin-top: 3rem;
+			width: calc(100% - 50px);
+			margin-left: 50px;
 		}
 	}
 }
@@ -1384,6 +1417,27 @@
 	}
 
 
+	// contacts
+	.inner-contacts .main .right{
+		box-shadow: 0 0 8px #ccc;
+		margin-left: 0;
+		width: auto;
+		.title{
+			font-size: 3.5rem;
+			text-align: center;
+		}
+		.form-wrapper{
+			border-left: none;
+			padding: 2rem;
+		}
+		.btn-submit{
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			display: block;
+			text-align: center;
+		}
+	}
 }
 
 
@@ -1551,5 +1605,19 @@
 		height: 6rem;
 	}
 
+
+	.inner-contacts .main{
+		.subtitle{
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+		}
+		.right{
+			.title{
+				font-size: 2.5rem;
+				text-align: center;
+			}
+		}
+	}
 
 }

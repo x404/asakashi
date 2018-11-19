@@ -5270,10 +5270,10 @@ em strong {
     margin-bottom: 2rem;
     margin-top: -.5rem;
     padding: .6rem 2rem; }
-  .inner-contacts .main main .contacts__cell {
-    margin-right: 5rem; }
-    .inner-contacts .main main .contacts__cell:last-child {
-      margin-right: 0; }
+  .inner-contacts .main main .contacts {
+    padding-right: 80px; }
+    .inner-contacts .main main .contacts__cell:first-child {
+      margin-right: 5rem; }
     .inner-contacts .main main .contacts__cell p {
       line-height: 1.3; }
   .inner-contacts .main main a.tel {
@@ -5962,6 +5962,10 @@ em strong {
   .inner .main h4 {
     font-size: 1.6rem; } }
 
+@media (max-width: 1870px) {
+  .inner-contacts .main .contacts a.tel {
+    font-size: 3rem; } }
+
 @media (max-width: 1750px) {
   .homeslider {
     margin-left: 110px; }
@@ -6146,12 +6150,22 @@ em strong {
     .main__body .content {
       order: 1; }
   .article__item {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .inner-contacts .main main .subtitle {
+    font-size: 2.8rem; }
+  .inner-contacts .main main .contacts__cell:first-child {
+    margin-right: 3rem; }
+  .inner-contacts .main .form-wrapper {
+    padding: 5rem; } }
 
 @media (max-width: 1320px) {
   .product__item-right .product__box {
     width: calc(100% - 16rem);
-    padding-right: 12rem; } }
+    padding-right: 12rem; }
+  .inner-contacts .main main .d-flex {
+    display: block !important; }
+  .inner-contacts .main main .subtitle {
+    font-size: 2.4rem; } }
 
 @media (max-width: 1280px) {
   .product__item-left .product__box {
@@ -6170,6 +6184,12 @@ em strong {
     font-size: 2rem; }
   .inner-health .o2clean-body .o2clean-text-top {
     padding-top: 12rem; } }
+
+@media (max-width: 1250px) {
+  .inner-contacts .main main .subtitle {
+    font-size: 2.2rem; }
+  .inner-contacts .main .contacts a.tel {
+    font-size: 2.8rem; } }
 
 @media (max-width: 1249px) {
   .homepage .slider-intro,
@@ -6402,7 +6422,13 @@ em strong {
   .inner-health .bottom .cell img {
     width: 235px; }
   .inner-health .main .text .heading {
-    font-size: 3.4rem; } }
+    font-size: 3.4rem; }
+  .inner-contacts .main main .contacts {
+    padding-right: 0; }
+  .inner-contacts .main .right {
+    margin-top: 3rem;
+    width: calc(100% - 50px);
+    margin-left: 50px; } }
 
 @media (max-width: 900px) {
   .side-panel .secondary-menu {
@@ -6684,7 +6710,23 @@ em strong {
   .product__item-right .product__box {
     padding-right: 30px;
     padding-left: 30px;
-    width: 100%; } }
+    width: 100%; }
+  .inner-contacts .main .right {
+    box-shadow: 0 0 8px #ccc;
+    margin-left: 0;
+    width: auto; }
+    .inner-contacts .main .right .title {
+      font-size: 3.5rem;
+      text-align: center; }
+    .inner-contacts .main .right .form-wrapper {
+      border-left: none;
+      padding: 2rem; }
+    .inner-contacts .main .right .btn-submit {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      display: block;
+      text-align: center; } }
 
 @media (max-width: 420px) {
   .homepage .advantages {
@@ -6777,4 +6819,11 @@ em strong {
   .btn-more {
     margin-top: 2rem;
     font-size: 2.2rem;
-    height: 6rem; } }
+    height: 6rem; }
+  .inner-contacts .main .subtitle {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center; }
+  .inner-contacts .main .right .title {
+    font-size: 2.5rem;
+    text-align: center; } }
