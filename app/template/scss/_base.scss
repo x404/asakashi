@@ -66,19 +66,16 @@ h3{font-size:1.6rem}
 strong,
 .bold{
 	font-weight: 700;
-	// font-family: "SegoeUIBold";
 }
 em, i, 
 .italic{
 	font-style: normal;
-	// font-family: "SegoeUIItalic";
 }
 
 strong em,
 em strong
 {
 	font-weight: normal;
-	// font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -526,7 +523,6 @@ body{
 // modal menu
 .modal-menu
 {
-	// background: rgba(0, 180, 169, .95);
 	background-color: #fff;
 	height: 100%;
 	left: 0;
@@ -550,8 +546,6 @@ body{
 	}
 
 	.container{
-		// margin-left: 16.6%;
-		// margin-left: 8.3%;
 		padding: 5rem 8.3% 2rem;
 		position: relative;
 	}
@@ -625,52 +619,6 @@ body{
 		padding-top: 0;
 	}
 
-	.contacts{
-		font-size: 1.5rem;
-		letter-spacing: .1em;
-		color: $color1;
-		flex-grow: 2;
-			// padding-left: 8.3%;
-		&__inner{
-			padding-left: 160px;
-			// border: 1px solid $color1;
-			// padding: 4.2rem 0 5.5rem;	
-			// width: 40rem;	
-		}
-
-		&__cell{
-			margin-top: 2rem;
-			p{
-				font-size: 2.4rem;
-				// font-weight: 100;
-			}
-		}
-		.title{
-			// font-family: 'proxima_novablack_italic';
-			// color: $color1;
-			font-size: 2rem;
-			font-weight: normal;
-			line-height: 1.4;
-			margin-bottom: 4rem;
-			position: relative;
-			text-transform: none;
-		}
-		.tel{
-			text-decoration: none;
-			font-size: 4rem;
-		}
-		.email{
-			color: $color6;
-			// font-weight: 100;
-			text-decoration: none;
-			font-size: 3rem;
-			border-bottom: 1px solid ;
-			&:hover{
-				border-bottom: none;
-			}
-		}
-	}
-
 
 
 	.btn-callback{
@@ -679,7 +627,6 @@ body{
 		margin-top: .8rem;
 		text-align: center;
 	}
-
 
 	&.open{
 		transform: translateY(0);
@@ -690,7 +637,44 @@ body{
 }
 
 
+	.contacts{
+		font-size: 1.5rem;
+		letter-spacing: .1em;
+		color: $color1;
+		flex-grow: 2;
+		&__inner{
+			padding-left: 160px;
+		}
 
+		&__cell{
+			margin-top: 2rem;
+			p{
+				font-size: 2.4rem;
+			}
+		}
+		.title{
+			font-size: 2rem;
+			font-weight: normal;
+			line-height: 1.4;
+			margin-bottom: 4rem;
+			position: relative;
+			text-transform: none;
+		}
+		a.tel{
+			color: $color1;
+			text-decoration: none !important;
+			font-size: 4rem;
+		}
+		a.email{
+			color: $color6;
+			text-decoration: none !important;
+			font-size: 3rem;
+			border-bottom: 1px solid ;
+			&:hover{
+				border-bottom: none;
+			}
+		}
+	}
 
 .nicescroll-cursors{
 	border-radius: 0 !important;

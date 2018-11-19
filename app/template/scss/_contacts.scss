@@ -1,0 +1,45 @@
+.inner-contacts{
+	.main{
+		.form-wrapper{
+			padding-left: 100px;
+			.title{
+				font-size: 4rem;
+				padding-left: 0;
+				&:before{
+					display: none
+				}
+			}
+		}
+		main{
+			font-size: 2.4rem;
+			.subtitle{
+				background-color: $color6;
+				color: $color2;
+				display: inline-block;
+				font-size: 3.5rem;
+				line-height: 1.2;
+				margin-bottom: 2rem;
+				margin-top: -.5rem;
+				padding: .6rem 2rem;
+			}
+			.contacts{
+				&__cell{
+					margin-right: 5rem;
+					&:last-child{
+						margin-right: 0;
+					}
+					p{
+						line-height: 1.3;
+					}
+				}
+			}
+			a.tel{
+				color: $color1;
+			}
+		}
+
+		.right{
+			margin-top: -150px;
+		}
+	}
+}

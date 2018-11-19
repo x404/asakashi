@@ -3843,34 +3843,6 @@ em strong {
           color: #ed1d24; }
   .modal-menu .cell {
     padding-top: 0; }
-  .modal-menu .contacts {
-    font-size: 1.5rem;
-    letter-spacing: .1em;
-    color: #000;
-    flex-grow: 2; }
-    .modal-menu .contacts__inner {
-      padding-left: 160px; }
-    .modal-menu .contacts__cell {
-      margin-top: 2rem; }
-      .modal-menu .contacts__cell p {
-        font-size: 2.4rem; }
-    .modal-menu .contacts .title {
-      font-size: 2rem;
-      font-weight: normal;
-      line-height: 1.4;
-      margin-bottom: 4rem;
-      position: relative;
-      text-transform: none; }
-    .modal-menu .contacts .tel {
-      text-decoration: none;
-      font-size: 4rem; }
-    .modal-menu .contacts .email {
-      color: #ed1d24;
-      text-decoration: none;
-      font-size: 3rem;
-      border-bottom: 1px solid; }
-      .modal-menu .contacts .email:hover {
-        border-bottom: none; }
   .modal-menu .btn-callback {
     border-color: #000;
     color: #000;
@@ -3880,6 +3852,36 @@ em strong {
     transform: translateY(0);
     opacity: 1;
     z-index: 9999; }
+
+.contacts {
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  color: #000;
+  flex-grow: 2; }
+  .contacts__inner {
+    padding-left: 160px; }
+  .contacts__cell {
+    margin-top: 2rem; }
+    .contacts__cell p {
+      font-size: 2.4rem; }
+  .contacts .title {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    position: relative;
+    text-transform: none; }
+  .contacts a.tel {
+    color: #000;
+    text-decoration: none !important;
+    font-size: 4rem; }
+  .contacts a.email {
+    color: #ed1d24;
+    text-decoration: none !important;
+    font-size: 3rem;
+    border-bottom: 1px solid; }
+    .contacts a.email:hover {
+      border-bottom: none; }
 
 .nicescroll-cursors {
   border-radius: 0 !important;
@@ -4564,9 +4566,13 @@ em strong {
 
 .webp .inner {
   background-image: url(../images/bg/bg-inner-3.webp);
-  background-position: center bottom; }
+  background-position: center bottom;
+  background-repeat: no-repeat; }
   .webp .inner-products {
     background-image: url(../images/bg/bg-inner-1.webp);
+    background-position: center top; }
+  .webp .inner-contacts {
+    background-image: url(../images/bg/contact-bg.webp);
     background-position: center top; }
   .webp .inner-health {
     background-image: url(../images/bg/bg-inner-3.webp);
@@ -4578,9 +4584,13 @@ em strong {
 
 .no-webp .inner {
   background-image: url(../images/bg/bg-inner-3.jpg);
-  background-position: center bottom; }
+  background-position: center bottom;
+  background-repeat: no-repeat; }
   .no-webp .inner-products {
     background-image: url(../images/bg/bg-inner-1.jpg);
+    background-position: center top; }
+  .no-webp .inner-contacts {
+    background-image: url(../images/bg/contact-bg.jpg);
     background-position: center top; }
   .no-webp .inner-health {
     background-image: url(../images/bg/bg-inner-3.jpg);
@@ -5240,6 +5250,37 @@ em strong {
         margin-right: 4rem; }
     .inner-health .bottom .cell:last-child p {
       margin-left: 4rem; }
+
+.inner-contacts .main .form-wrapper {
+  padding-left: 100px; }
+  .inner-contacts .main .form-wrapper .title {
+    font-size: 4rem;
+    padding-left: 0; }
+    .inner-contacts .main .form-wrapper .title:before {
+      display: none; }
+
+.inner-contacts .main main {
+  font-size: 2.4rem; }
+  .inner-contacts .main main .subtitle {
+    background-color: #ed1d24;
+    color: #fff;
+    display: inline-block;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: -.5rem;
+    padding: .6rem 2rem; }
+  .inner-contacts .main main .contacts__cell {
+    margin-right: 5rem; }
+    .inner-contacts .main main .contacts__cell:last-child {
+      margin-right: 0; }
+    .inner-contacts .main main .contacts__cell p {
+      line-height: 1.3; }
+  .inner-contacts .main main a.tel {
+    color: #000; }
+
+.inner-contacts .main .right {
+  margin-top: -150px; }
 
 /* =mobile-menu
 ---------------------------*/

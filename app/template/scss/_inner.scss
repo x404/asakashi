@@ -2,8 +2,13 @@
 	.inner{
 		background-image: url(../images/bg/bg-inner-3.webp);
 		background-position: center bottom;
+		background-repeat: no-repeat;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.webp);
+			background-position: center top;
+		}
+		&-contacts{
+			background-image: url(../images/bg/contact-bg.webp);
 			background-position: center top;
 		}
 		&-health{
@@ -22,8 +27,13 @@
 	.inner{
 		background-image: url(../images/bg/bg-inner-3.jpg);
 		background-position: center bottom;
+		background-repeat: no-repeat;
 		&-products{
 			background-image: url(../images/bg/bg-inner-1.jpg);
+			background-position: center top;
+		}
+		&-contacts{
+			background-image: url(../images/bg/contact-bg.jpg);
 			background-position: center top;
 		}
 		&-health{
