@@ -4630,8 +4630,7 @@ em strong {
     .inner .main main h5,
     .inner .main main h6 {
       color: #000;
-      font-weight: 700;
-      margin: 0; }
+      font-weight: 700; }
     .inner .main .text h2, .inner .main .text h3, .inner .main .text h4, .inner .main .text h5, .inner .main .text h6,
     .inner .main main h2,
     .inner .main main h3,
@@ -4643,7 +4642,7 @@ em strong {
     .inner .main .text h1,
     .inner .main main h1 {
       font-size: 50px;
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
     .inner .main .text h1:before,
     .inner .main main h1:before {
       top: 35px; }
@@ -4706,7 +4705,7 @@ em strong {
     .inner .main main img.justifyright,
     .inner .main main table.justifyright {
       float: right;
-      margin-left: 10px;
+      margin-left: 20px;
       margin-bottom: 10px; }
     .inner .main .text img.justifycenter, .inner .main .text table.justifycenter,
     .inner .main main img.justifycenter,
@@ -5886,6 +5885,11 @@ em strong {
     font-size: 2.2rem; }
   .inner .main main h4 {
     font-size: 1.8rem; }
+  .inner .main main img {
+    display: block;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
   .product__intro {
     font-size: 1.5rem; } }
 

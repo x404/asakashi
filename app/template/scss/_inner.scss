@@ -92,7 +92,6 @@ main{
 			h1:not(.title), h2, h3, h4, h5, h6{
 				color: #000;
 				font-weight: 700;
-				margin: 0;
 			}
 			h2, h3, h4, h5, h6{
 				padding: 0;
@@ -101,7 +100,7 @@ main{
 
 			h1{
 				font-size: 50px;
-				margin-bottom: 40px;
+				margin-bottom: 30px;
 			}
 
 			h1{
@@ -167,7 +166,7 @@ main{
 			}
 
 			img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:10px;margin-top: 10px;}
-			img.justifyright, table.justifyright {float:right; margin-left:10px;margin-bottom:10px;}
+			img.justifyright, table.justifyright {float:right; margin-left:20px;margin-bottom:10px;}
 			img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
 
 			.text-center{
