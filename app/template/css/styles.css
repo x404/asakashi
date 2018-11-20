@@ -5799,7 +5799,13 @@ em strong {
 
 @media (max-width: 750px) {
   main .d-flex {
-    display: block !important; } }
+    flex-direction: column; }
+    main .d-flex.pic-right .pic {
+      order: -1;
+      text-align: center; }
+      main .d-flex.pic-right .pic img {
+        float: none !important;
+        margin-top: 0; } }
 
 @media (max-width: 680px) {
   #modal-ask .modal-dialog {
