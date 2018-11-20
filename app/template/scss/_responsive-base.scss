@@ -365,9 +365,15 @@
 }
 
 
-@media (max-width: 720px){
 
+@media (max-width: 750px){
+	main{
+		.d-flex{
+			display: block !important;
+		}
+	}
 }
+
 
 
 @media (max-width: 680px){
@@ -440,14 +446,7 @@
 		.main{
 			padding-top: 3rem;
 		}
-		.title{
-			// padding-left: 0;
-			&:before{
-				// display: none;
-			}
-		}
 		.intro{
-			// padding-left: 0;
 			padding-top: 1.5rem;
 		}
 
@@ -553,7 +552,6 @@
 			text-align: justify;
 		}
 		.footer{
-			// padding-top: 0;
 			padding-bottom: 2rem;
 		}
 	}

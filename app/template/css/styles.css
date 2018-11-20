@@ -4638,7 +4638,8 @@ em strong {
     .inner .main main h4,
     .inner .main main h5,
     .inner .main main h6 {
-      padding: 0; }
+      padding: 0;
+      margin: 15px 0; }
     .inner .main .text h1,
     .inner .main main h1 {
       font-size: 50px;
@@ -5796,6 +5797,10 @@ em strong {
     font-size: 1.6rem; }
   .inner-padding {
     padding-left: 6rem; } }
+
+@media (max-width: 750px) {
+  main .d-flex {
+    display: block !important; } }
 
 @media (max-width: 680px) {
   #modal-ask .modal-dialog {
