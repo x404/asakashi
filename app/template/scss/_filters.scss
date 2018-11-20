@@ -1,0 +1,40 @@
+.substances{
+	padding-left: 5rem;
+	font-size: 1.7rem;
+	align-self: start;
+	margin-top: -7.8rem;
+	&__wrapper{
+		background: $color2;
+		box-shadow: 0 0 20px rgba(52, 63, 69, 0.15);
+		padding: 1.5rem 3rem;
+		width: 32rem;
+	}
+	ul{
+		margin-bottom: 2rem;
+		li{
+			align-items: center;
+			display: flex;
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin: 1rem 0;
+			padding-left: 0 !important;
+			&:before{
+				display: none !important;
+			}
+		}
+	}
+
+	&__pic{
+		@extend .flex-center;
+		background-color: $color6;
+		border-radius: 50%;
+		width: 4.6rem;
+		height: 4.6rem;
+		margin-right: 1.4rem;
+	}
+}
+
+
+.filter-item{
+	margin-bottom: 13rem;
+}

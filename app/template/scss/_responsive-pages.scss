@@ -30,6 +30,15 @@
 	.newproduct__cell{
 		width: 33.3%;
 	}
+
+
+	.substances{
+		padding-left: 2rem;
+		&__wrapper{
+			padding: 2rem;
+			width: 30rem;
+		}
+	}
 }
 
 
@@ -175,6 +184,15 @@
 			}
 		}
 	}
+
+
+	.substances{
+		padding-left: 3rem;
+		&__wrapper{
+			padding: 2rem;
+			width: 32rem;
+		}
+	}
 }
 
 
@@ -308,7 +326,6 @@
 	.side-panel{
 		display: contents !important;
 		margin-left: 4.5rem;
-		// order: 0;
 		width: calc(100% - 4.5rem);
 	}
 
@@ -321,16 +338,17 @@
 		}
 		flex-wrap: wrap;
 		.side-panel{
-			// order: 0;
 			margin-bottom: 2.5rem;
 			.secondary-menu{
 				margin-bottom: 4rem;
 				margin-left: 50px;
 				order: 0;
+				padding-top: 1rem;
 				width: 100%;
 				ul{
 					display: flex;
-					justify-content: space-between
+					// justify-content: space-between
+					justify-content: space-around
 				}				
 			}
 			.learnlist{
@@ -607,6 +625,15 @@
 		&__intro,
 		&__subtitle{
 			font-size: 1.5rem;
+		}
+	}
+
+
+	.substances{
+		padding-left: 1rem;
+		&__wrapper{
+			width: 30rem;
+			padding-top: 1rem;
 		}
 	}
 }
@@ -897,6 +924,24 @@
 			margin-left: 50px;
 		}
 	}
+
+
+	.substances{
+		margin-top: 3rem;
+		&__wrapper{
+			width: 90%;
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				li{
+					width: 33%;
+				}
+			}
+		}
+		&__pic{
+			flex-shrink: 0
+		}
+	}
 }
 
 @media (max-width: 900px){
@@ -1001,6 +1046,20 @@
 			line-height: 1.6;
 		}
 	}
+
+
+	.substances{
+		&__wrapper{
+			ul{
+				li{
+					width: 50%;
+				}
+			}
+		}
+	}
+
+
+
 }
 
 
@@ -1008,6 +1067,10 @@
 @media (max-width: 767px){
 	.main__body .side-panel .secondary-menu{
 		display: none;
+	}
+
+	.filter-item{
+		margin-bottom: 7rem;
 	}
 }
 
@@ -1022,8 +1085,6 @@
 		margin-left: -30px;
 		margin-right: -30px;
 	}
-
-	
 }
 
 
@@ -1300,6 +1361,18 @@
 			}
 		}
 	}
+
+
+	.substances{
+		&__wrapper{
+			ul{
+				display: block;
+				li{
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1572,6 +1645,15 @@
 			}
 		}
 	}
+
+
+	.substances {
+		text-align: left;
+		&__wrapper{
+			width: 100% ;
+		}
+	}
+
 }
 
 @media (max-width: 340px){
@@ -1621,5 +1703,6 @@
 			}
 		}
 	}
+
 
 }

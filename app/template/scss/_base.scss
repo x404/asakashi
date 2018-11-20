@@ -667,9 +667,9 @@ body{
 		}
 		a.email{
 			color: $color6;
-			text-decoration: none !important;
-			font-size: 3rem;
 			border-bottom: 1px solid ;
+			font-size: 3rem;
+			text-decoration: none !important;
 			&:hover{
 				border-bottom: none;
 			}

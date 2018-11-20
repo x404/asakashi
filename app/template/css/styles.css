@@ -3877,9 +3877,9 @@ em strong {
     font-size: 4rem; }
   .contacts a.email {
     color: #ed1d24;
-    text-decoration: none !important;
+    border-bottom: 1px solid;
     font-size: 3rem;
-    border-bottom: 1px solid; }
+    text-decoration: none !important; }
     .contacts a.email:hover {
       border-bottom: none; }
 
@@ -4581,6 +4581,9 @@ em strong {
       background-image: url(../images/bg/bg-1.webp);
       background-position: center top;
       background-repeat: no-repeat; }
+  .webp .inner-cabinair {
+    background-image: url(../images/bg/bg-inner-4.webp);
+    background-position: center top; }
 
 .no-webp .inner {
   background-image: url(../images/bg/bg-inner-3.jpg);
@@ -4599,6 +4602,9 @@ em strong {
       background-image: url(../images/bg/bg-1.jpg);
       background-position: center top;
       background-repeat: no-repeat; }
+  .no-webp .inner-cabinair {
+    background-image: url(../images/bg/bg-inner-4.jpg);
+    background-position: center top; }
 
 .bg-radial {
   background: radial-gradient(circle at center, #dedfe0 0%, #888a8d 100%); }
@@ -4671,11 +4677,9 @@ em strong {
       margin-top: 5px; }
     .inner .main .text p > strong,
     .inner .main main p > strong {
-      font-size: inherit;
-      color: #000; }
+      font-size: inherit; }
     .inner .main .text strong,
     .inner .main main strong {
-      color: #000;
       font-weight: 700; }
     .inner .main .text a,
     .inner .main main a {
@@ -4732,6 +4736,13 @@ em strong {
       clear: both;
       display: block;
       margin: 10px auto; }
+    .inner .main .text .more a,
+    .inner .main main .more a {
+      color: #ed1d24;
+      font-size: 25px;
+      font-weight: 700;
+      padding-right: 30px;
+      background: url(../images/arrow-right.png) no-repeat right center; }
     .inner .main .text ol,
     .inner .main main ol {
       counter-reset: li;
@@ -4855,7 +4866,7 @@ em strong {
     .inner .intro p {
       line-height: 1.7; }
 
-.flex-center, .pagination, .pagination a, .pagination span {
+.flex-center, .pagination, .pagination a, .pagination span, .substances__pic {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5281,6 +5292,37 @@ em strong {
 
 .inner-contacts .main .right {
   margin-top: -150px; }
+
+.substances {
+  padding-left: 5rem;
+  font-size: 1.7rem;
+  align-self: start;
+  margin-top: -7.8rem; }
+  .substances__wrapper {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(52, 63, 69, 0.15);
+    padding: 1.5rem 3rem;
+    width: 32rem; }
+  .substances ul {
+    margin-bottom: 2rem; }
+    .substances ul li {
+      align-items: center;
+      display: flex;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      padding-left: 0 !important; }
+      .substances ul li:before {
+        display: none !important; }
+  .substances__pic {
+    background-color: #ed1d24;
+    border-radius: 50%;
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-right: 1.4rem; }
+
+.filter-item {
+  margin-bottom: 13rem; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -5805,7 +5847,9 @@ em strong {
       text-align: center; }
       main .d-flex.pic-right .pic img {
         float: none !important;
-        margin-top: 0; } }
+        margin-top: 0; }
+    main .d-flex.pic-right div {
+      padding-left: 0 !important; } }
 
 @media (max-width: 680px) {
   #modal-ask .modal-dialog {
@@ -5993,7 +6037,12 @@ em strong {
       font-size: 6rem;
       padding-top: 1rem; }
   .newproduct__cell {
-    width: 33.3%; } }
+    width: 33.3%; }
+  .substances {
+    padding-left: 2rem; }
+    .substances__wrapper {
+      padding: 2rem;
+      width: 30rem; } }
 
 @media (max-width: 1650px) {
   .homepage .intro .title {
@@ -6063,7 +6112,12 @@ em strong {
   .product__item .img-center img {
     max-height: 275px; }
   .product__item-left .product__box {
-    padding-left: 165px; } }
+    padding-left: 165px; }
+  .substances {
+    padding-left: 3rem; }
+    .substances__wrapper {
+      padding: 2rem;
+      width: 32rem; } }
 
 @media (max-width: 1520px) {
   .inner .main .content {
@@ -6150,10 +6204,11 @@ em strong {
         margin-bottom: 4rem;
         margin-left: 50px;
         order: 0;
+        padding-top: 1rem;
         width: 100%; }
         .main__body .side-panel .secondary-menu ul {
           display: flex;
-          justify-content: space-between; }
+          justify-content: space-around; }
       .main__body .side-panel .learnlist {
         order: 2; }
         .main__body .side-panel .learnlist__wrapper {
@@ -6277,7 +6332,12 @@ em strong {
   .product__title {
     font-size: 3.2rem; }
   .product__intro, .product__subtitle {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .substances {
+    padding-left: 1rem; }
+    .substances__wrapper {
+      width: 30rem;
+      padding-top: 1rem; } }
 
 @media (max-width: 1100px) {
   .homepage .counter {
@@ -6443,7 +6503,18 @@ em strong {
   .inner-contacts .main .right {
     margin-top: 3rem;
     width: calc(100% - 50px);
-    margin-left: 50px; } }
+    margin-left: 50px; }
+  .substances {
+    margin-top: 3rem; }
+    .substances__wrapper {
+      width: 90%; }
+      .substances__wrapper ul {
+        display: flex;
+        flex-wrap: wrap; }
+        .substances__wrapper ul li {
+          width: 33%; }
+    .substances__pic {
+      flex-shrink: 0; } }
 
 @media (max-width: 900px) {
   .side-panel .secondary-menu {
@@ -6492,11 +6563,15 @@ em strong {
   .product__subtitle {
     font-size: 1.4rem; }
   .product__intro p {
-    line-height: 1.6; } }
+    line-height: 1.6; }
+  .substances__wrapper ul li {
+    width: 50%; } }
 
 @media (max-width: 767px) {
   .main__body .side-panel .secondary-menu {
-    display: none; } }
+    display: none; }
+  .filter-item {
+    margin-bottom: 7rem; } }
 
 @media (max-width: 750px) {
   .product__box {
@@ -6659,7 +6734,11 @@ em strong {
     .inner-health .bottom .cell:first-child p {
       margin-right: 2rem; }
   .inner-health .bottom .cell:last-child p {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  .substances__wrapper ul {
+    display: block; }
+    .substances__wrapper ul li {
+      width: 100%; } }
 
 @media (max-width: 540px) {
   .lastnew__title {
@@ -6817,6 +6896,10 @@ em strong {
       width: 100%;
       text-align: center; }
     .inner-health .bottom .cell img {
+      width: 100%; }
+  .substances {
+    text-align: left; }
+    .substances__wrapper {
       width: 100%; } }
 
 @media (max-width: 340px) {

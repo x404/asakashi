@@ -20,6 +20,10 @@
 				background-repeat: no-repeat;
 			}
 		}
+		&-cabinair{
+			background-image: url(../images/bg/bg-inner-4.webp);
+			background-position: center top;
+		}
 	}
 }
 
@@ -44,6 +48,10 @@
 				background-position: center top;
 				background-repeat: no-repeat;
 			}
+		}
+		&-cabinair{
+			background-image: url(../images/bg/bg-inner-4.jpg);
+			background-position: center top;
 		}
 	}
 }
@@ -136,11 +144,11 @@ main{
 
 			p > strong{
 				font-size: inherit;
-				color: #000;
+				// color: #000;
 			}
 
 			strong{
-				color: #000;
+				// color: #000;
 				font-weight: 700;
 			}
 			a{
@@ -192,6 +200,16 @@ main{
 				margin: 10px auto;
 			}
 
+
+			.more{
+				a{
+					color: #ed1d24;
+					font-size: 25px;
+					font-weight: 700;
+					padding-right: 30px;
+					background: url(../images/arrow-right.png) no-repeat right center;
+				}
+			}
 
 
 			// ol

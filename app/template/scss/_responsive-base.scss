@@ -370,28 +370,19 @@
 	main{
 		.d-flex{
 			flex-direction: column;
-			// display: block !important;
-
-			.pic{
-				img{
-					// float: none !important;
-					// margin-left: auto !important;
-					// margin-right: auto !important;
-					// display: block;
-				}
-			}
-				&.pic-right{
-					.pic{
-						order: -1;
-						text-align: center;
-						img{
-							float: none !important;
-							// margin-left: auto; 
-							// margin-right: auto;
-							margin-top: 0;
-						}
+			&.pic-right{
+				.pic{
+					order: -1;
+					text-align: center;
+					img{
+						float: none !important;
+						margin-top: 0;
 					}
 				}
+				div{
+					padding-left: 0 !important;
+				}
+			}
 		}
 	}
 }
