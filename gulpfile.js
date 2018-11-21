@@ -22,6 +22,7 @@ var gulp 		= require('gulp'),
 var config = {
 	templateDir : 'app/template',
 	destDir : 'dist',
+	desttemplateDir : 'dist/template',
 	libsDir : 'app/libs'
 };
 
@@ -123,7 +124,7 @@ gulp.task('img', function() {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/template/images')); // Выгружаем на продакшен
+        .pipe(gulp.dest(config.desttemplateDir + '/images')); // Выгружаем на продакшен
 });
 
 
@@ -236,7 +237,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/selectize.css',
 		config.templateDir + '/css/animate.css'
 	])
-	.pipe(gulp.dest(config.destDir + '/template/css'));
+	.pipe(gulp.dest(config.desttemplateDir + '/css'));
 
 	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
@@ -251,12 +252,12 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/slick.min.js',
 		config.templateDir + '/js/selectize.min.js'
 	])
-	.pipe(gulp.dest(config.destDir + '/js'));
+	.pipe(gulp.dest(config.desttemplateDir + '/js'));
 
 
-	var buildTmp = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
+	var buildImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
 	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
-	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/template/fonts')); // Переносим шрифты в продакшен
+	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.desttemplateDir + '/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));
 
 });
