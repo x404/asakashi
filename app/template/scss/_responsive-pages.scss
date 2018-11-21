@@ -4,6 +4,13 @@
 			font-size: 3rem;
 		}
 	}
+
+
+	.advantages{
+		&__show{
+			font-size: 5rem;
+		}
+	}
 }
 
 
@@ -38,6 +45,11 @@
 			padding: 2rem;
 			width: 30rem;
 		}
+	}
+
+
+	.inner .history .history-arrows{
+		left: 55%;
 	}
 }
 
@@ -397,6 +409,19 @@
 			padding: 5rem;
 		}
 	}
+
+
+	// advantages
+	.advantages{
+		justify-content: space-around;
+		width: 90%;
+		&__cell{
+			padding-left: 0;
+			flex-grow: 0 !important;
+			flex-shrink: 0 !important
+		}
+	}
+
 }
 
 
@@ -457,24 +482,29 @@
 			padding-top: 12rem;
 		}
 	}
+
+
+
+	// about page
+	.inner{
+		.history,
+		.coverage
+		{
+			.title{
+				font-size: 3.6rem;
+			}
+		}
+
+		.history{
+			margin-top: 10rem;
+			.history-arrows{
+				left: auto;
+				right: 50px;
+				top: 20px;
+			}
+		}
+	}
 }
-
-
-
-// @media (max-width: 1279px){
-// 	.homepage{
-// 		.main{
-// 			overflow: hidden;
-// 		}
-// 	}
-
-// 	// .product__item 
-// 	.bg-radial:not(.img-center) img{
-// 		position: absolute;
-// 		left: 0;
-// 		top: 0;
-// 	}
-// }
 
 
 @media (max-width: 1250px){
@@ -488,8 +518,22 @@
 			font-size: 2.8rem;
 		}
 	}
+	
+	.coverage{
+		.columns{
+			margin-right: 0;
+		}
+		&__signature{
+			justify-content: center;
+		}
 
+		&__title{
+			font-size: 1.4rem;
+		}
+	}
 }
+
+
 
 @media (max-width: 1249px){
 	.homepage{
@@ -942,6 +986,20 @@
 			flex-shrink: 0
 		}
 	}
+
+
+	// advantages
+	.advantages{
+		&__show{
+			font-size: 3.5rem;
+		}
+	}
+
+	.coverage__signature{
+		font-size: 1.4rem;
+	}
+
+
 }
 
 @media (max-width: 900px){
@@ -999,6 +1057,11 @@
 				font-size: 2rem;
 			}
 		}
+	}
+
+	.inner .history__item{
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -1059,6 +1122,21 @@
 	}
 
 
+	.inner{
+		.history,
+		.coverage
+		{
+			.title{
+				font-size: 3.2rem;
+			}
+		}
+
+		.history{
+			.history-arrows{
+				top: 12px;
+			}
+		}
+	}
 
 }
 
@@ -1072,6 +1150,15 @@
 	.filter-item{
 		margin-bottom: 7rem;
 	}
+
+	.coverage{
+		.columns{
+			margin-left: 0;
+		}
+		&__title{
+			text-align: left;
+		}
+	}
 }
 
 
@@ -1084,6 +1171,17 @@
 	#sertificats-carousel{
 		margin-left: -30px;
 		margin-right: -30px;
+	}
+
+	// advantages
+	.advantages{
+		display: block !important;
+		width: 92%;
+		&__cell{
+			margin-bottom: 0rem;
+			padding-right: 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -1183,8 +1281,20 @@
 		}
 	}
 
-	// health
+	// about
+	.coverage__signature{
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
 
+	.coverage .signature{
+		&__item{
+			justify-content: center;
+			margin-right: 0;
+			margin: 1.5rem 0;
+			width: 50%;
+		}
+	}
 }
 
 
@@ -1373,6 +1483,31 @@
 			}
 		}
 	}
+
+
+
+
+	.inner{
+		.history,
+		.coverage
+		{
+			.title{
+				font-size: 2.6rem;
+			}
+		}
+
+		.history{
+			.history-arrows{
+				top: 12px;
+			}
+		}
+	}
+
+
+	.coverage{
+		padding-top: 5rem;
+	}
+
 }
 
 
@@ -1424,6 +1559,11 @@
 
 	.materials{
 		font-size: 1.8rem;
+	}
+
+
+	.history-arrows{
+		display: none;
 	}
 }
 
@@ -1511,6 +1651,26 @@
 			width: 80%;
 			display: block;
 			text-align: center;
+		}
+	}
+
+
+	.inner{
+		.coverage,
+		.history{
+			.title{
+				margin-bottom: 2rem;
+			}
+		}
+		.history{
+			margin-top: 5rem;
+		}
+	}
+	.coverage{
+		padding-bottom: 1rem;
+		&__row{
+			margin-left: -10px;
+			margin-right: -10px;
 		}
 	}
 }
@@ -1654,6 +1814,38 @@
 		}
 	}
 
+
+	.advantages{
+		margin-top: 3rem;
+		width: 100%;
+		&__show{
+			font-size: 3.2rem;
+		}
+	}
+
+
+
+	.inner{
+		.history,
+		.coverage
+		{
+			.title{
+				font-size: 2.6rem;
+			}
+		}
+
+		.history{
+			&__item{
+				width: 240px;
+			}
+			&__year{
+				font-size: 3rem;
+			}
+			&__desc{
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 340px){
@@ -1704,5 +1896,19 @@
 		}
 	}
 
+
+	.inner{
+		.history{
+			&__item{
+				width: 220px;
+			}
+			&__year{
+				font-size: 2.8rem;
+			}
+			&__desc{
+				font-size: 1.5rem;
+			}
+		}
+	}
 
 }

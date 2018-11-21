@@ -130,7 +130,53 @@ $(document).ready(function(){
 		arrows : true,
         infinite : false,
         appendArrows : $('.history-arrows'),
-        adaptiveHeight: true
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 850,
+				settings: {
+					slidesToShow: 2,
+					centerMode: true,
+					centerPadding: "30px"
+				}
+			},
+			{
+				breakpoint: 630,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: "120px"
+				}
+			},
+			{
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: "70px"
+				}
+			},
+			{
+				breakpoint: 420,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					centerPadding: "40px",
+					adaptiveHeight: true
+				}
+			}
+		]
 	});
 
 
