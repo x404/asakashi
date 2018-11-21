@@ -118,6 +118,22 @@ $(document).ready(function(){
 		]
 	});
 
+
+	$('#history-slider').slick({
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+		dots: false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		arrows : true,
+        infinite : false,
+        appendArrows : $('.history-arrows'),
+        adaptiveHeight: true
+	});
+
+
     $('.slider-tabs a').click(function(e){
         e.preventDefault();
         let $this = $(this),

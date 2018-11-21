@@ -2,16 +2,13 @@
     background:linear-gradient(to right, #f3eb6c 3px, transparent 3px);
     background-color: #eee32d;
 	background-size: 30px 100%;
-	margin-top: 7rem;
-	padding: 5.5rem 0 0rem;
 	border-bottom: 10px solid $color6;
+	margin-top: 7rem;
+	padding: 5rem 0 0rem;
 	&__cell{
 		padding-left: 5rem;
 		padding-right: 5px;
-		padding-bottom: 5.5rem;
-		// display: flex;
-		// flex-direction: column;
-		// align-items: center;
+		padding-bottom: 4.5rem;
 		text-align: left;
 	}
 	&__show{
@@ -21,7 +18,7 @@
 		letter-spacing: 7px;
 	}
 	&__sign{
-		color: #808080;
+		color: $color1;
 		font-size: 1.8rem;
 		font-weight: 700;
 	}
@@ -40,8 +37,87 @@
 			}
 		}
 	}
+
+	#history-slider{
+		display: flex;
+		margin-top: 3rem;
+	}
 	.history{
-		margin-top: 20rem;
+		margin-top: 19rem;
+		position: relative;
+		.history-arrows{
+			left: calc( 50% - 25px);
+			position: absolute;
+			top: 30px;
+		}
+
+		&__item{
+			position: relative;
+			width: 260px;
+			padding-top: 35px;
+			&:before,
+			&:after{
+				@extend .before;
+				border-radius: 50%;
+				z-index: 5;
+				left: 5px;
+				top: 3px;
+			}
+			
+			&:after{
+				$s: 16px;
+				width: $s;
+				height: $s;
+				border: 1px solid $color6;
+				border-radius: 50%;
+				margin-left: -3px;
+				margin-top: -3px;
+			}
+
+			&:before{
+				background-color: $color6;
+				height: 10px;
+				width: 10px;
+			}
+		}
+		&__year{
+			color: $color6;
+			font-size: 4rem;
+			line-height: 1;
+			font-weight: 700;
+		}
+		&__desc{
+			font-size: 1.7rem;
+			margin: 1.7rem 0 2.5rem;
+			strong{
+				color: $color1;
+			}
+		}
+
+		&-arrows{
+			.slick{
+				&-arrow{
+					background: url(../images/arrow-right-2.png) no-repeat left center;
+					height: 21px;
+					width: 41px;
+					cursor: pointer;
+					border: none;
+					transition: .3s;
+					margin: 0 10px;
+					&:hover{
+						background-position: 10px center
+					}
+				}
+				&-next{
+
+				}
+				&-prev{
+					transform: rotate(180deg);
+					&:hover{
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -53,14 +129,15 @@
 	$color3: #edab1d;
 	$color4: #edd71d;
 	$color5: #a2a2a2;
-	padding: 5rem 0;
+	padding: 11rem 0 5rem;
 	.title{
-		margin-bottom: 3rem;
+		margin-bottom: 4.3rem;
 	}
 
 	&__signature{
 		font-size: 1.6rem;
 		color: #808080;
+		margin-top: 4.8rem;
 		padding-left: 2.6rem;
 		.color1{
 			.circle{
@@ -125,19 +202,18 @@
 		font-weight: 700;
 	}
 	.columns{
-		height: 36px;
+		height: 37px;
 		margin-left: 1.7rem;
 		margin-right: 9.5rem;
 		position: relative;
 	}
 
-	.over{
-		background: url(../images/columns.png) repeat-x;
-		position: absolute;
-		width: 100%;
-		z-index: 10;
-		height: 36px;
-	}
+	// .over{
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	z-index: 10;
+	// 	height: 36px;
+	// }
 
 	.column{
 		border-right: 2px solid #fff;
@@ -155,7 +231,7 @@
 
 
 .dots{
-	top: 10px;
+	top: 11px;
 	position: absolute;
 	width: 100%;
 	.dot{
