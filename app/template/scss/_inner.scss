@@ -24,6 +24,11 @@
 			background-image: url(../images/bg/bg-inner-4.webp);
 			background-position: center top;
 		}
+		&-about{
+			.main-grid{
+				background: url(../images/bg/bg-inner-5.webp) no-repeat center top;
+			}
+		}
 	}
 }
 
@@ -52,6 +57,11 @@
 		&-cabinair{
 			background-image: url(../images/bg/bg-inner-4.jpg);
 			background-position: center top;
+		}
+		&-about{
+			.main-grid{
+				background: url(../images/bg/bg-inner-5.jpg) no-repeat center top;
+			}
 		}
 	}
 }
