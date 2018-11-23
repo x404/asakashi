@@ -4338,15 +4338,16 @@ em strong {
   .apanel__inner {
     right: -320px;
     transition: .3s; }
-  .apanel .page-asubnav {
-    transform: translateX(320px);
-    transition: .4s transform;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 7.3rem 1.5rem 0 !important; }
-    .apanel .page-asubnav.open {
-      overflow-y: auto;
-      transform: translateX(0); }
+  .apanel .page {
+    padding: 7.3rem 1.5rem 0 !important;
+    overflow-y: auto; }
+    .apanel .page-asubnav {
+      transform: translateX(320px);
+      transition: .4s transform;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
+      .apanel .page-asubnav.open {
+        transform: translateX(0); }
   .apanel .close-menu {
     display: block;
     position: absolute;
@@ -4375,16 +4376,17 @@ em strong {
     overflow: auto;
     width: 320px;
     height: 100%; }
-  .apanel .page-asubnav {
-    background: #fff;
+  .apanel .page {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0; }
-    .apanel .page-asubnav ul {
-      font-size: 1.8rem;
-      text-transform: none; }
+    .apanel .page-asubnav {
+      background: #fff; }
+      .apanel .page-asubnav ul {
+        font-size: 1.8rem;
+        text-transform: none; }
   .apanel__body {
     padding-left: 15px;
     padding-right: 15px;
@@ -4395,6 +4397,20 @@ em strong {
       top: 4px;
       width: 261px;
       z-index: 999; }
+    .apanel__body .lang {
+      align-items: center;
+      background: #e2e2e2;
+      display: flex;
+      font-size: 1.4rem;
+      height: 50px;
+      justify-content: center;
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: 3rem;
+      padding-right: 0; }
+      .apanel__body .lang a {
+        color: #767676;
+        font-weight: 400; }
   .apanel__top {
     align-items: center;
     height: 8rem;
@@ -4450,7 +4466,7 @@ em strong {
       padding: 1.6rem 0 1.6rem 43px; }
       .apanel .back_btn:hover {
         color: #ed1d24; }
-  .apanel nav {
+  .apanel .nav {
     font-size: 2rem;
     font-weight: 700; }
 
@@ -5663,15 +5679,16 @@ em strong {
   .apanel__inner {
     right: -320px;
     transition: .3s; }
-  .apanel .page-asubnav {
-    transform: translateX(320px);
-    transition: .4s transform;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 7.3rem 1.5rem 0 !important; }
-    .apanel .page-asubnav.open {
-      overflow-y: auto;
-      transform: translateX(0); }
+  .apanel .page {
+    padding: 7.3rem 1.5rem 0 !important;
+    overflow-y: auto; }
+    .apanel .page-asubnav {
+      transform: translateX(320px);
+      transition: .4s transform;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
+      .apanel .page-asubnav.open {
+        transform: translateX(0); }
   .apanel .close-menu {
     display: block;
     position: absolute;
@@ -5700,16 +5717,17 @@ em strong {
     overflow: auto;
     width: 320px;
     height: 100%; }
-  .apanel .page-asubnav {
-    background: #fff;
+  .apanel .page {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0; }
-    .apanel .page-asubnav ul {
-      font-size: 1.8rem;
-      text-transform: none; }
+    .apanel .page-asubnav {
+      background: #fff; }
+      .apanel .page-asubnav ul {
+        font-size: 1.8rem;
+        text-transform: none; }
   .apanel__body {
     padding-left: 15px;
     padding-right: 15px;
@@ -5720,6 +5738,20 @@ em strong {
       top: 4px;
       width: 261px;
       z-index: 999; }
+    .apanel__body .lang {
+      align-items: center;
+      background: #e2e2e2;
+      display: flex;
+      font-size: 1.4rem;
+      height: 50px;
+      justify-content: center;
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: 3rem;
+      padding-right: 0; }
+      .apanel__body .lang a {
+        color: #767676;
+        font-weight: 400; }
   .apanel__top {
     align-items: center;
     height: 8rem;
@@ -5775,7 +5807,7 @@ em strong {
       padding: 1.6rem 0 1.6rem 43px; }
       .apanel .back_btn:hover {
         color: #ed1d24; }
-  .apanel nav {
+  .apanel .nav {
     font-size: 2rem;
     font-weight: 700; }
 
