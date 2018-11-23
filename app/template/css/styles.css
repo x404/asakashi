@@ -5328,24 +5328,24 @@ em strong {
 .filter-item {
   margin-bottom: 13rem; }
 
-.advantages {
+.about {
   background: linear-gradient(to right, #f3eb6c 3px, transparent 3px);
   background-color: #eee32d;
   background-size: 30px 100%;
   border-bottom: 10px solid #ed1d24;
   margin-top: 7rem;
   padding: 5rem 0 0rem; }
-  .advantages__cell {
+  .about__cell {
     padding-left: 5rem;
     padding-right: 5px;
     padding-bottom: 4.5rem;
     text-align: left; }
-  .advantages__show {
+  .about__show {
     color: #ed1d24;
     font-size: 7rem;
     line-height: 1;
     letter-spacing: 7px; }
-  .advantages__sign {
+  .about__sign {
     color: #000;
     font-size: 1.8rem;
     font-weight: 700; }
@@ -6187,7 +6187,7 @@ em strong {
 @media (max-width: 1870px) {
   .inner-contacts .main .contacts a.tel {
     font-size: 3rem; }
-  .advantages__show {
+  .about__show {
     font-size: 5rem; } }
 
 @media (max-width: 1750px) {
@@ -6394,10 +6394,10 @@ em strong {
     margin-right: 3rem; }
   .inner-contacts .main .form-wrapper {
     padding: 5rem; }
-  .advantages {
+  .about {
     justify-content: space-around;
     width: 90%; }
-    .advantages__cell {
+    .about__cell {
       padding-left: 0;
       flex-grow: 0 !important;
       flex-shrink: 0 !important; } }
@@ -6785,10 +6785,10 @@ em strong {
   #sertificats-carousel {
     margin-left: -30px;
     margin-right: -30px; }
-  .advantages {
+  .about {
     display: block !important;
     width: 92%; }
-    .advantages__cell {
+    .about__cell {
       margin-bottom: 0rem;
       padding-right: 0;
       text-align: center; } }
