@@ -5858,6 +5858,18 @@ em strong {
 ::-ms-clear {
   display: none; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .slider-intro {
+    width: 100%; }
+  .product__box {
+    height: 440px; }
+  .inner-health .o2clean-body {
+    background-size: cover !important; }
+  .learnlist__wrapper {
+    display: block !important; }
+  .filter-item .row {
+    width: 100%; } }
+
 @media (max-width: 1800px) {
   .header .navmenu ul li {
     margin-left: 28px; }
