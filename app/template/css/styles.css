@@ -3675,7 +3675,8 @@ em strong {
   max-width: 0;
   overflow: hidden;
   position: absolute;
-  transition: max-width 0.5s; }
+  transition: max-width 0.5s;
+  will-change: auto; }
 
 .cl-effect-11 a:hover::before,
 .cl-effect-11 a:focus::before {
@@ -5005,7 +5006,9 @@ em strong {
     justify-content: center; }
 
 .product__link {
-  min-height: 44rem; }
+  color: #000 !important;
+  min-height: 44rem;
+  text-decoration: none !important; }
   .product__link:hover {
     color: #000;
     text-decoration: none; }
@@ -5095,7 +5098,8 @@ em strong {
   display: block;
   width: 290px;
   height: 390px;
-  transition: box-shadow .3s; }
+  transition: box-shadow .3s;
+  text-decoration: none !important; }
   .newproduct__link:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-decoration: none; }
@@ -5161,7 +5165,7 @@ em strong {
   .btn-more:hover {
     background-color: #ed1d24;
     color: #fff; }
-    .btn-more:hover:before {
+    .btn-more:hover:after {
       filter: brightness(5); }
 
 .main__body .content {
@@ -5229,6 +5233,9 @@ em strong {
     width: auto; }
   .learnlist .lastnew__desc .date {
     font-size: 1.5rem; }
+
+.no-webp .inner-health .o2clean-body {
+  background: url(../images/bg/bg-2.jpg) center top no-repeat; }
 
 .inner-health .main__body {
   padding-bottom: 85px; }
@@ -6035,15 +6042,15 @@ em strong {
     padding-left: 6rem; } }
 
 @media (max-width: 750px) {
-  main .d-flex {
+  main .d-flex:not(.newproducts__list):not(.product__link) {
     flex-direction: column; }
-    main .d-flex.pic-right .pic {
+    main .d-flex:not(.newproducts__list):not(.product__link).pic-right .pic {
       order: -1;
       text-align: center; }
-      main .d-flex.pic-right .pic img {
+      main .d-flex:not(.newproducts__list):not(.product__link).pic-right .pic img {
         float: none !important;
         margin-top: 0; }
-    main .d-flex.pic-right div {
+    main .d-flex:not(.newproducts__list):not(.product__link).pic-right div {
       padding-left: 0 !important; } }
 
 @media (max-width: 680px) {
@@ -6189,7 +6196,9 @@ em strong {
   .inner .main main h3 {
     font-size: 2.1rem; }
   .inner .main main h4 {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .inner .main main .product__title {
+    margin-top: 10px; } }
 
 @media (max-width: 340px) {
   .extra-toggle {
@@ -6579,7 +6588,7 @@ em strong {
     padding-right: 1rem; } }
 
 @media (max-width: 991px) {
-  .homepage.header,
+  .homepage .header,
   .slider-intro {
     background: url(../images/bg-hline.gif); }
   .homepage:after, .homepage:before {
@@ -6739,7 +6748,9 @@ em strong {
   .advantages__show {
     font-size: 3.5rem; }
   .coverage__signature {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .main main .pic {
+    margin-right: 1.5rem; } }
 
 @media (max-width: 900px) {
   .side-panel .secondary-menu {
@@ -6786,6 +6797,8 @@ em strong {
     font-size: 2.2rem !important; }
   .products-list {
     margin-top: 3rem; }
+    .products-list .d-flex {
+      flex-direction: row; }
   .product__link {
     min-height: 335px; }
   .product__subtitle {
@@ -6808,7 +6821,9 @@ em strong {
   .coverage .columns {
     margin-left: 0; }
   .coverage__title {
-    text-align: left; } }
+    text-align: left; }
+  .main main .pic {
+    margin-right: 0; } }
 
 @media (max-width: 750px) {
   .product__box {
@@ -7121,9 +7136,8 @@ em strong {
   .homepage .slick-list {
     padding-left: 3%; }
   .product__box {
-    min-height: 130px;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    min-height: 0;
+    padding: 10px !important;
     width: 65% !important;
     flex-basis: 65% !important; }
     .product__box .btn {
@@ -7142,11 +7156,13 @@ em strong {
     padding-left: 0 !important;
     padding-right: 0 !important; }
   .newproduct__link {
+    height: auto;
+    padding-bottom: 2rem;
     width: 100%; }
   .newproduct__pic {
     height: auto;
     min-height: 200px;
-    margin: 4rem 0; }
+    margin-bottom: 4rem; }
   .inner-health .main .text .heading {
     font-size: 2.4rem; }
   .inner-health .o2clean-body .o2clean-text-top {

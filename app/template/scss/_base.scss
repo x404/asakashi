@@ -391,6 +391,7 @@ body{
 	overflow: hidden;
 	position: absolute;
 	transition: max-width 0.5s;
+	will-change: auto; 
 }
 
 .cl-effect-11 a:hover::before,
@@ -416,7 +417,6 @@ body{
 .hline{
 	position: relative;
 	&:before{
-
 		@extend .before;
 	    background:linear-gradient(to bottom, $color9 50%, #fff 50%);
 		background-size:100% 10px;

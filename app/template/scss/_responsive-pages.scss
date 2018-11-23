@@ -717,7 +717,7 @@
 }
 
 @media (max-width: 991px){
-	.homepage.header,
+	.homepage .header,
 	.slider-intro{
 		background: url(../images/bg-hline.gif);
 	}
@@ -1000,6 +1000,13 @@
 	}
 
 
+	.main{
+		main{
+			.pic{
+				margin-right: 1.5rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 900px){
@@ -1097,6 +1104,9 @@
 	// product
 	.products-list{
 		margin-top: 3rem;
+		.d-flex{
+			flex-direction: row
+		}
 	}
 	.product{
 		&__link{
@@ -1158,6 +1168,10 @@
 		&__title{
 			text-align: left;
 		}
+	}
+
+	.main main .pic{
+		margin-right: 0;
 	}
 }
 
@@ -1723,9 +1737,8 @@
 
 	.product{
 		&__box{
-			min-height: 130px;
-			padding-left: 15px !important;
-			padding-right: 15px !important;
+			min-height: 0;
+			padding: 10px !important;
 			width: 65% !important;
 			flex-basis: 65% !important;
 			.btn{
@@ -1759,12 +1772,15 @@
 			padding-right: 0 !important;
 		}
 		&__link{
+			height: auto;
+			padding-bottom: 2rem;
 			width: 100%;
 		}
 		&__pic{
 			height: auto;
 			min-height: 200px;
-			margin: 4rem 0;
+			// margin: 4rem 0;
+			margin-bottom: 4rem;
 		}
 	}
 

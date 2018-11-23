@@ -368,7 +368,7 @@
 
 @media (max-width: 750px){
 	main{
-		.d-flex{
+		.d-flex:not(.newproducts__list):not(.product__link){
 			flex-direction: column;
 			&.pic-right{
 				.pic{
@@ -624,6 +624,9 @@
 				h3{font-size: 2.1rem}
 				h4{font-size: 1.7rem}
 
+				.product__title{
+					margin-top: 10px;
+				}
 			}
 		}
 	}

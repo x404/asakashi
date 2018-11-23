@@ -22,8 +22,6 @@
 			}
 		}
 		img{
-			// max-width: 100%;
-			// height: auto;
 			transition: transform .3s;
 		}
 		.img-center{
@@ -33,7 +31,9 @@
 		}
 	}
 	&__link{
+		color: $color1 !important;
 		min-height: 44rem;
+		text-decoration: none !important;
 		// hover
   		&:hover{
   			color: $color1;

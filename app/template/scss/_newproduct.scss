@@ -22,6 +22,7 @@
 		width: 290px;
 		height: 390px;
 		transition: box-shadow .3s;
+		text-decoration: none !important;
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 			text-decoration: none;
@@ -105,8 +106,8 @@
 	&:hover{
 		background-color: $color6;
 		color: $color2;
-		&:before{
-			filter: brightness(5);
+		&:after{
+			filter: brightness(5); 
 		}
 	}
 }
