@@ -335,10 +335,10 @@ main{
 			&:before{
 				@extend .before;
 				border-top: 5px solid $color6;
-				width: 118px;
 				left: 0;
-				top: 50px;
 				margin-top: -3px;
+				top: 50%;
+				width: 118px;
 			}
 		}
 

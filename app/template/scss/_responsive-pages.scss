@@ -160,7 +160,6 @@
 
 		&__box{
 			.circle-half{
-				// background-size: 46px 31px;
 				$s: 240px;
 				height: $s;
 				width: $s;
@@ -359,7 +358,6 @@
 				width: 100%;
 				ul{
 					display: flex;
-					// justify-content: space-between
 					justify-content: space-around
 				}				
 			}
@@ -422,6 +420,13 @@
 		}
 	}
 
+}
+
+
+@media (max-width: 1366px){
+	.product__box .circle-half:before{
+		margin-top: -11px;
+	}
 }
 
 

@@ -11,7 +11,16 @@ _::-webkit-:host:not(:root:root), .header{
 // edge
 // @supports (-ms-ime-align:auto) {
 // }
-_::-webkit-full-page-media, _:future, :root .selector {
+@supports (-ms-ime-align:auto) {
+	.slide__link img {
+		align-self: flex-start
+	}
+
+	.inner .main .title:before, 
+	.inner .main h1:before{
+		margin-top: -7px;
+		top: 50%;
+	}
 }
 
 
