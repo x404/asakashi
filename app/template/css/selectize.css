@@ -198,7 +198,13 @@
   -webkit-user-select: auto !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+
 }
+.selectize-input > input::-webkit-input-placeholder {color:#000;}
+.selectize-input > input::-moz-placeholder          {color:#000;}
+.selectize-input > input:-ms-input-placeholder      {color:#000;}
+
+
 .selectize-input > input::-ms-clear {
   display: none;
 }

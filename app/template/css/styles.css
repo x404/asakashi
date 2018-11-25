@@ -3696,7 +3696,7 @@ em strong {
 .hline {
   position: relative; }
   .hline:before {
-    background: linear-gradient(to bottom, #eee32d 50%, #fff 50%);
+    background: linear-gradient(to bottom, #eee32d 50%, transparent 50%);
     background-size: 100% 10px;
     height: 50px;
     width: 100%;
@@ -5089,17 +5089,17 @@ em strong {
     padding-top: 1rem; }
 
 .newproduct__cell {
-  background-color: #fff;
   margin: 1rem 0;
   text-align: center;
   width: 25%; }
 
 .newproduct__link {
+  background-color: #fff;
   display: block;
-  width: 290px;
   height: 390px;
+  text-decoration: none !important;
   transition: box-shadow .3s;
-  text-decoration: none !important; }
+  width: 290px; }
   .newproduct__link:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-decoration: none; }
@@ -5858,6 +5858,9 @@ em strong {
 ::-ms-clear {
   display: none; }
 
+_::-webkit-:host:not(:root:root), .selectize-dropdown {
+  top: 36px !important; }
+
 @supports (-ms-ime-align: auto) {
   .slide__link img {
     align-self: flex-start; }
@@ -5915,7 +5918,9 @@ em strong {
   .inner .intro {
     font-size: 1.8rem; }
   .inner-padding {
-    padding-left: 128px; } }
+    padding-left: 128px; }
+  .modal-menu .close-modal {
+    right: 35px; } }
 
 @media (max-width: 1545px) {
   .modal-menu .contacts .tel {
@@ -5981,7 +5986,9 @@ em strong {
   .inner .container {
     max-width: 100%;
     padding-left: 3rem;
-    padding-right: 3rem; } }
+    padding-right: 3rem; }
+  .modal-menu .close-modal {
+    right: 20px; } }
 
 @media (max-width: 1249px) {
   .extra-toggle {
@@ -6065,7 +6072,9 @@ em strong {
   .inner .intro {
     font-size: 1.6rem; }
   .inner-padding {
-    padding-left: 6rem; } }
+    padding-left: 6rem; }
+  .modal-menu .close-modal {
+    right: 32px; } }
 
 @media (max-width: 750px) {
   main .d-flex:not(.newproducts__list):not(.product__link) {

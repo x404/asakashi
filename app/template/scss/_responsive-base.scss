@@ -57,6 +57,11 @@
 	.inner-padding{
 		padding-left: 128px;
 	}
+
+
+	.modal-menu .close-modal{
+		right: 35px;
+	}
 }
 
 
@@ -187,20 +192,9 @@
 		}
 	}
 
-	// .inner{
-	// 	.main{
-	// 		font-size: 1.8rem;
-	// 	}
-	// 	.container{
-	// 		max-width: 100%;
-	// 		padding-left: 140px;
-	// 		padding-right: 140px;
-	// 	}
-	// 	.title{
-	// 		font-size: 5.5rem;
-	// 		padding-left: 98px;
-	// 	}
-	// }
+	.modal-menu .close-modal{
+		right: 20px;
+	}
 }
 
 
@@ -352,6 +346,10 @@
 	}
 	.inner-padding{
 		padding-left: 6rem;
+	}
+
+	.modal-menu .close-modal{
+		right: 32px;
 	}
 }
 

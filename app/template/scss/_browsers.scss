@@ -4,7 +4,8 @@
 
 
 // safari
-_::-webkit-:host:not(:root:root), .header{
+_::-webkit-:host:not(:root:root), .selectize-dropdown{
+	top: 36px !important;
 }
 
 

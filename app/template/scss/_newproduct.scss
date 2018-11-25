@@ -12,17 +12,17 @@
 
 .newproduct{
 	&__cell{
-		background-color: $color2;
 		margin: 1rem 0;
 		text-align: center;
 		width: 25%;
 	}
 	&__link{
+		background-color: $color2;
 		display: block;
-		width: 290px;
 		height: 390px;
-		transition: box-shadow .3s;
 		text-decoration: none !important;
+		transition: box-shadow .3s;
+		width: 290px;
 		&:hover{
 			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 			text-decoration: none;
