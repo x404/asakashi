@@ -240,6 +240,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	.pipe(gulp.dest(config.desttemplateDir + '/css'));
 
 	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+	var buildFaviconIco = gulp.src('app/the_favicon/favicon.ico').pipe(gulp.dest(config.destDir));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
