@@ -4931,6 +4931,7 @@ em strong {
     .pagination .next:hover {
       color: #ed1d24; }
   .pagination .prev {
+    margin-left: 0;
     margin-right: 6rem; }
   .pagination .next {
     margin-left: 8rem; }
@@ -6028,9 +6029,13 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     .header .logo img {
       width: 105px; }
   .header .btn-ask {
-    margin-top: 1.4rem; }
+    margin-top: 2rem; }
   .header__menu {
-    display: none; } }
+    display: none; }
+  .form-wrapper .textarea {
+    background-position: left -1px; }
+  .btn {
+    padding-top: .2rem; } }
 
 @media (max-width: 768px) {
   #modal-ask .modal-dialog {
@@ -6105,7 +6110,10 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     .inner .main main ul {
       font-size: 1.5rem; }
     .inner .main main blockquote {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .modal-content .form-wrapper {
+    padding-right: 8rem;
+    padding-left: 7rem; } }
 
 @media (max-width: 600px) {
   .header__right {
@@ -6233,7 +6241,10 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
   .inner .main main h4 {
     font-size: 1.7rem; }
   .inner .main main .product__title {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .modal-content .form-wrapper {
+    padding-right: 5rem;
+    padding-left: 4rem; } }
 
 @media (max-width: 340px) {
   .extra-toggle {
@@ -6258,7 +6269,10 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
   .inner .main h3 {
     font-size: 2rem; }
   .inner .main h4 {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .modal-content .form-wrapper {
+    padding-right: 3rem;
+    padding-left: 2rem; } }
 
 @media (max-width: 1870px) {
   .inner-contacts .main .contacts a.tel {
@@ -6824,7 +6838,9 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     flex-grow: 1;
     width: auto; }
   .homepage .counter-lastnews .homeslider-sm {
-    width: 370px; } }
+    width: 370px; }
+  .dots .dot {
+    margin-left: -10px; } }
 
 @media (max-width: 768px) {
   .article__link {
