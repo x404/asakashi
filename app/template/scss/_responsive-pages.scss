@@ -1088,7 +1088,7 @@
 		}
 	}
 
-	
+
 	.dots .dot{
 		margin-left: -10px;
 	}
@@ -1509,8 +1509,6 @@
 	}
 
 
-
-
 	.inner{
 		.history,
 		.coverage
@@ -1532,6 +1530,17 @@
 		padding-top: 5rem;
 	}
 
+
+	.btn-more{
+		display: block;
+		text-align: center;
+		padding-top: .5rem;
+		&:after{
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+		}
+	}
 }
 
 
@@ -1658,7 +1667,7 @@
 
 	// contacts
 	.inner-contacts .main .right{
-		box-shadow: 0 0 8px #ccc;
+		// box-shadow: 0 0 8px #ccc;
 		margin-left: 0;
 		width: auto;
 		.title{
@@ -1696,6 +1705,10 @@
 			margin-left: -10px;
 			margin-right: -10px;
 		}
+	}
+
+	.about{
+		width: 100%;
 	}
 }
 

@@ -242,13 +242,25 @@ $color_2: #0563bf;
 		transition: .3s;
 	}
 	.page{
-		padding: 7.3rem 1.5rem 0 !important;
-		overflow-y: auto;		
+		padding: 0 1.5rem 0 !important;
+		overflow-y: auto;	
+
+		position: absolute;
+		left: 0;
+		top: 7.2rem;
+		bottom: 0;
+		right: 0;
+			
 		&-asubnav{
 			transform: translateX(320px);
 			transition: .4s transform;
 			margin-left: 0 !important;
 			margin-right: 0 !important;
+			background: $color2;
+			ul{
+				font-size: 1.8rem;
+				text-transform: none;
+			}
 			&.open{
 				transform: translateX(0);
 			}
@@ -304,18 +316,7 @@ $color_2: #0563bf;
 
 
 	.page{
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		&-asubnav{
-			background: $color2;
-			ul{
-				font-size: 1.8rem;				
-				text-transform: none;
-			}
-		}
+
 	}
 	
 	// &__top,

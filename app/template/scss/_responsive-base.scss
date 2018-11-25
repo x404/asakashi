@@ -375,6 +375,10 @@
 	#modal-ask .modal-dialog{
 		max-width: 85%
 	}
+
+	.main-grid{
+		display: block;
+	}
 }
 
 
@@ -476,6 +480,7 @@
 	.hide-col-sm{
 		display: none;
 	}
+
 }
 
 
@@ -531,9 +536,7 @@
 }
 
 @media (max-width: 460px){
-	.main-grid{
-		display: block;
-	}
+
 	.homepage .main{
 		display: block;
 	}
