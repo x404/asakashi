@@ -690,3 +690,25 @@ body{
 	width: 14px !important;
 }
 
+
+
+
+@media (min-width: 992px) {
+	.revealator-once{
+		opacity: 0;
+	}
+
+	.overflow{
+		overflow: hidden;
+	}
+	.loaded{
+		.main-pic{
+			&.partially-below,
+			&.revealator-within{
+				transform: none;
+				transition-delay: unset !important;
+				transition: none !important
+			}
+		}
+	}
+}

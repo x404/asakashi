@@ -40,7 +40,7 @@
 		<!-- =header -->
 		<header class="header">
 			<div class="d-flex">	
-				<div class="header__left d-flex">
+				<div class="header__left d-flex revealator-slideright revealator-delay2 revealator-once">
 					<button type="button" class="extra-toggle" data-popup="modal-menu" aria-label="Show / hide menu">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -55,7 +55,7 @@
 					<!-- =/logo -->
 				</div>
 			
-				<div class="header__menu">
+				<div class="header__menu revealator-slideleft revealator-delay5 revealator-once">
 					<!-- =nav -->
 					<div class="navmenu">
 						<div class="navmenu__inner">
@@ -75,7 +75,7 @@
 					<!-- =/nav -->					
 				</div>
 
-				<div class="header__right">
+				<div class="header__right revealator-slideleft revealator-delay8 revealator-once">
 					<a href="#" class="btn btn-icon btn-ask icon-question" data-toggle="modal" data-target="#modal-ask">Ask us</a>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 			<div class="slider-intro d-flex">
 				<div class="offset-xl-1 col-xl-6 hide-sm">
 					<!-- =slider-tabs -->
-					<div class="slider-tabs">
+					<div class="slider-tabs revealator-slideright revealator-delay3 revealator-once">
 						<ul>
 							<li>
 								<a href="#slide-0" title="" class="active">
@@ -124,7 +124,7 @@
 					<!-- =/slider-tabs -->
 
 					<!-- =homeslider -->
-					<div class="homeslider" id="home-carousel">
+					<div class="homeslider revealator-zoomin revealator-delay10 revealator-once" id="home-carousel">
 						<div>
 							<div class="slide">
 								<img src="images/slider-bg-1.png" alt="" class="slide__bg">
@@ -168,7 +168,7 @@
 					</div>
 					<!-- =/homeslider -->
 				</div>
-				<div class="col-xl-5 col-lg-5 col-sm-12">
+				<div class="col-xl-5 col-lg-5 col-sm-12 revealator-slideleft revealator-delay5 revealator-once">
 					<div class="intro">
 						<p class="title">Automative filters</p>
 						<div class="subtitle">Premium class of filtration</div>
@@ -233,7 +233,7 @@
 				</div>
 			</div>
 
-			<div class="counter-lastnews">
+			<div class="counter-lastnews revealator-slideright revealator-delay3 revealator-once">
 				<div class="news-counter d-flex justify-content-between">
 					<!-- =counter -->
 					<div class="counter offset-xl-1">
@@ -539,6 +539,10 @@
 <script src="/template/js/engine.js"></script>
 
 <link rel="stylesheet" property="stylesheet" href="/template/css/selectize.css" />    
-<link rel="stylesheet" property="stylesheet" href="/template/css/animate.css" />    
+<link rel="stylesheet" property="stylesheet" href="/template/css/animate.css" />
+
+
+<script src="/template/js/fm.revealator.jquery.js"></script>
+<link rel="stylesheet" property="stylesheet" href="/template/css/fm.revealator.jquery.css" /> 
 </body>
 </html>

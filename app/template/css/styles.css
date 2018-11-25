@@ -3897,6 +3897,16 @@ em strong {
   left: calc(100% - 14px) !important;
   width: 14px !important; }
 
+@media (min-width: 992px) {
+  .revealator-once {
+    opacity: 0; }
+  .overflow {
+    overflow: hidden; }
+  .loaded .main-pic.partially-below, .loaded .main-pic.revealator-within {
+    transform: none;
+    transition-delay: unset !important;
+    transition: none !important; } }
+
 .input-field {
   position: relative;
   margin-top: 3.2rem; }
