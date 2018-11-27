@@ -3967,7 +3967,8 @@ em strong {
 
 .homepage {
   flex-grow: 1;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .homepage:before {
     background: url(../images/bg-vline.gif);
     height: 100%;
@@ -4047,7 +4048,7 @@ em strong {
     z-index: 2; }
 
 .homeslider {
-  margin-left: 170px;
+  margin-left: 110px;
   position: relative;
   top: -10px;
   width: 750px;
@@ -4055,30 +4056,33 @@ em strong {
   .homeslider .slick-slide {
     position: relative; }
   .homeslider .slide {
+    padding-left: 60px;
     height: 740px; }
     .homeslider .slide__bg {
       position: absolute;
       left: 0;
       top: 0; }
     .homeslider .slide__link {
-      display: flex;
       background-color: #ed1d24;
       border-radius: 50%;
-      width: 617px;
-      height: 618px;
       box-shadow: 40px 20px 50px rgba(255, 98, 40, 0.7);
+      display: flex;
+      height: 618px;
+      margin-top: 45px;
+      overflow: hidden;
       position: relative;
-      z-index: 1;
-      margin-top: 45px; }
+      width: 617px;
+      z-index: 1; }
       .homeslider .slide__link img {
         transition: transform .5s;
+        transform: scale(1.02);
         margin: auto; }
       .homeslider .slide__link:hover img {
-        transform: scale(1.1); }
+        transform: scale(1.1) !important; }
   .homeslider .slick-active .slide__link img {
     animation: fadeIn .5s both .5s; }
   .homeslider .slick-active .slide__bg {
-    animation: fadeInRight 1s both 1s; }
+    animation: fadeIn 1s both 1s; }
 
 .slider-tabs {
   font-size: 1.3rem;
@@ -4677,7 +4681,7 @@ em strong {
     .inner .main .text h1,
     .inner .main main h1 {
       font-size: 50px;
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
     .inner .main .text h1:before,
     .inner .main main h1:before {
       top: 35px; }
@@ -4890,10 +4894,8 @@ em strong {
         color: #ed1d24;
         font-weight: 700;
         text-decoration: none; }
-  .inner .intro {
-    padding-top: 2.7rem; }
-    .inner .intro p {
-      line-height: 1.7; }
+  .inner .intro p {
+    line-height: 1.7; }
 
 .flex-center, .pagination, .pagination a, .pagination span, .substances__pic {
   display: flex;
@@ -6949,9 +6951,7 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
   .product__subtitle {
     font-size: 1.5rem; }
   .product__intro {
-    font-size: 1.5rem; }
-    .product__intro p {
-      line-height: 1.6; }
+    display: none; }
   .product__desc .btn {
     font-size: 1.8rem;
     height: 50px; }
@@ -7002,6 +7002,8 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
       padding-left: 2.2rem;
       padding-right: 2.2rem;
       padding-top: 3.5rem; }
+  .products-list {
+    margin-top: 0; }
   .product__link {
     min-height: 0; }
   .product__box {
@@ -7101,8 +7103,6 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     min-height: 200px;
     padding-left: 20px !important;
     padding-right: 20px !important; }
-  .product__intro {
-    display: none; }
   .product__desc .btn {
     width: 109px;
     height: 40px;
@@ -7185,6 +7185,8 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     width: 100%; }
     .homepage .advantage__item br {
       display: none !important; }
+  .homepage .advantages {
+    margin-top: 0; }
   .homepage .advantage__pic img {
     width: 60%; }
   .homepage .slider-intro {

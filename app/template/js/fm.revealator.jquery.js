@@ -114,7 +114,13 @@ $(function () {
 		});
 	};
 
-	$(window).bind('scroll resize load ready', function () {
+	// $(window).on('scroll resize load ready', function () {
+
+	// });
+});
+
+
+$(document).ready(function(){
 		if (!Revealator.busy) {
 			Revealator.busy = true;
 			setTimeout(function () {
@@ -122,5 +128,4 @@ $(function () {
 				Revealator.refresh();
 			}, 150);
 		}
-	});
 });

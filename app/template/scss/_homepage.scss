@@ -5,6 +5,8 @@
 .homepage{
 	flex-grow: 1;
 	position: relative;
+	overflow: hidden;
+
 	&:before{
 		@extend .before;
 		background: url(../images/bg-vline.gif);
@@ -115,7 +117,7 @@
 
 
 .homeslider{
-	margin-left: 170px;
+	margin-left: 110px;
 	position: relative;
 	top: -10px;
 	width: 750px;
@@ -124,6 +126,7 @@
 		position: relative;
 	}
 	.slide{
+		padding-left: 60px;
 		height: 740px;
 		&__bg{
 			position: absolute;
@@ -131,22 +134,24 @@
 			top: 0;
 		}
 		&__link{
-			display: flex;
 			background-color: $color6;
 			border-radius: 50%;
-			width: 617px;
-			height: 618px;
 			box-shadow: 40px 20px 50px rgba(255,98,40,.7);
-			position: relative;
-			z-index: 1;
+			display: flex;
+			height: 618px;
 			margin-top: 45px;
+			overflow: hidden;
+			position: relative;
+			width: 617px;
+			z-index: 1;
 			img{
 				transition: transform .5s;
+				transform: scale(1.02);
 				margin: auto;
 			}
 			&:hover{
 				img{
-					transform: scale(1.1);
+					transform: scale(1.1) !important;
 				}
 			}
 		}		
@@ -159,7 +164,7 @@
 			}
 		}
 		.slide__bg{
-			animation:fadeInRight 1s both 1s;
+			animation:fadeIn 1s both 1s;
 		}
 	}
 }

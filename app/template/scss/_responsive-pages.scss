@@ -1187,9 +1187,11 @@
 
 
 @media (max-width: 750px){
-	.product__box{
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
+	.product{
+		&__box{
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+		}
 	}
 
 	#sertificats-carousel{
@@ -1294,10 +1296,11 @@
 			font-size: 1.5rem;
 		}
 		&__intro{
-			font-size: 1.5rem;
-			p{
-				line-height: 1.6;
-			}
+			display: none;
+			// font-size: 1.5rem;
+			// p{
+			// 	line-height: 1.6;
+			// }
 		}
 		&__desc .btn{
 			font-size: 1.8rem;
@@ -1387,6 +1390,10 @@
 				padding-top: 3.5rem;
 			}
 		}
+	}
+
+	.products-list{
+		margin-top: 0;
 	}
 	.product__link{
 		min-height: 0;
@@ -1580,9 +1587,6 @@
 			padding-left: 20px !important;
 			padding-right: 20px !important;
 		}
-		&__intro{
-			display: none;
-		}
 		&__desc .btn{
 			width: 109px;
 			height: 40px;
@@ -1723,6 +1727,9 @@
 			br{
 				display: none !important;
 			}
+		}
+		.advantages{
+			margin-top: 0;
 		}
 		.advantage__pic{
 			img{
