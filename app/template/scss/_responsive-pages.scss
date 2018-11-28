@@ -18,7 +18,12 @@
 @media (max-width: 1750px){
 	.homeslider{
 		margin-left: 110px;
+
+		.slide {
+		    padding-left: 0;
+		}
 	}
+
 
 	.homepage .counter{
 		margin-top: -8rem;
@@ -574,7 +579,7 @@
 				height: 365px;
 				width: 365px;
 				img{
-					width: 70%;
+					width: 100%;
 				}
 			}
 			&__bg{

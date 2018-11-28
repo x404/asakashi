@@ -24,10 +24,14 @@
 		img{
 			transition: transform .3s;
 		}
-		.img-center{
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		.img{
+			overflow: hidden;
+			padding-left: 0;
+			&-center{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 		}
 	}
 	&__link{
