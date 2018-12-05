@@ -78,7 +78,7 @@
 			height: 500px;
 			width: 500px;
 			img{
-				width: 70%;
+				width: 95%;
 			}
 		}
 
@@ -288,9 +288,6 @@
 			&__link{
 				height: 400px;
 				width: 400px;
-				img{
-					width: 70%;
-				}
 			}
 			&__bg{
 				width: 240px;
@@ -541,6 +538,16 @@
 			font-size: 1.4rem;
 		}
 	}
+
+	.homepage{
+		.slide{
+			&__link{
+				img{
+					width: 97%;
+				}
+			}
+		}
+	}
 }
 
 
@@ -579,7 +586,7 @@
 				height: 365px;
 				width: 365px;
 				img{
-					width: 100%;
+					// width: 100%;
 				}
 			}
 			&__bg{
@@ -1014,6 +1021,17 @@
 		main{
 			.pic{
 				margin-right: 1.5rem;
+			}
+		}
+	}
+
+
+	.homeslider{
+		.slide{
+			&__link{
+				img{
+					width: 97%;
+				}
 			}
 		}
 	}
