@@ -1551,6 +1551,68 @@ template {
   .modal-lg {
     max-width: 800px; } }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem; }
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: none; }
+  .nav-link.disabled {
+    color: #6c757d; }
+
+.nav-tabs {
+  border-bottom: 0px solid #dee2e6; }
+  .nav-tabs .nav-item {
+    margin-bottom: 0px; }
+  .nav-tabs .nav-link {
+    border: 0px solid transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem; }
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+      border-color: #e9ecef #e9ecef #dee2e6; }
+    .nav-tabs .nav-link.disabled {
+      color: #6c757d;
+      background-color: transparent;
+      border-color: transparent; }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff; }
+  .nav-tabs .dropdown-menu {
+    margin-top: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.nav-pills .nav-link {
+  border-radius: 0rem; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #007bff; }
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center; }
+
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -3472,7 +3534,7 @@ em strong {
   .pagination .next:hover {
     text-decoration: none; }
 
-.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main .text ul li:before,
+.before, .icon-question:before, .header .navmenu ul li:before, .lang .current:before, .vline:before, .hline:before, .inner .catalog-page .tabs:before, .box-vline:before, .modal-menu .menu:before, .homepage:before, .homepage:after, .slider-tabs ul li a.active:before, .apanel__body:before, .apanel ul li:before, .asubnav_content li:before, .inner .main .text ul li:before,
 .inner .main main ul li:before, .inner .main h1:before,
 .inner .main .title:before, .pagination .current:before, .product__box .circle-half:before, .inner-health .o2clean-body ul li:before, .inner .history__item:before, .inner .history__item:after {
   content: "";
@@ -3693,9 +3755,9 @@ em strong {
     left: -55px;
     top: 0; }
 
-.hline {
+.hline, .inner .catalog-page .tabs {
   position: relative; }
-  .hline:before {
+  .hline:before, .inner .catalog-page .tabs:before {
     background: linear-gradient(to bottom, #eee32d 50%, transparent 50%);
     background-size: 100% 10px;
     height: 50px;
@@ -4614,6 +4676,10 @@ em strong {
     background-position: center top; }
   .webp .inner-about .main-grid {
     background: url(../images/bg/bg-inner-5.webp) no-repeat center top; }
+  .webp .inner-catalog {
+    background: #f0f0f0; }
+    .webp .inner-catalog .main-grid {
+      background: url(../images/bg/bg-catalog.webp) no-repeat center top; }
 
 .no-webp .inner {
   background-image: url(../images/bg/bg-inner-3.jpg);
@@ -4637,6 +4703,8 @@ em strong {
     background-position: center top; }
   .no-webp .inner-about .main-grid {
     background: url(../images/bg/bg-inner-5.jpg) no-repeat center top; }
+  .no-webp .inner-catalog .main-grid {
+    background: url(../images/bg/bg-catalog.jpg) no-repeat center top; }
 
 .bg-radial {
   background: radial-gradient(circle at center, #dedfe0 0%, #888a8d 100%); }
@@ -5522,6 +5590,79 @@ em strong {
     font-size: 1.2rem;
     position: absolute;
     z-index: 15; }
+
+.inner .catalog-page .tabs {
+  background: #fff;
+  min-height: 24rem;
+  box-shadow: 0px 2.5px 20px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 0 3.5rem;
+  margin-bottom: 8px; }
+  .inner .catalog-page .tabs:before {
+    left: 0;
+    top: auto;
+    bottom: -40px;
+    height: 40px; }
+
+.inner .catalog-page .nav {
+  list-style: none;
+  padding-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  border-bottom: 1px solid #d2d5d6; }
+  .inner .catalog-page .nav-item {
+    margin-bottom: 0;
+    padding-left: 0; }
+    .inner .catalog-page .nav-item:before {
+      display: none; }
+  .inner .catalog-page .nav-link {
+    position: relative;
+    top: 1px;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0); }
+    .inner .catalog-page .nav-link.active {
+      color: #000;
+      border-left: 1px solid #d2d5d6;
+      border-right: 1px solid #d2d5d6;
+      border-top: 1px solid #d2d5d6;
+      border-bottom-color: #fff; }
+
+.inner .catalog-page .search-result {
+  margin-top: 8.5rem; }
+  .inner .catalog-page .search-result-table {
+    width: 100%; }
+    .inner .catalog-page .search-result-table th {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      vertical-align: middle; }
+      .inner .catalog-page .search-result-table th img {
+        vertical-align: bottom; }
+    .inner .catalog-page .search-result-table tr:nth-child(even) td {
+      background: #f0f0f0; }
+    .inner .catalog-page .search-result-table tr td {
+      padding: 1rem 2.8rem;
+      border-bottom: 1px solid #d2d5d6; }
+      .inner .catalog-page .search-result-table tr td a {
+        text-decoration: none;
+        display: block;
+        margin: 1rem 0; }
+        .inner .catalog-page .search-result-table tr td a:hover {
+          text-decoration: underline; }
+      .inner .catalog-page .search-result-table tr td.model-title {
+        background: #232323;
+        padding-top: .3rem;
+        padding-bottom: .3rem; }
+        .inner .catalog-page .search-result-table tr td.model-title h3 {
+          color: #fff; }
+    .inner .catalog-page .search-result-table h3 {
+      font-size: 1.7rem;
+      font-weight: 700; }
+
+.inner .catalog-page .search-title {
+  font-size: 3rem; }
 
 /* =mobile-menu
 ---------------------------*/

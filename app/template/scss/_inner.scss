@@ -29,6 +29,12 @@
 				background: url(../images/bg/bg-inner-5.webp) no-repeat center top;
 			}
 		}
+		&-catalog{
+			background: #f0f0f0;
+			.main-grid{
+				background: url(../images/bg/bg-catalog.webp) no-repeat center top;				
+			}
+		}
 	}
 }
 
@@ -61,6 +67,11 @@
 		&-about{
 			.main-grid{
 				background: url(../images/bg/bg-inner-5.jpg) no-repeat center top;
+			}
+		}
+		&-catalog{
+			.main-grid{
+				background: url(../images/bg/bg-catalog.jpg) no-repeat center top;
 			}
 		}
 	}
