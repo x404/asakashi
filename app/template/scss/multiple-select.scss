@@ -76,6 +76,18 @@
     border: 1px solid #aaa;
 }
 
+#year_tab{
+	.ms-drop {
+	    width: 150px;
+    }
+}
+
+#body_tab{
+	.ms-drop {
+	    width: 200px;
+    }
+}
+
 .ms-drop.bottom {
     top: 100%;
     -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
@@ -279,7 +291,9 @@
 .ms-drop{
 	li{
 		transition: .3s;
-		padding: 7px 0;
+		label{
+			padding: 7px 0;
+		}
 		&:hover{
 			color: #fff;
 			background: #ed1d24;

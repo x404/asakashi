@@ -5625,9 +5625,6 @@ em strong {
   .inner .catalog-page .tab-pane .btn {
     margin-top: .8rem; }
 
-.inner .catalog-page .select-tab {
-  margin-right: 4.2rem; }
-
 .inner .catalog-page #brand_tab,
 .inner .catalog-page #class_tab,
 .inner .catalog-page #model_tab {
@@ -5772,6 +5769,12 @@ em strong {
   background: #fff;
   color: #000;
   border: 1px solid #aaa; }
+
+#year_tab .ms-drop {
+  width: 150px; }
+
+#body_tab .ms-drop {
+  width: 200px; }
 
 .ms-drop.bottom {
   top: 100%;
@@ -5936,8 +5939,9 @@ em strong {
   border-color: #fff !important; }
 
 .ms-drop li {
-  transition: .3s;
-  padding: 7px 0; }
+  transition: .3s; }
+  .ms-drop li label {
+    padding: 7px 0; }
   .ms-drop li:hover {
     color: #fff;
     background: #ed1d24; }

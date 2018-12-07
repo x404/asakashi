@@ -63,6 +63,12 @@
   color: #000;
   border: 1px solid #aaa; }
 
+#year_tab .ms-drop {
+  width: 150px; }
+
+#body_tab .ms-drop {
+  width: 200px; }
+
 .ms-drop.bottom {
   top: 100%;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
@@ -226,8 +232,9 @@
   border-color: #fff !important; }
 
 .ms-drop li {
-  transition: .3s;
-  padding: 7px 0; }
+  transition: .3s; }
+  .ms-drop li label {
+    padding: 7px 0; }
   .ms-drop li:hover {
     color: #fff;
     background: #ed1d24; }

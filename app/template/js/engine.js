@@ -215,7 +215,9 @@ $(document).ready(function(){
 	});
 
 
-	var nice = $('.selectize-dropdown-content').niceScroll({railpadding: {top: 15, right: 0, left: 0, bottom: 15 }});
+	var niceScroll = $('.selectize-dropdown-content').niceScroll({
+		railpadding: {top: 15, right: 0, left: 0, bottom: 15 }
+	});
 
 
 	/* Time Parser */
