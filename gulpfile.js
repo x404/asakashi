@@ -253,6 +253,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/multiple-select.js',
 		config.templateDir + '/js/selectize.min.js'
 	])
 	.pipe(gulp.dest(config.desttemplateDir + '/js'));

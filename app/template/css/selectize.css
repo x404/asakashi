@@ -320,25 +320,25 @@
 .selectize-control.single .selectize-input.input-active input {
   cursor: text;
 }
-.selectize-control.single .selectize-input:after {
+.selectize-control.single .selectize-input:after,
+.ms-choice div:after {
   content: ' ';
   display: block;
   position: absolute;
-  /*top: 50%;*/
   top: 10px;	
   right: 0;
   width: 17px;
   height: 9px;
    transition: .3s transform;
-  /*transition: .3s;*/
-  /*filter: grayscale(1) brightness(2);*/
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMdJREFUeNpifCurUsfAwBAFxDFAfIaBeBAExBOAuIIJSDwDYnUg3gjEZiQYsByIpYH4NciQOUBcCsRSQLyJCIMCgXgpEDNBfbCbCSrRA3IWEIsD8XogNsZjwDIgZoYasJIBahoMdCK5aDMQm2PxwgqoAaDwWw2TYEJTCHJRGRBLAvEGIDaFigcgeQFkwCpkTSxYnNwNVdwBxGuAeBYQVyGFwWp0DYzAKMYVgCVQA0HgDxBHo7sAn0uQvcYDxIVAnIfLABAACDAA7o0i2NNlN5sAAAAASUVORK5CYII=") no-repeat left top;
 }
+
 
 .selectize-control.single .selectize-input:hover:after {
 	filter: none;
 }
 
+.ms-choice div.open:after,
 .selectize-control.single .selectize-input.dropdown-active:after {
 	transform: rotate(180deg);
 }

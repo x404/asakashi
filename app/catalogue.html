@@ -121,8 +121,8 @@
 									<div role="tabpanel" class="tab-pane fade in active show" id="application-search">
 										<form action="#" method="post" id="frmAppSearch">
 											<fieldset>
-												<div class="d-flex">
-													<div id="brand_tab" class="select-tab">
+												<div class="d-flex justify-content-lg-around">
+													<div id="brand_tab" class="select-tab radio-tab">
 														<select name="selBrand" id="selBrand" class="selBrand" multiple="multiple">
 															<option value="1">ACURA</option>
 															<option value="2">ALFA ROMEO</option>
@@ -138,7 +138,7 @@
 															<option value="272">BOVA</option>
 														</select>
 													</div>
-													<div id="class_tab" class="select-tab">
+													<div id="class_tab" class="select-tab checkbox-tab">
 														<select name="selClass" id="selClass" multiple="multiple">
 															<option value="1018">A-Class</option>
 															<option value="1022">Actros-Serie</option>
@@ -155,7 +155,7 @@
 															<option value="6">E-Class</option>
 														</select>	
 													</div>
-													<div id="model_tab" class="select-tab">
+													<div id="model_tab" class="select-tab checkbox-tab">
 														<select name="selModel" id="selModel" multiple="multiple">
 															<option value="20532">A 45 AMG</option>
 															<option value="20078">A 140</option>
@@ -170,7 +170,7 @@
 															<option value="20084">A 250</option>
 														</select>
 													</div>
-													<div id="year_tab" class="select-tab">
+													<div id="year_tab" class="select-tab checkbox-tab">
 														<select name="selYear" id="selYear" multiple="multiple">
 															<option value="2018">2018</option>
 															<option value="2017">2017</option>
@@ -198,7 +198,7 @@
 
 														<p class="optional">Optional</p>
 													</div>
-													<div id="engine_tab" class="select-tab">
+													<div id="engine_tab" class="select-tab checkbox-tab">
 														<select name="selEngine" id="selEngine" multiple="multiple">
 															<option value="1500">1500</option>
 															<option value="1600">1600</option>
@@ -207,7 +207,7 @@
 														</select>
 														<p class="optional">Optional</p>
 													</div>
-													<div id="body_tab" class="select-tab">
+													<div id="body_tab" class="select-tab checkbox-tab">
 														<select name="selBody" id="selBody" multiple="multiple">
 															<option value="W168">W168</option>
 															<option value="W176">W176</option>
@@ -652,6 +652,10 @@
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/selectize.min.js"></script>
 <script src="/template/js/engine.js"></script>
+
+
+<script src="/template/js/multiple-select.js"></script>
+<script src="/template/js/filters.js"></script>
 
 <link rel="stylesheet" property="stylesheet" href="/template/css/selectize.css" />    
 <link rel="stylesheet" property="stylesheet" href="/template/css/animate.css" />    
