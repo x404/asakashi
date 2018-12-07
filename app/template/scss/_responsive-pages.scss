@@ -80,6 +80,11 @@
 			img{
 				width: 95%;
 			}
+			&.overflow{
+				img{
+					width: 98%;
+				}
+			}
 		}
 
 		.advantage{
@@ -428,6 +433,10 @@
 @media (max-width: 1366px){
 	.product__box .circle-half:before{
 		margin-top: -11px;
+	}
+
+	.homeslider .slide__bg{
+		top: 10px;
 	}
 }
 

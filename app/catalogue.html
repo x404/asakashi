@@ -104,9 +104,135 @@
 								</ul>
 								<!-- Tab panes -->
 								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane fade" id="product-search">...</div>
-									<div role="tabpanel" class="tab-pane fade in active" id="application-search">bbb</div>
-									<div role="tabpanel" class="tab-pane fade" id="vin-search">ccc</div>
+									<div role="tabpanel" class="tab-pane fade" id="product-search">
+										<form action="#" method="post" id="frmPartNoSearch">
+											<fieldset>
+												<div class="d-flex">
+													<div class="input-field">
+														<label for="txtPartNo" class="name-field">Product No</label>
+														<label for="txtPartNo" class="helper-field helper-field-name">Product No</label>
+														<input type="text" id="txtPartNo" name="txtPartNo" rel="OEM No or JS No" value="" class="form-control">
+													</div>
+													<input type="submit" id="btnProductSearch" name="btnProductSearch" class="btn btn-red btn-submit" value="Search">						
+												</div>
+											</fieldset>
+										</form>
+									</div>
+									<div role="tabpanel" class="tab-pane fade in active show" id="application-search">
+										<form action="#" method="post" id="frmAppSearch">
+											<fieldset>
+												<div class="d-flex">
+													<div id="brand_tab" class="select-tab">
+														<select name="selBrand" id="selBrand" class="selBrand" multiple="multiple">
+															<option value="1">ACURA</option>
+															<option value="2">ALFA ROMEO</option>
+															<option value="227">ARO</option>
+															<opption value="3">ASIA MOTORS</option>
+															<option value="4">ASTON MARTIN</option>
+															<option value="5">AUDI</option>
+															<option value="447">BAW</option>
+															<option value="6">BENTLEY</option>
+															<option value="7">BMW</option>
+															<option value="8">BMW (Alpina)</option>
+															<option value="99">BOBCAT</option>
+															<option value="272">BOVA</option>
+														</select>
+													</div>
+													<div id="class_tab" class="select-tab">
+														<select name="selClass" id="selClass" multiple="multiple">
+															<option value="1018">A-Class</option>
+															<option value="1022">Actros-Serie</option>
+															<option value="1012">Atego-Serie</option>
+															<option value="1013">Axor-Serie</option>
+															<option value="2">B-Class</option>
+															<option value="3">C-Class</option>
+															<option value="4">CL-Class</option>
+															<option value="20">CLA-Class</option>
+															<option value="26">CLC-Class</option>
+															<option value="5">CLK-Class</option>
+															<option value="22">CLS-Class</option>
+															<option value="1003">Citan - Class</option>
+															<option value="6">E-Class</option>
+														</select>	
+													</div>
+													<div id="model_tab" class="select-tab">
+														<select name="selModel" id="selModel" multiple="multiple">
+															<option value="20532">A 45 AMG</option>
+															<option value="20078">A 140</option>
+															<option value="20079">A 150</option>
+															<option value="20080">A 160</option>
+															<option value="20081">A 170</option>
+															<option value="20082">A 180</option>
+															<option value="20076">A 190</option>
+															<option value="20077">A 200</option>
+															<option value="20083">A 210</option>
+															<option value="20531">A 220</option>
+															<option value="20084">A 250</option>
+														</select>
+													</div>
+													<div id="year_tab" class="select-tab">
+														<select name="selYear" id="selYear" multiple="multiple">
+															<option value="2018">2018</option>
+															<option value="2017">2017</option>
+															<option value="2016">2016</option>
+															<option value="2015">2015</option>
+															<option value="2014">2014</option>
+															<option value="2013">2013</option>
+															<option value="2012">2012</option>
+															<option value="2011">2011</option>
+															<option value="2010">2010</option>
+															<option value="2009">2009</option>
+															<option value="2008">2008</option>
+															<option value="2007">2007</option>
+															<option value="2006">2006</option>
+															<option value="2005">2005</option>
+															<option value="2004">2004</option>
+															<option value="2003">2003</option>
+															<option value="2002">2002</option>
+															<option value="2001">2001</option>
+															<option value="2000">2000</option>
+															<option value="1999">1999</option>
+															<option value="1998">1998</option>
+															<option value="1997">1997</option>\
+														</select>
+
+														<p class="optional">Optional</p>
+													</div>
+													<div id="engine_tab" class="select-tab">
+														<select name="selEngine" id="selEngine" multiple="multiple">
+															<option value="1500">1500</option>
+															<option value="1600">1600</option>
+															<option value="1800">1800</option>
+															<option value="2000">2000</option>
+														</select>
+														<p class="optional">Optional</p>
+													</div>
+													<div id="body_tab" class="select-tab">
+														<select name="selBody" id="selBody" multiple="multiple">
+															<option value="W168">W168</option>
+															<option value="W176">W176</option>
+														</select>
+														<p class="optional">Optional</p>
+													</div>
+													<input type="submit" id="btnAppSearch" name="btnAppSearch" class="btn btn-red btn-submit" value="Go">
+												</div>
+											</fieldset>
+										</form>								
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="vin-search">
+										<form action="#" method="post" id="frmVinSearch">
+											<fieldset>
+												<div class="d-flex">
+													<div class="input-field">
+														<label for="txtVinNo" class="name-field">Vin Or Chassis No</label>
+														<label for="txtVinNo" class="helper-field helper-field-name">Vin Or Chassis No</label>
+														<input type="text" id="txtVinNo" name="txtVinNo" rel="Vin Or Chassis No.." value="" class="form-control">
+													</div>
+													<input type="submit" id="btnVinSearch" name="btnVinSearch" class="btn btn-red btn-submit" value="Search">
+												</div>
+											</fieldset>
+										</form>
+									</div>
 								</div>
 							</div>
 
@@ -141,10 +267,10 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
-											<a href="#" class="parts " title="">FS2027</a>
+											<a href="#" class="parts" title="">FS2027</a>
 										</td> 
 										<td class="tdParts tdCabin1">
 											<a href="#" title="">AC0184CSET</a>
@@ -167,7 +293,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>
@@ -192,7 +318,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>
@@ -220,7 +346,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>
@@ -246,7 +372,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>
@@ -271,7 +397,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>
@@ -296,7 +422,7 @@
 											<a href="#" class="parts " title="">OE1002</a>
 										</td> 
 										<td class="tdParts tdAir1">
-											<a href="# class="parts obsolute" title="">A0283</a>
+											<a href="#" class="parts obsolute" title="">A0283</a>
 										</td> 
 										<td class="tdParts tdFuel1">
 											<a href="#" class="parts " title="">FS2027</a>

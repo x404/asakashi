@@ -1,10 +1,10 @@
 .inner .catalog-page{
 	.tabs{
 		background: $color2;
-		min-height: 24rem;
+		min-height: 20.5rem;
 		box-shadow: 0px 2.5px 20px 0 rgba(0, 0, 0, 0.1);
 		position: relative;
-		padding: 0 3.5rem;
+		padding: 0 1.7rem;
 		@extend .hline;
 		margin-bottom: 8px;
 		&:before{
@@ -14,10 +14,66 @@
 			height: 40px;
 		}
 	}
+	.tab-pane{
+		padding-top: 2.3rem;
+		.input-field{
+			margin-left: 2rem;
+			margin-top: 0;
+			margin-right: 4rem;
+			label{
+				font-size: 1.7rem;
+				&.helper-field{
+					left: 3px;
+					top: 0px;	
+				}
+			}
+		}
+		.form-control{
+			border: none;
+			border-bottom: 2px solid #7e8083;
+			height: 40px;
+			width: 250px;
+		}
+
+		.btn{
+			margin-top: .8rem;
+		}
+	}
+
+
+	.select-tab{
+		margin-right: 4.2rem;
+	}
+
+	#brand_tab,
+	#class_tab,
+	#model_tab
+	{
+		width: 18rem;
+	}
+
+	#year_tab{
+		width: 80px;
+	}
+
+	#engine_tab{
+		width: 110px;
+	}	
+
+	#body_tab{
+		width: 160px;
+	}	
+
+	.optional{
+		font-size: 1.2rem;
+		color: #7f7f7f;
+		text-transform: none;
+	}
+
 	.nav{
 		$color: #d2d5d6;
 		list-style: none;
-		padding-top: 1rem;
+		padding-top: 1.3rem;
 		font-size: 3rem;
 		font-weight: 700;
 		border-bottom: 1px solid $color;
@@ -31,7 +87,7 @@
 		&-link{
 			position: relative;
 			top: 1px;
-			padding: 1rem 3.5rem;
+			padding: .7rem 2.3rem;
 			text-decoration: none;
 			border-left: 1px solid rgba(0,0,0,0);
 			border-right: 1px solid rgba(0,0,0,0);
@@ -48,8 +104,9 @@
 
 	.search{
 		&-result{
-			margin-top: 8.5rem;
+			margin-top: 8.9rem;
 			&-table{
+				margin-top: 1rem;
 				width: 100%;
 				th{
 					font-size: 1.7rem;

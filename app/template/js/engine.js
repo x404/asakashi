@@ -22,7 +22,7 @@ $(document).ready(function(){
 	});
 
 
-	$('select').selectize();
+	$('select.country').selectize();
 
 
 

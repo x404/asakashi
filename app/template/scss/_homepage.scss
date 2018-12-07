@@ -122,6 +122,9 @@
 	position: relative;
 	top: -10px;
 	width: 750px;
+	.overflow{
+		overflow: hidden;
+	}
 	.slick-slide{
 		position: relative;
 	}

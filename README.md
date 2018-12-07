@@ -16,5 +16,5 @@ __Используемые в проекте js плагины__
 * Сообщение для устаревших браузеров Outdated Browser v1.1.5[https://github.com/burocratik/outdated-browser](https://github.com/burocratik/outdated-browser) [Демо](http://outdatedbrowser.com/ru)
 * Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
 * Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
-* Анимация появления блоков [http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html](http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html), [https://github.com/QODIO/revealator](https://github.com/QODIO/revealator) 
-
+* Animations of blocks at homepage [http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html](http://wordsmall.ru/jquery-javascript/animaciya-poyavleniya-blokov-dlya-landing-page.html), [https://github.com/QODIO/revealator](https://github.com/QODIO/revealator) 
+* Muliple select in catalogue [https://github.com/wenzhixin/multiple-select](https://github.com/wenzhixin/multiple-select)
