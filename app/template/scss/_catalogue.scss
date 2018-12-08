@@ -125,25 +125,30 @@
 					}
 				}
 
-				tr td{
-					padding: 1rem 2.8rem;
-					border-bottom: 1px solid #d2d5d6;
-					a{
-						text-decoration: none;
-						display: block;
-						margin: 1rem 0;
-						&:hover{
-							text-decoration: underline;
+				tr{
+					td{
+						padding: 1rem 2.8rem;
+						border-bottom: 1px solid #d2d5d6;
+						a{
+							text-decoration: none;
+							display: block;
+							margin: 1rem 0;
+							&:hover{
+								text-decoration: underline;
+							}
 						}
-					}
-					&.model-title{
-						background: #232323;
-						padding-top: .3rem;
-						padding-bottom: .3rem;
+
 						h3{
 							color: #fff;
 						}
 					}
+					&.model-title{
+						td{
+							background: #232323 !important;
+							padding-top: .3rem;
+							padding-bottom: .3rem;
+						}
+					}					
 				}
 
 				h3{

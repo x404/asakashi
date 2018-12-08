@@ -141,7 +141,7 @@
 	font-size: 14px;
     overflow: auto;
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 0 30px;
 }
 
 .ms-drop ul > li {
@@ -151,8 +151,12 @@
     position: static;
     padding-left: 16px !important;
     padding-right: 16px;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    min-height: 35px;
+    &:nth-last-child(2){
+    	// padding-bottom: 28px;
+    }
     &:before{
     	display: none !important;
     }
