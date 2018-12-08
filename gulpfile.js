@@ -249,7 +249,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildJs = gulp.src([ // move js to production
 		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js',
-		config.templateDir + '/js/filter.js',
+		config.templateDir + '/js/filters.js',
 		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
