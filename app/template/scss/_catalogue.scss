@@ -53,15 +53,15 @@
 	}
 
 	#year_tab{
-		width: 80px;
+		width: 8rem;
 	}
 
 	#engine_tab{
-		width: 110px;
+		width: 11rem;
 	}	
 
 	#body_tab{
-		width: 160px;
+		width: 16rem;
 	}	
 
 	.optional{
@@ -112,6 +112,7 @@
 					font-size: 1.7rem;
 					text-transform: uppercase;
 					vertical-align: middle;
+					white-space: nowrap;
 					img{
 						vertical-align: bottom;
 					}

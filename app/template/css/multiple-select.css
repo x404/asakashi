@@ -4,7 +4,8 @@
 .ms-parent {
   display: inline-block;
   position: relative;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100% !important; }
 
 .ms-choice {
   border: none;

@@ -231,8 +231,7 @@ gulp.task('check-for-favicon-update', function(done) {
 
 
 gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
-	// переносим css файлы
-	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
+	var buildCss = gulp.src([ // // move css to production
 		config.templateDir + '/css/fm.revealator.jquery.css',
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/selectize.css',
@@ -247,9 +246,10 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
 	// var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
 	
-	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
+	var buildJs = gulp.src([ // move js to production
 		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/filter.js',
 		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',

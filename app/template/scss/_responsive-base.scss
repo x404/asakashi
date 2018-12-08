@@ -82,6 +82,30 @@
 
 
 
+@media (max-width: 1420px){
+	.inner .catalog-page {	
+		#brand_tab,
+		#class_tab,
+		#model_tab
+		{
+			width: 14rem;
+		}
+
+		#year_tab{
+			width: 7rem;
+		}
+
+		#engine_tab{
+			width: 10rem;
+		}	
+
+		#body_tab{
+			width: 14rem;
+		}
+	}
+}
+
+
 @media (max-width: 1300px){
 	.modal-menu .contacts{
 		.tel,
@@ -122,6 +146,14 @@
 	.lastnew__item{
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
+	}
+
+	.inner .catalog-page .search-result-table{
+		th,
+		tr td{
+			padding-left: 1.5rem;
+			padding-right: .5rem;
+		}
 	}
 }
 
@@ -214,6 +246,37 @@
 	}
 }
 
+
+@media (max-width: 1150px){
+	.inner .catalog-page {	
+		.tab-content{
+			.d-flex{
+				flex-wrap: wrap;
+			}
+		}
+		#brand_tab,
+		#class_tab,
+		#model_tab
+		{
+			margin-bottom: 1rem;
+			width: 31%;
+		}
+
+		#year_tab{
+			width: 26%;
+		}
+
+		#engine_tab{
+			width: 26%;
+		}	
+
+		#body_tab{
+			width: 26%;
+		}
+	}
+}
+
+
 @media (max-width: 1100px){
 	.header{
 		.d-flex{
@@ -243,6 +306,14 @@
 			margin-left: auto;
 			margin-right: auto;
 			display: block;
+		}
+	}
+
+	@media (max-width: 1150px){
+		.inner .catalog-page{
+			.nav{
+				font-size: 2rem;
+			}
 		}
 	}
 }
@@ -276,6 +347,20 @@
 	}
 }
 
+
+
+@media (max-width: 950px){
+	.inner .catalog-page .search-result-table{
+		th{
+			font-size: 1.5rem;
+		}
+
+		th,
+		tr td{
+			padding-left: .5rem;
+		}
+	}
+}
 
 
 @media (max-width: 768px){
@@ -336,6 +421,10 @@
 		.intro{
 			font-size: 1.6rem;
 		}
+
+		.catalog-page .search-title{
+			font-size: 2.8rem;
+		}
 	}
 	.inner-padding{
 		padding-left: 6rem;
@@ -344,8 +433,20 @@
 	.modal-menu .close-modal{
 		right: 32px;
 	}
+
+
+	
 }
 
+
+
+@media (max-width: 767px){
+	.inner .catalog-page .tab-pane .btn{
+		height: 4rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
 
 
 @media (max-width: 750px){
@@ -367,6 +468,10 @@
 			}
 		}
 	}
+
+	.inner .catalog-page .tab-content .d-flex{
+		flex-direction: row;
+	}
 }
 
 
@@ -378,6 +483,14 @@
 
 	.main-grid{
 		display: block;
+	}
+
+	.inner .catalog-page .nav{
+		font-size: 1.6rem;
+		&-link{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
 	}
 }
 
@@ -407,12 +520,58 @@
 				}
 			}
 		}
+
+		.catalog-page{
+			.tab-pane{
+				.form-control{
+					width: 100%;
+				}
+			}
+			#product-search,
+			#vin-search
+			{
+				.input-field{
+					flex-grow: 1;
+				}
+			}
+
+
+			#brand_tab,
+			#class_tab,
+			#model_tab
+			{
+				width: 48%;
+			}
+
+			#year_tab{
+				width: 48%;
+			}
+
+			#engine_tab{
+				width: 48%;
+			}	
+
+			#body_tab{
+				width: 48%;
+			}
+			.tab-pane{
+				.btn{
+					margin: 1rem auto 2rem;
+				}
+			}
+
+			.search-title{
+				font-size: 2.6rem;
+			}
+
+		}
 	}
 
 	.modal-content .form-wrapper{
 		padding-right: 8rem;
 		padding-left: 7rem;
 	}
+
 }
 
 
@@ -481,6 +640,56 @@
 		display: none;
 	}
 
+
+	.inner{
+		.catalog-page{
+			#application-search .d-flex{
+				display: block !important;
+			}
+			#brand_tab,
+			#class_tab,
+			#model_tab,
+			#year_tab,
+			#engine_tab,
+			#body_tab
+			{
+				margin-bottom: 3rem;
+				width: 100%;
+			}
+
+			#year_tab,
+			#engine_tab,
+			#body_tab{
+				margin-bottom: 1rem;
+			}
+
+			
+			#application-search{
+				.btn{
+					margin: 1rem auto 2rem;
+					text-align: center;
+					width: 150px;
+					display: block;
+				}
+			}
+
+			#vin-search,
+			#product-search{
+				.input-field{
+					margin-left: 0;
+					width: calc(100% -  150px)
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 500px){
+	.inner .catalog-page .nav-link{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 
@@ -531,6 +740,14 @@
 	.product{
 		&__intro{
 			font-size: 1.5rem;
+		}
+	}
+
+	.inner{
+		.catalog-page{
+			.search-title{
+				font-size: 2.4rem;
+			}
 		}
 	}
 }
@@ -595,13 +812,27 @@
 }
 
 
+@media (max-width: 450px){
+	.inner .catalog-page .nav{
+		border-bottom: none;
+		display: block;
+		&-item{
+			margin-top: 0;
+			text-align: center;
+		}
+		&-link.active{
+			border-bottom: 1px solid #d2d5d6;
+		}
+	}
+}
+
+
 @media (max-width: 440px){
 	.inner{
 		.main{
 			main{
 				h1,
 				.title{
-					// margin-left: 0; 
 					font-size: 3.2rem;
 					&:before{
 						margin-top: 0;
@@ -626,6 +857,21 @@
 		padding-right: 5rem;
 		padding-left: 4rem;
 	}
+
+
+	.inner .catalog-page{
+		#vin-search,
+		#product-search{
+			.d-flex{
+				display: block !important;
+			}
+			.input-field{
+				margin-right: 0;
+				width: 100%;
+			}
+		}		
+	}
+
 }
 
 @media (max-width: 340px){
