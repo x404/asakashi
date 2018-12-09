@@ -349,7 +349,7 @@ $(document).on('click', '.table-grid .model-title', function(e){
 	let $this = $(this),
 		$modelbody = $this.next('.model-body');
 
-	$this.toggleClass('arrow-up');
+	$this.toggleClass('arrow-down');
 	$modelbody.slideToggle();
 });
 

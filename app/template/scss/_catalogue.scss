@@ -311,7 +311,7 @@
 			color: $color2 !important;
 			font-size: 1.7rem !important;
 		}
-		&.arrow-up{
+		&.arrow-down{
 			&:before{ 
 				transform: rotate(180deg);
 			}
@@ -333,12 +333,6 @@
 		&EngineNo{width: 7.5%;}
 		&Body{width: 10%;}
 		&Parts{width: 8%;}
-	}
-
-	.collapse{
-		h3{
-
-		}
 	}
 }
 
