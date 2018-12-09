@@ -105,6 +105,32 @@
 	.search{
 		&-result{
 			margin-top: 8.9rem;
+			&-top{
+				align-items: center;
+				.btn{
+					background: none;
+					color: $color1;
+					text-decoration: none;
+					width: 310px;
+					flex-shrink: 0;
+					letter-spacing: 0.05em;
+					span{
+						color: $color6;
+						margin-left: .5rem;
+						text-transform: uppercase;
+					}
+					&:hover{
+						background: $color6;
+						color: $color2;
+						span{
+							color: inherit;
+						}
+					}
+				}
+				.search-title{
+					flex-grow: 1;
+				}
+			}
 			&-table{
 				margin-top: 1rem;
 				width: 100%;
@@ -165,3 +191,90 @@
 }
 
 
+.inner .main .product{
+	background: $color2;
+	padding: 3rem 4rem;
+
+	&__gallery{
+		margin-right: 3rem;
+		width: 235px;
+		flex-shrink: 0;
+
+		.gallery{
+			&__thumbs{
+				margin-top: 2rem;
+				div{
+					margin-right: 1.2rem;
+					&:last-child{
+						margin-right: 0;
+					}
+					a{
+						display: block;
+						transition: .3s outline;
+						img{
+							vertical-align: top;
+						}
+
+						&:hover,
+						&.active{
+							outline: 3px solid #ee2a31;
+							outline-offset: -3px;
+						}
+					}
+				}				
+			}
+		}
+	}
+	&__characteristics{
+		flex-grow: 1;
+	}
+
+	&__box{
+		margin-bottom: 1rem;
+	}
+	&__head{
+		background: #f0f0f0;
+		padding: .8rem 1.8rem;
+		align-items: center;
+		p{
+			font-size: 1.4rem;
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.box-title{
+			color: $color1;
+			font-size: 2rem;
+			font-weight: 700;
+			margin-right: 2rem !important;
+		}
+	}
+	
+
+	&__body{
+		font-size: 1.4rem;
+		.column{
+			flex-grow: 1;
+			padding-left: 1.8rem;
+			padding-right: 1.8rem;
+			.str{
+				display: flex;
+				justify-content: space-between;
+				margin-top: 1.5rem;
+			}
+			.param{
+				&-title{
+					padding-right: 7rem;
+				}
+				&-field{
+
+				}
+			}
+		}
+	}
+}

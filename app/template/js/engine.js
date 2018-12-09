@@ -315,7 +315,7 @@ function resetpanel(){
 		{
 			var self = subnavs[i];
 			if (self.classList.contains('subnav_content-active')){
-				console.log (self.classList.contains('subnav_content-active'));
+				// console.log (self.classList.contains('subnav_content-active'));
 				self.classList.remove('subnav_content-active');
 				
 			}
@@ -323,6 +323,21 @@ function resetpanel(){
 	document.querySelector('.page-asubnav.open').classList.remove('open');
 }
 // =/mobile menu
+
+
+// =gallery
+$(document).on('click', '.gallery__thumbs div a', function(e){
+	e.preventDefault();
+	let src = this.getAttribute('href'),
+		mainimg = document.getElementById('mainimg');
+	document.querySelector('.gallery__thumbs a.active').classList.remove('active');
+	this.classList.add('active');
+	$('#mainimg').fadeOut(function(){
+	    mainimg.setAttribute('src', src); 
+		$('#mainimg').fadeIn();
+	}); 
+});
+// =/gallery
 
 
 

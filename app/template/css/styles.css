@@ -5672,6 +5672,26 @@ em strong {
 
 .inner .catalog-page .search-result {
   margin-top: 8.9rem; }
+  .inner .catalog-page .search-result-top {
+    align-items: center; }
+    .inner .catalog-page .search-result-top .btn {
+      background: none;
+      color: #000;
+      text-decoration: none;
+      width: 310px;
+      flex-shrink: 0;
+      letter-spacing: 0.05em; }
+      .inner .catalog-page .search-result-top .btn span {
+        color: #ed1d24;
+        margin-left: .5rem;
+        text-transform: uppercase; }
+      .inner .catalog-page .search-result-top .btn:hover {
+        background: #ed1d24;
+        color: #fff; }
+        .inner .catalog-page .search-result-top .btn:hover span {
+          color: inherit; }
+    .inner .catalog-page .search-result-top .search-title {
+      flex-grow: 1; }
   .inner .catalog-page .search-result-table {
     margin-top: 1rem;
     width: 100%; }
@@ -5705,6 +5725,61 @@ em strong {
 
 .inner .catalog-page .search-title {
   font-size: 3rem; }
+
+.inner .main .product {
+  background: #fff;
+  padding: 3rem 4rem; }
+  .inner .main .product__gallery {
+    margin-right: 3rem;
+    width: 235px;
+    flex-shrink: 0; }
+    .inner .main .product__gallery .gallery__thumbs {
+      margin-top: 2rem; }
+      .inner .main .product__gallery .gallery__thumbs div {
+        margin-right: 1.2rem; }
+        .inner .main .product__gallery .gallery__thumbs div:last-child {
+          margin-right: 0; }
+        .inner .main .product__gallery .gallery__thumbs div a {
+          display: block;
+          transition: .3s outline; }
+          .inner .main .product__gallery .gallery__thumbs div a img {
+            vertical-align: top; }
+          .inner .main .product__gallery .gallery__thumbs div a:hover, .inner .main .product__gallery .gallery__thumbs div a.active {
+            outline: 3px solid #ee2a31;
+            outline-offset: -3px; }
+  .inner .main .product__characteristics {
+    flex-grow: 1; }
+  .inner .main .product__box {
+    margin-bottom: 1rem; }
+  .inner .main .product__head {
+    background: #f0f0f0;
+    padding: .8rem 1.8rem;
+    align-items: center; }
+    .inner .main .product__head p {
+      font-size: 1.4rem;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important; }
+    .inner .main .product__head a {
+      text-decoration: none; }
+      .inner .main .product__head a:hover {
+        text-decoration: underline; }
+    .inner .main .product__head .box-title {
+      color: #000;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-right: 2rem !important; }
+  .inner .main .product__body {
+    font-size: 1.4rem; }
+    .inner .main .product__body .column {
+      flex-grow: 1;
+      padding-left: 1.8rem;
+      padding-right: 1.8rem; }
+      .inner .main .product__body .column .str {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem; }
+      .inner .main .product__body .column .param-title {
+        padding-right: 7rem; }
 
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
