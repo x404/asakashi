@@ -240,6 +240,10 @@ $(document).ready(function(){
 	});
 
 
+	$('#modal-feedback').on('show.bs.modal', function (e) {
+		let $title = $(e.relatedTarget).data('title');
+		$('#modal-feedback .title-model').text($title);
+	});
 });
 
 
@@ -347,10 +351,7 @@ $(document).on('click', '.table-grid .model-title', function(e){
 		$modelbody = $this.next('.model-body');
 
 	$this.toggleClass('arrow-up');
-	
-	$modelbody.slideToggle(function(){
-		// $modelbody.toggleClass('collapse')		
-	})		
+	$modelbody.slideToggle();
 });
 
 
