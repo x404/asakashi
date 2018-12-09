@@ -153,7 +153,7 @@
 
 				tr{
 					td{
-						padding: 1rem 2.8rem;
+						padding: 1rem 0 1rem 2.8rem;
 						border-bottom: 1px solid #d2d5d6;
 						a{
 							text-decoration: none;
@@ -275,6 +275,63 @@
 
 				}
 			}
+		}
+	}
+}
+
+
+.inner .catalog-page .table-grid{
+	margin-top: 3rem;
+	.model-title{
+		cursor: pointer;
+		background: #232323 !important;
+		padding-bottom: .3rem;		
+		padding-left: 6rem;
+		padding-top: .3rem;
+		position: relative;
+		border-bottom: 1px solid #fff;
+		&:before{
+			@extend .before;
+			background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAMAAADjNjc+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEX/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf///+9+OMEAAAAJHRSTlMAgPFfdPtWd+F79flVdec1UPfmN1L65TNR6DZXZP1Fftg04lqpaN6sAAAAAWJLR0QlwwHJDwAAAAd0SU1FB+IMCQ8KK3Kv5FUAAABcSURBVAjXY2CAAEYmZgYUwKKiwsqGLMCuwsHJxc2DEOBV4eNnEBBEqGJRERIGUiLcomwwLWLiYIaEoCgPRIWkFFSxhCCrNAODjIqYFNxAEW5ZOQZ5BUUkS0WUlAEZKASFjhqtgwAAAABJRU5ErkJggg==") no-repeat left top;
+			position: absolute;
+			left: 30px;
+			top: 50%;
+			margin-top: -5px;
+			width: 17px;
+			height: 9px;
+			transition: transform .3s;
+		}
+		h3{
+			color: $color2 !important;
+			font-size: 1.7rem !important;
+		}
+		&.arrow-up{
+			&:before{ 
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.search-result-table{
+		margin-top: 0;
+		margin-bottom: 0;
+		tr th{
+			border-bottom-width: 2px;
+		}
+	}
+
+	.th,
+	.td{
+		&Year{width: 9%;}
+		&EngineVol{width: 7.5%;}
+		&EngineNo{width: 7.5%;}
+		&Body{width: 10%;}
+		&Parts{width: 8%;}
+	}
+
+	.collapse{
+		h3{
+
 		}
 	}
 }

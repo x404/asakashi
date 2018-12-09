@@ -330,6 +330,7 @@ $(document).on('click', '.gallery__thumbs div a', function(e){
 	e.preventDefault();
 	let src = this.getAttribute('href'),
 		mainimg = document.getElementById('mainimg');
+
 	document.querySelector('.gallery__thumbs a.active').classList.remove('active');
 	this.classList.add('active');
 	$('#mainimg').fadeOut(function(){
@@ -339,6 +340,18 @@ $(document).on('click', '.gallery__thumbs div a', function(e){
 });
 // =/gallery
 
+
+$(document).on('click', '.table-grid .model-title', function(e){
+	e.preventDefault();
+	let $this = $(this),
+		$modelbody = $this.next('.model-body');
+
+	$this.toggleClass('arrow-up');
+	
+	$modelbody.slideToggle(function(){
+		// $modelbody.toggleClass('collapse')		
+	})		
+});
 
 
 // `closest` polyfill for IE11
