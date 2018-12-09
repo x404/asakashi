@@ -5673,7 +5673,9 @@ em strong {
 .inner .catalog-page .search-result {
   margin-top: 8.9rem; }
   .inner .catalog-page .search-result-top {
-    align-items: center; }
+    align-items: center;
+    margin-top: -3rem;
+    padding-bottom: 1rem; }
     .inner .catalog-page .search-result-top .btn {
       background: none;
       color: #000;
@@ -5726,59 +5728,61 @@ em strong {
 .inner .catalog-page .search-title {
   font-size: 3rem; }
 
-.inner .main .product {
+.inner .main .detail {
   background: #fff;
   padding: 3rem 4rem; }
-  .inner .main .product__gallery {
+  .inner .main .detail__specification {
+    padding-bottom: 3rem; }
+  .inner .main .detail__gallery {
     margin-right: 3rem;
     width: 235px;
     flex-shrink: 0; }
-    .inner .main .product__gallery .gallery__thumbs {
+    .inner .main .detail__gallery .gallery__thumbs {
       margin-top: 2rem; }
-      .inner .main .product__gallery .gallery__thumbs div {
+      .inner .main .detail__gallery .gallery__thumbs div {
         margin-right: 1.2rem; }
-        .inner .main .product__gallery .gallery__thumbs div:last-child {
+        .inner .main .detail__gallery .gallery__thumbs div:last-child {
           margin-right: 0; }
-        .inner .main .product__gallery .gallery__thumbs div a {
+        .inner .main .detail__gallery .gallery__thumbs div a {
           display: block;
           transition: .3s outline; }
-          .inner .main .product__gallery .gallery__thumbs div a img {
+          .inner .main .detail__gallery .gallery__thumbs div a img {
             vertical-align: top; }
-          .inner .main .product__gallery .gallery__thumbs div a:hover, .inner .main .product__gallery .gallery__thumbs div a.active {
+          .inner .main .detail__gallery .gallery__thumbs div a:hover, .inner .main .detail__gallery .gallery__thumbs div a.active {
             outline: 3px solid #ee2a31;
             outline-offset: -3px; }
-  .inner .main .product__characteristics {
+  .inner .main .detail__characteristics {
     flex-grow: 1; }
-  .inner .main .product__box {
+  .inner .main .detail__plate {
     margin-bottom: 1rem; }
-  .inner .main .product__head {
+  .inner .main .detail__head {
     background: #f0f0f0;
     padding: .8rem 1.8rem;
     align-items: center; }
-    .inner .main .product__head p {
+    .inner .main .detail__head p {
       font-size: 1.4rem;
       margin-top: 0 !important;
       margin-bottom: 0 !important; }
-    .inner .main .product__head a {
+    .inner .main .detail__head a {
       text-decoration: none; }
-      .inner .main .product__head a:hover {
+      .inner .main .detail__head a:hover {
         text-decoration: underline; }
-    .inner .main .product__head .box-title {
+    .inner .main .detail__head .box-title {
       color: #000;
       font-size: 2rem;
       font-weight: 700;
       margin-right: 2rem !important; }
-  .inner .main .product__body {
+  .inner .main .detail__body {
     font-size: 1.4rem; }
-    .inner .main .product__body .column {
+    .inner .main .detail__body .column {
       flex-grow: 1;
       padding-left: 1.8rem;
       padding-right: 1.8rem; }
-      .inner .main .product__body .column .str {
+      .inner .main .detail__body .column .str {
         display: flex;
         justify-content: space-between;
         margin-top: 1.5rem; }
-      .inner .main .product__body .column .param-title {
+      .inner .main .detail__body .column .param-title {
         padding-right: 7rem; }
 
 .inner .catalog-page .table-grid {
@@ -5837,7 +5841,7 @@ em strong {
   padding-bottom: 7rem; }
 
 #modal-feedback .subject {
-  margin-top: 3rem; }
+  margin-top: 4rem; }
   #modal-feedback .subject p {
     font-size: 1.7rem;
     margin-bottom: 1rem; }
@@ -5852,7 +5856,8 @@ em strong {
   position: relative;
   padding: 0 0 0 30px;
   cursor: pointer;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  margin-bottom: 1rem; }
 
 #modal-feedback .radio + label:before {
   content: '';
@@ -7229,7 +7234,11 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     .about__cell {
       padding-left: 0;
       flex-grow: 0 !important;
-      flex-shrink: 0 !important; } }
+      flex-shrink: 0 !important; }
+  .inner .main .product__body .column {
+    max-width: 50%; }
+    .inner .main .product__body .column .str .owner {
+      padding-right: 3rem; } }
 
 @media (max-width: 1366px) {
   .product__box .circle-half:before {
@@ -7361,7 +7370,15 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     padding-left: 1rem; }
     .substances__wrapper {
       width: 30rem;
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+  .detail__specification {
+    padding-bottom: 1rem; }
+    .detail__specification .d-flex {
+      display: block !important; }
+    .detail__specification .column {
+      max-width: 100% !important; }
+  .detail__head {
+    display: block !important; } }
 
 @media (max-width: 1100px) {
   .homepage .counter {
@@ -7650,7 +7667,13 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
       .inner .catalog-page .search-result-table td a {
         margin: 0 !important; }
         .inner .catalog-page .search-result-table td a + a {
-          margin-top: .5rem !important; } }
+          margin-top: .5rem !important; }
+  .inner .catalog-page .detail__inner {
+    display: block !important; }
+  .inner .catalog-page .detail__gallery {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem; } }
 
 @media (max-width: 767px) {
   .main__body .side-panel .secondary-menu {
@@ -7677,7 +7700,12 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     .about__cell {
       margin-bottom: 0rem;
       padding-right: 0;
-      text-align: center; } }
+      text-align: center; }
+  .inner .catalog-page .gallery__thumbs {
+    flex-direction: row !important;
+    justify-content: center; }
+  .inner .catalog-page .detail__body .d-flex {
+    display: block !important; } }
 
 @media (max-width: 720px) {
   .homepage .advantage__item {
@@ -7954,6 +7982,16 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
   .about {
     width: 100%; } }
 
+@media (max-width: 450px) {
+  .inner .main .detail {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .inner .catalog-page .str-notes {
+    display: block !important; }
+    .inner .catalog-page .str-notes .param-field {
+      margin-top: .5rem;
+      text-align: left !important; } }
+
 @media (max-width: 420px) {
   .homepage .advantages {
     display: block !important; }
@@ -8049,7 +8087,14 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
   .inner .history__year {
     font-size: 3rem; }
   .inner .history__desc {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .inner .catalog-page .search-result-top .btn {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    justify-content: center; }
+  #modal-feedback .subject label {
+    display: block; } }
 
 @media (max-width: 340px) {
   .homepage .slick-list {

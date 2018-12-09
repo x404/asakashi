@@ -276,7 +276,6 @@ $(document).on('click', '.extra-toggle', function(e){
 	if (window.innerWidth > 650) {
 		var modal = $(this).data('popup');
 		$('#' + modal).addClass('open');
-		// document.querySelector('body').classList.add('modal-open-my')
 	} else{
 		// for mobile menu
 		document.querySelector('.apanel').classList.add('open');

@@ -107,6 +107,8 @@
 			margin-top: 8.9rem;
 			&-top{
 				align-items: center;
+				margin-top: -3rem;
+				padding-bottom: 1rem;
 				.btn{
 					background: none;
 					color: $color1;
@@ -191,9 +193,13 @@
 }
 
 
-.inner .main .product{
+.inner .main .detail{
 	background: $color2;
 	padding: 3rem 4rem;
+
+	&__specification{
+		padding-bottom: 3rem;
+	}
 
 	&__gallery{
 		margin-right: 3rem;
@@ -229,7 +235,7 @@
 		flex-grow: 1;
 	}
 
-	&__box{
+	&__plate{
 		margin-bottom: 1rem;
 	}
 	&__head{
@@ -351,7 +357,7 @@
 	}
 
 	.subject{
-		margin-top: 3rem;
+		margin-top: 4rem;
 		p{
 			font-size: 1.7rem;
 			margin-bottom: 1rem;
@@ -369,6 +375,7 @@
 	  padding: 0 0 0 30px;
 	  cursor: pointer;
 	  margin-right: 1.5rem;
+	  margin-bottom: 1rem;
 	}
 	.radio + label:before {
 	  content: '';
