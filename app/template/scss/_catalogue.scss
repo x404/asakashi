@@ -41,10 +41,6 @@
 	}
 
 
-	.select-tab{
-		// margin-right: 4.2rem;
-	}
-
 	#brand_tab,
 	#class_tab,
 	#model_tab
@@ -206,30 +202,10 @@
 		width: 235px;
 		flex-shrink: 0;
 
-		.gallery{
-			&__thumbs{
-				margin-top: 2rem;
-				div{
-					margin-right: 1.2rem;
-					&:last-child{
-						margin-right: 0;
-					}
-					a{
-						display: block;
-						transition: .3s outline;
-						img{
-							vertical-align: top;
-						}
-
-						&:hover,
-						&.active{
-							outline: 3px solid #ee2a31;
-							outline-offset: -3px;
-						}
-					}
-				}				
-			}
+		.fotorama__nav-wrap{
+			margin-top: 2rem;
 		}
+
 	}
 	&__characteristics{
 		flex-grow: 1;

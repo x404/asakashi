@@ -328,22 +328,6 @@ function resetpanel(){
 // =/mobile menu
 
 
-// =gallery
-$(document).on('click', '.gallery__thumbs div a', function(e){
-	e.preventDefault();
-	let src = this.getAttribute('href'),
-		mainimg = document.getElementById('mainimg');
-
-	document.querySelector('.gallery__thumbs a.active').classList.remove('active');
-	this.classList.add('active');
-	$('#mainimg').fadeOut(function(){
-	    mainimg.setAttribute('src', src); 
-		$('#mainimg').fadeIn();
-	}); 
-});
-// =/gallery
-
-
 $(document).on('click', '.table-grid .model-title', function(e){
 	e.preventDefault();
 	let $this = $(this),

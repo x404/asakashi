@@ -5737,20 +5737,8 @@ em strong {
     margin-right: 3rem;
     width: 235px;
     flex-shrink: 0; }
-    .inner .main .detail__gallery .gallery__thumbs {
+    .inner .main .detail__gallery .fotorama__nav-wrap {
       margin-top: 2rem; }
-      .inner .main .detail__gallery .gallery__thumbs div {
-        margin-right: 1.2rem; }
-        .inner .main .detail__gallery .gallery__thumbs div:last-child {
-          margin-right: 0; }
-        .inner .main .detail__gallery .gallery__thumbs div a {
-          display: block;
-          transition: .3s outline; }
-          .inner .main .detail__gallery .gallery__thumbs div a img {
-            vertical-align: top; }
-          .inner .main .detail__gallery .gallery__thumbs div a:hover, .inner .main .detail__gallery .gallery__thumbs div a.active {
-            outline: 3px solid #ee2a31;
-            outline-offset: -3px; }
   .inner .main .detail__characteristics {
     flex-grow: 1; }
   .inner .main .detail__plate {
@@ -7674,8 +7662,7 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     display: block !important; }
   .inner .catalog-page .detail__gallery {
     margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 1.5rem; }
+    margin-right: auto; }
   .inner .catalog-page .table-grid td {
     width: 100% !important; }
   .inner .catalog-page .table-grid .model-title {
@@ -7709,9 +7696,6 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
       margin-bottom: 0rem;
       padding-right: 0;
       text-align: center; }
-  .inner .catalog-page .gallery__thumbs {
-    flex-direction: row !important;
-    justify-content: center; }
   .inner .catalog-page .detail__body .d-flex {
     display: block !important; } }
 

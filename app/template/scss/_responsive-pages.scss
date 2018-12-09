@@ -1286,7 +1286,6 @@
 			&__gallery{
 				margin-left: auto;
 				margin-right: auto;
-				padding-bottom: 1.5rem;
 			}
 		}
 
@@ -1355,10 +1354,6 @@
 	}
 
 	.inner .catalog-page{
-		.gallery__thumbs{
-			flex-direction: row !important;
-			justify-content: center;
-		}
 		.detail__body{
 			.d-flex{
 				display: block !important;

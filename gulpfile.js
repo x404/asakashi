@@ -141,6 +141,18 @@ gulp.task('img2', function() {
 });
 
 
+gulp.task('img-fotorama', function() {
+    return gulp.src(config.templateDir + '/css/**/*') // Берем все изображения из app
+        .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        })))
+        .pipe(gulp.dest(config.desttemplateDir + '/css')); // Выгружаем на продакшен
+});
+
+
 // File where the favicon markups are stored
 var FAVICON_DATA_FILE = 'faviconData.json';
 
@@ -230,11 +242,12 @@ gulp.task('check-for-favicon-update', function(done) {
 });
 
 
-gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
+gulp.task('build', ['clean', 'img', 'img-fotorama', 'scss', 'compress'], function(){
 	var buildCss = gulp.src([ // // move css to production
 		config.templateDir + '/css/fm.revealator.jquery.css',
 		config.templateDir + '/css/styles.min.css',
 		config.templateDir + '/css/selectize.css',
+		config.templateDir + '/css/fotorama.css',
 		config.templateDir + '/css/animate.css'
 	])
 	.pipe(gulp.dest(config.desttemplateDir + '/css'));
@@ -250,6 +263,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js',
 		config.templateDir + '/js/filters.js',
+		config.templateDir + '/js/fotorama.js',
 		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
