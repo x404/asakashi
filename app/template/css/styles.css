@@ -5785,7 +5785,8 @@ em strong {
     padding-left: 6rem;
     padding-top: .3rem;
     position: relative;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    transition: background-color .3s; }
     .inner .catalog-page .table-grid .model-title:before {
       background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAMAAADjNjc+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEX/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf///+9+OMEAAAAJHRSTlMAgPFfdPtWd+F79flVdec1UPfmN1L65TNR6DZXZP1Fftg04lqpaN6sAAAAAWJLR0QlwwHJDwAAAAd0SU1FB+IMCQ8KK3Kv5FUAAABcSURBVAjXY2CAAEYmZgYUwKKiwsqGLMCuwsHJxc2DEOBV4eNnEBBEqGJRERIGUiLcomwwLWLiYIaEoCgPRIWkFFSxhCCrNAODjIqYFNxAEW5ZOQZ5BUUkS0WUlAEZKASFjhqtgwAAAABJRU5ErkJggg==") no-repeat left top;
       height: 9px;
@@ -5794,7 +5795,12 @@ em strong {
       position: absolute;
       top: 50%;
       transition: transform .3s;
-      width: 17px; }
+      width: 17px;
+      transition: filter .3s; }
+    .inner .catalog-page .table-grid .model-title:hover {
+      background-color: #ed1d24 !important; }
+      .inner .catalog-page .table-grid .model-title:hover:before {
+        filter: grayscale(1) brightness(3); }
     .inner .catalog-page .table-grid .model-title h3 {
       color: #fff !important;
       font-size: 1.7rem !important; }
