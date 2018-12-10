@@ -246,10 +246,15 @@
 									<div class="d-flex detail__inner">
 										<!-- =gallery -->
 										<div class="detail__gallery">
-											<div class="fotorama" data-nav="thumbs" data-thumbmargin="12" data-arrows="false">
+											<div class="fotorama" 
+												data-nav="thumbs" 
+												data-thumbmargin="12" 
+												data-arrows="false"
+												data-allow-full-screen="true"
+											>
 												<a href="images/cat-product-1.jpg" title="" class="active"><img src="images/thumb-1.jpg" alt=""></a>
-												<a href="images/cat-product-2.jpg" title=""><img src="images/thumb-2.jpg" alt=""></a>
-												<a href="images/cat-product-3.jpg" title=""><img src="images/thumb-3.jpg" alt=""></a>
+												<a href="images/1.jpg" title=""><img src="images/thumb-2.jpg" alt=""></a>
+												<a href="images/pic3.jpg" title=""><img src="images/thumb-3.jpg" alt=""></a>
 											</div>
 										</div>
 										<!-- =/gallery -->
@@ -1278,6 +1283,19 @@
 
 <link  href="/template/css/fotorama.css" rel="stylesheet">
 <script src="/template/js/fotorama.js"></script>
+<script>
+	$(document).ready(function(){
+$('.fotorama').on('fotorama:fullscreenenter', function() {
+$(this).data('fotorama').setOptions({fit: 'contain'});
+});
 
+$('.fotorama').on('fotorama:fullscreenexit', function() {
+$(this).data('fotorama').setOptions({fit: 'cover'});
+});
+
+		$('.fotorama__active img').fancybox()
+	})
+
+</script>
 </body>
 </html>
