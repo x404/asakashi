@@ -5595,16 +5595,16 @@ em strong {
 
 .inner .catalog-page .tabs {
   background: #fff;
-  min-height: 20.5rem;
   box-shadow: 0px 2.5px 20px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
+  margin-bottom: 8px;
+  min-height: 20.5rem;
   padding: 0 1.7rem;
-  margin-bottom: 8px; }
+  position: relative; }
   .inner .catalog-page .tabs:before {
-    left: 0;
-    top: auto;
     bottom: -40px;
-    height: 40px; }
+    height: 40px;
+    left: 0;
+    top: auto; }
 
 .inner .catalog-page .tab-pane {
   padding-top: 2.3rem; }
@@ -5656,13 +5656,16 @@ em strong {
     .inner .catalog-page .nav-item:before {
       display: none; }
   .inner .catalog-page .nav-link {
-    position: relative;
-    top: 1px;
     padding: .7rem 2.3rem;
+    position: relative;
     text-decoration: none;
+    top: 1px;
     border-left: 1px solid rgba(0, 0, 0, 0);
     border-right: 1px solid rgba(0, 0, 0, 0);
-    border-top: 1px solid rgba(0, 0, 0, 0); }
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    transition: color .3s; }
+    .inner .catalog-page .nav-link:hover {
+      color: #000; }
     .inner .catalog-page .nav-link.active {
       color: #000;
       border-left: 1px solid #d2d5d6;
@@ -5707,12 +5710,12 @@ em strong {
     .inner .catalog-page .search-result-table tr:nth-child(even) td {
       background: #f0f0f0; }
     .inner .catalog-page .search-result-table tr td {
-      padding: 1rem 0 1rem 2.8rem;
-      border-bottom: 1px solid #d2d5d6; }
+      border-bottom: 1px solid #d2d5d6;
+      padding: 1rem 0 1rem 2.8rem; }
       .inner .catalog-page .search-result-table tr td a {
-        text-decoration: none;
         display: block;
-        margin: 1rem 0; }
+        margin: 1rem 0;
+        text-decoration: none; }
         .inner .catalog-page .search-result-table tr td a:hover {
           text-decoration: underline; }
       .inner .catalog-page .search-result-table tr td h3 {
@@ -5734,9 +5737,9 @@ em strong {
   .inner .main .detail__specification {
     padding-bottom: 3rem; }
   .inner .main .detail__gallery {
+    flex-shrink: 0;
     margin-right: 3rem;
-    width: 235px;
-    flex-shrink: 0; }
+    width: 235px; }
     .inner .main .detail__gallery .fotorama__nav-wrap {
       margin-top: 2rem; }
   .inner .main .detail__characteristics {
@@ -5785,13 +5788,13 @@ em strong {
     border-bottom: 1px solid #fff; }
     .inner .catalog-page .table-grid .model-title:before {
       background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAMAAADjNjc+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEX/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf///+9+OMEAAAAJHRSTlMAgPFfdPtWd+F79flVdec1UPfmN1L65TNR6DZXZP1Fftg04lqpaN6sAAAAAWJLR0QlwwHJDwAAAAd0SU1FB+IMCQ8KK3Kv5FUAAABcSURBVAjXY2CAAEYmZgYUwKKiwsqGLMCuwsHJxc2DEOBV4eNnEBBEqGJRERIGUiLcomwwLWLiYIaEoCgPRIWkFFSxhCCrNAODjIqYFNxAEW5ZOQZ5BUUkS0WUlAEZKASFjhqtgwAAAABJRU5ErkJggg==") no-repeat left top;
-      position: absolute;
-      left: 30px;
-      top: 50%;
-      margin-top: -5px;
-      width: 17px;
       height: 9px;
-      transition: transform .3s; }
+      left: 30px;
+      margin-top: -5px;
+      position: absolute;
+      top: 50%;
+      transition: transform .3s;
+      width: 17px; }
     .inner .catalog-page .table-grid .model-title h3 {
       color: #fff !important;
       font-size: 1.7rem !important; }
@@ -5841,33 +5844,33 @@ em strong {
   margin: 10px 0 0 7px; }
 
 #modal-feedback .radio + label {
-  position: relative;
-  padding: 0 0 0 30px;
   cursor: pointer;
+  margin-bottom: 1rem;
   margin-right: 1.5rem;
-  margin-bottom: 1rem; }
+  padding: 0 0 0 30px;
+  position: relative; }
 
 #modal-feedback .radio + label:before {
+  background: #FFF;
+  border-radius: 50%;
+  border: 3px solid #bcc0c1;
   content: '';
+  height: 20px;
+  left: 0;
   position: absolute;
   top: 0px;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #bcc0c1;
-  border-radius: 50%;
-  background: #FFF; }
+  width: 20px; }
 
 #modal-feedback .radio + label:after {
-  content: '';
-  position: absolute;
   background: #fff;
-  top: 7px;
-  left: 7px;
-  width: 6px;
-  height: 6px;
   border-radius: 50%;
-  transition: .2s; }
+  content: '';
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 7px;
+  transition: .2s;
+  width: 6px; }
 
 #modal-feedback .radio:checked + label:before {
   background: #ed1d24;
