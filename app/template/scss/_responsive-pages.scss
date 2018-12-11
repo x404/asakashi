@@ -259,6 +259,11 @@
 	}
 
 	.homepage{
+		.slider-wrapper{
+			max-width: 42%;
+			flex-basis: 42%;
+		}
+
 		.intro{
 			padding-top: 10px;
 			.title{
@@ -487,7 +492,12 @@
 }
 
 
-
+@media (max-width: 1430px){
+	.homepage .counter-lastnews{
+		margin-top: 3rem;
+		margin-bottom: 4rem;
+	}
+}
 
 
 @media (max-width: 1366px){
@@ -500,7 +510,7 @@
 	}
 
 	.homepage .counter{
-		margin-left: 0;
+		// margin-left: 0;
 	}
 }
 
@@ -584,6 +594,11 @@
 			}
 		}
 	}
+
+	.homepage .slider-wrapper{
+		max-width: 50%;
+		flex-basis: 50%;
+	}
 }
 
 
@@ -613,6 +628,9 @@
 	}
 
 	.homepage{
+		.counter{
+			margin-left: 8.333%;
+		}
 		.slide{
 			&__link{
 				img{
@@ -793,6 +811,8 @@
 @media (max-width: 1100px){
 	.homepage{
 		.counter{
+			margin-top: 5rem;
+			margin-left: 0;
 			width: auto;
 		}
 		.advantages{
@@ -808,6 +828,11 @@
 				width: 70px;
 				margin-right: 10px;
 			}
+		}
+
+		.slider-wrapper{
+			max-width: 60%;
+			flex-basis: 60%;
 		}
 	}
 	.lastnew__item{
