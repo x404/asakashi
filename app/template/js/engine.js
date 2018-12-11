@@ -279,6 +279,12 @@ document.onkeydown = function(evt) {
 // }
 
 
+document.querySelector('#modal-menu').addEventListener('click', function(e){
+	this.closest('.open').classList.remove('open');
+	document.querySelector('.body').classList.remove('m-modal-open');
+}, false);
+
+
 $(document).on('click', '.extra-toggle', function(e){
 	if (window.innerWidth > 650) {
 		var modal = $(this).data('popup');
