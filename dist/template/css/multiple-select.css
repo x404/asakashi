@@ -1,0 +1,242 @@
+/**
+ * @author zhixin wen <wenzhixin2010@gmail.com>
+ */
+.ms-parent {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100% !important; }
+
+.ms-choice {
+  border: none;
+  border-bottom: 2px solid #7f8184;
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 36px;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  font-size: 1.4rem; }
+  .ms-choice div:after {
+    top: 13px; }
+
+.ms-choice.disabled {
+  background-color: #f4f4f4;
+  background-image: none;
+  border: 1px solid #ddd;
+  cursor: default; }
+
+.ms-choice > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; }
+
+.ms-choice > span.placeholder {
+  color: #000; }
+
+.ms-choice > div {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 20px;
+  height: 25px; }
+
+.ms-drop {
+  width: 140%;
+  overflow: hidden;
+  display: none;
+  margin-top: -1px;
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  border: 1px solid #aaa; }
+
+#year_tab .ms-drop {
+  width: 150px; }
+
+#body_tab .ms-drop {
+  width: 200px; }
+
+.ms-drop.bottom {
+  top: 100%;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15); }
+
+.ms-drop.top {
+  bottom: 100%;
+  -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15); }
+
+.ms-search {
+  display: inline-block;
+  margin: 0;
+  min-height: 26px;
+  padding: 12px 15px 0;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 10000; }
+
+.ms-search input {
+  background: url(../images/icons/search.png) no-repeat right 10px center;
+  width: 100%;
+  height: auto !important;
+  min-height: 35px;
+  padding: 0 20px 0 5px;
+  margin: 0;
+  outline: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 1px solid #d4d4d4; }
+
+.ms-search, .ms-search input {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ms-drop ul {
+  color: #2f2f2f;
+  font-size: 14px;
+  overflow: auto;
+  margin: 0;
+  padding: 5px 0 30px; }
+
+.ms-drop ul > li {
+  list-style: none;
+  display: list-item;
+  background-image: none;
+  position: static;
+  padding-left: 16px !important;
+  padding-right: 16px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: 35px; }
+  .ms-drop ul > li:before {
+    display: none !important; }
+
+.ms-drop ul > li .disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35); }
+
+.ms-drop ul > li.multiple {
+  display: block;
+  float: left; }
+
+.ms-drop ul > li.group {
+  clear: both; }
+
+.ms-drop ul > li.multiple label {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.ms-drop ul > li label {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap; }
+
+.ms-drop ul > li label.optgroup {
+  font-weight: bold; }
+
+.ms-drop input[type="checkbox"] {
+  vertical-align: middle; }
+
+.ms-drop .ms-no-results {
+  display: none; }
+
+.checkbox-tab .ms-drop li label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.checkbox-tab .ms-drop span {
+  position: relative;
+  padding: 0 0 0 32px;
+  cursor: pointer; }
+
+.checkbox-tab .ms-drop span:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7f8184; }
+
+.checkbox-tab .ms-drop li label input:checked + span:before {
+  background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAQAAAAKsiavAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiDAcROSIJf8CIAAAAbklEQVQY033QwQmAMAxA0YDgtRt0AzfoDIKzeRIKXcF9vHp1hu+hxhabmp6SF0gaQbrPMyB9XoET1+NIjumfoz1COekOgaXiVDMihCc1GRHmt2RwHqHlo2VdUlsaLr/YbS4NjgvYvlzfYcRbR7sBmW8Hgsek6JcAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ed1d24;
+  border-color: #ed1d24; }
+
+.checkbox-tab .ms-drop li:hover span:before {
+  border-color: #fff !important; }
+
+.radio-tab .ms-drop li label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.radio-tab .ms-drop span {
+  display: block;
+  position: relative;
+  padding: 0 0 0 32px;
+  cursor: pointer; }
+
+.radio-tab .ms-drop span:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7f8184;
+  border-radius: 50%;
+  transition: .3s; }
+
+.radio-tab .ms-drop span:after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  left: 9px;
+  top: 7px; }
+
+.radio-tab .ms-drop li label input:checked + span:before {
+  background-color: #ed1d24;
+  border-color: #ed1d24; }
+
+.radio-tab .ms-drop li:hover span:before {
+  border-color: #fff !important; }
+
+.ms-drop li {
+  transition: .3s; }
+  .ms-drop li label {
+    padding: 7px 0; }
+  .ms-drop li:hover {
+    color: #fff;
+    background: #ed1d24; }
