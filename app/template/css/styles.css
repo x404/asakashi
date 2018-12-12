@@ -5067,6 +5067,10 @@ em strong {
 .materials {
   font-size: 2.4rem; }
 
+.gallery-filter img {
+  margin-bottom: 2rem;
+  vertical-align: top; }
+
 .products-list {
   margin-top: 6rem; }
 
@@ -6749,18 +6753,16 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
     padding-right: 2rem; } }
 
 @media (max-width: 750px) {
-  main .d-flex:not(.newproducts__list):not(.product__link) {
+  main .d-flex:not(.newproducts__list):not(.product__link):not(.gallery-filter) {
     flex-direction: column; }
-    main .d-flex:not(.newproducts__list):not(.product__link).pic-right .pic {
+    main .d-flex:not(.newproducts__list):not(.product__link):not(.gallery-filter).pic-right .pic {
       order: -1;
       text-align: center; }
-      main .d-flex:not(.newproducts__list):not(.product__link).pic-right .pic img {
+      main .d-flex:not(.newproducts__list):not(.product__link):not(.gallery-filter).pic-right .pic img {
         float: none !important;
         margin-top: 0; }
-    main .d-flex:not(.newproducts__list):not(.product__link).pic-right div {
-      padding-left: 0 !important; }
-  .inner .catalog-page .tab-content .d-flex {
-    flex-direction: row; } }
+    main .d-flex:not(.newproducts__list):not(.product__link):not(.gallery-filter).pic-right div {
+      padding-left: 0 !important; } }
 
 @media (max-width: 680px) {
   #modal-ask .modal-dialog {
@@ -7753,7 +7755,9 @@ _::-webkit-:host:not(:root:root), .selectize-dropdown {
       padding-right: 0;
       text-align: center; }
   .inner .catalog-page .detail__body .d-flex {
-    display: block !important; } }
+    display: block !important; }
+  .gallery-filter img {
+    margin-bottom: 4rem; } }
 
 @media (max-width: 720px) {
   .homepage .advantage__item {

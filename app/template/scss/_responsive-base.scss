@@ -452,7 +452,7 @@
 
 @media (max-width: 750px){
 	main{
-		.d-flex:not(.newproducts__list):not(.product__link){
+		.d-flex:not(.newproducts__list):not(.product__link):not(.gallery-filter){
 			flex-direction: column;
 			&.pic-right{
 				.pic{
@@ -470,9 +470,6 @@
 		}
 	}
 
-	.inner .catalog-page .tab-content .d-flex{
-		flex-direction: row;
-	}
 }
 
 
