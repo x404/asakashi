@@ -5776,6 +5776,7 @@ em strong {
       .inner .main .detail__body .column .str {
         display: flex;
         justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
         margin-top: 1.5rem; }
       .inner .main .detail__body .column .param-title {
         padding-right: 7rem; }
